@@ -1,0 +1,14 @@
+{
+    "schemas": {
+        "alteryx": {
+            "name": "alteryx",
+            "start": "New Features",
+            "end": "Fixed and Known Issues"
+        },
+        "microsoft": {
+            "name": "microsoft",
+            "start": "__version Release Notes",
+            "end": "Was This Page Helpful?"
+        }
+    }
+}

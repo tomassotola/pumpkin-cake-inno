@@ -1,0 +1,616 @@
+
+
+[Skip to main content](#main-content)
+
+
+
+
+
+
+
+
+
+
+[![Home](/themes/custom/themekit/logo.png)](/ "Home")
+
+
+
+
+ 
+
+ 
+
+
+
+Select your language
+EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Secondary Menu
+--------------
+
+
+* [Community](https://community.alteryx.com "Community")
+* [Developer Help](/developer-help)
+* [Support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Get Support")
+
+
+
+
+Main navigation
+---------------
+
+
+* [Release Notes](/release-notes "Release Notes")
+* [License and Activate](/product-activation-and-licensing "License & Activation")
+* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
+
+
+
+
+  
+
+
+
+
+ 
+
+
+
+Designer 2020.2 Release Notes
+=============================
+
+
+
+Version: 
+
+ 2020.2
+
+Last modified: December 22, 2020
+
+
+
+
+| Release Note Product Versions |
+| --- |
+| Version | Release Date | Release | End of Support |
+| --- | --- | --- | --- |
+| 2020.2.2.27029 | June 3, 2020 | Major | December 3, 2021 |
+| 2020.2.3.27789 | June 15, 2020 | Minor | December 15, 2021 |
+
+
+New Features
+------------
+
+
+#### Alteryx Analytics Hub
+
+
+Connect Designer to your Alteryx Analytics Hub site so that you can quickly save and share your workflows with others. Visit [Connect to Alteryx Analytics Hub](/node/9806 "Connect to Alteryx Analytics Hub") to learn more.
+
+
+#### Alteryx Intelligence Suite
+
+
+The Alteryx Intelligence Suite is now available as a Designer add-on. Alteryx Intelligence Suite offers Machine Learning and Natural Language Processing (NLP) capabilities on top of the great features that are already available with your Designer license. Visit [Alteryx Intelligence Suite](https://help.alteryx.com/current/designer/alteryx-intelligence-suite) to learn more.
+
+
+#### Alteryx Multi-threaded Processing (AMP)
+
+
+Alteryx Multi-threaded Processing (AMP) is a new architecture of Alteryx Engine, designed to work with larger volumes of data at higher velocity. To learn more about the AMP Engine as well as differences between the original engine and AMP, visit these resources:
+
+
+* [Alteryx Engine](/20231/designer/alteryx-amp-engine "Alteryx Engine")
+* [Alteryx Engine and AMP: Main Differences](/20231/designer/alteryx-engine-and-amp-main-differences "Alteryx Engine and AMP: Main Differences")
+* [AMP Memory Use](/20231/designer/amp-memory-use "AMP Memory Use")
+
+
+To run workflows with the AMP engine, navigate to the **Workflow**- **Configuration**pane in Designer and select the **Runtime**tab. Then check the **Use AMP Engine** box to enable Alteryx Multi-threaded Processing.
+
+
+AMP Engine supports Standard, Iterative, and Batch Macros. In addition, 50 tools have been converted to run with AMP.
+
+
+#### Smarter Data Profiling
+
+
+Several updates and improvements were made to the **Browse** tool data profiling:
+
+
+* The holistic view now shows the top values for each column of data. Use the toggle to switch between the top values view and the data profiling charts.
+* For columns that contain only one distinct value across all rows, the *Only one value* message displays.
+* For columns where each value is unique, the *All values are unique*message displays.
+* You can now see value ranges at a glance in the holistic view for numerical and data-time columns.
+* You can now see a list of up to 1,000 distinct top values via the **more >** link in the top values view.
+
+
+#### Additional Enhancements
+
+
+* Two new functions were added to the **Data Cleansing** tool: **Remove Null Rows** and **Remove Null Columns**.
+* It's back! Due to popular demand, the **Open**, **Save**, **Cut**, **Copy**, **Paste**, **Undo**, and **Redo** functions were added to the [Designer toolbar](/20231/designer/main-menus "Designer toolbar").
+* We made some updates to ensure a seamless, smooth experience when using Designer in a non-EN language.
+	+ In-product help directs to content in the selected language.
+	+ Search links to results in localized Community pages. Currently, this is supported for FR, DE, JP, ES, and PT languages.
+	+ Canvas annotation font defaults to a supported language font when you switch to a different language.
+* We added international support to the **DateTime** tool. Designer now supports dates and times in multiple languages and locale formats.
+* The **Text Input** tool cell import limit was increased to 10,000.
+* We made a few enhancements to the **Formula** tool:
+	+ You can now delete formulas when they are collapsed in the Configuration window.
+	+ When you double-click a column name inside of an expression, the brackets around the column name are also selected.
+	+ Hover tooltips for functions were updated to improve accuracy and consistency.
+* New One Model Examples are available in all supported languages. Download these via the [Licensing Portal](http://licenses.alteryx.com/ "Licensing Portal"). Select **Alteryx Designer** > **Alteryx Machine Learning Toolkit** and select a download option.
+* R was upgraded to 3.6.3 from 3.5.3., discontinuing support for Microsoft R Client and Microsoft Machine Learning Server.
+* CEF and Chromium were upgraded:
+	+ CEF was upgraded to 3.3396.1786.gd3e36d0 from 3.3202.1694.gf061c23.
+	+ Chromium was upgraded to 67.0.3396.79 from 62.0.3202.9400.
+
+
+Fixed and Known Issues
+----------------------
+
+
+
+
+| Fixed
+Major Release Version 2020.2 |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| DE8713 | Optimizations to the Imputation tool have fixed issues DE8713, DE13143, and DE13287 | 2020.2.2.27029 | Fixed |
+| DE9774 | Failing installation when running a command-line installation silently (when TARGETDIR command is also used). | 2020.2.2.27029 | Fixed |
+| DE13138 | The Generate Rows macro expression doesn't keep workflow constant after run. | 2020.2.2.27029 | Fixed |
+| DE13143 | Optimizations to the Imputation tool have fixed issues DE8713, DE13143, and DE13287. | 2020.2.2.27029 | Fixed |
+| DE13287 | Optimizations to the Imputation tool have fixed issues DE8713, DE13143, and DE13287. | 2020.2.2.27029 | Fixed |
+| DE13561 | 11.5 Alteryx Designer EXE installation using the command line. | 2020.2.2.27029 | Fixed |
+| DE15545 | Missing metadata when a macro ends with a macro in a workflow. | 2020.2.2.27029 | Fixed |
+| DE16422 | R tool is inconsistent with NA values returned from data frames. | 2020.2.2.27029 | Fixed |
+| DE17506 | Cross Validation tool is not working with SVM. | 2020.2.2.27029 | Fixed |
+| DE17173 | Iterative macro repeatedly runs RunCommand on Cancel. | 2020.2.2.27029 | Fixed |
+| DE18187 | Decision Tree counts are incorrect in interactive output. | 2020.2.2.27029 | Fixed |
+| DE18336 | Decision Tree interactive output shows incorrect confusion matrix and summary metrics. | 2020.2.2.27029 | Fixed |
+| DE18410 | The Output Data tool displays a *Could not generate a unique name for field* error when you output to Excel with the Overwriteoption selected. When **Skip Field Names** is selected, it corrupts the Excel file. | 2020.2.2.27029 | Fixed |
+| DE21243 | The UK street geocoder stops running the process with an invalid postcode. | 2020.2.2.27029 | Fixed |
+| DE21872 | A Japanese character is omitted in the output from the Table tool. | 2020.2.2.27029 | Fixed |
+| DE22004 | Data Cleansing and Formula tools change Int64 value. | 2020.2.2.27029 | Fixed |
+| DE22247 | Macro Detour is generating an error. | 2020.2.2.27029 | Fixed |
+| DE22680 | Message in Browse Data Profiling stating *No Data to Chart* when there are no records in a field. | 2020.2.2.27029 | Fixed |
+| DE22971 | Passing in a path that starts with "\\" is causing an error in the Filter tool when using the FileExists function. | 2020.2.2.27029 | Fixed |
+| DE22981 | With the Trade Area tool, Small Float data types are treated not as a single radius asking for a circle, but as two radii asking for a doughnut. | 2020.2.2.27029 | Fixed |
+| DE23047 | K-Centroids Cluster Analysis tool does not work with Japanese field names. | 2020.2.2.27029 | Fixed |
+| DE23144 | The copy **All Records without Headers** feature in the **Results** window does not work properly when you paste the copied content directly onto the canvas. | 2020.2.2.27029 | Fixed |
+| DE23341 | Race condition calling in JS versus plugin engine execution. | 2020.2.2.27029 | Fixed |
+| DE23336 | Feedback from the FNO License Server is not readable in multibyte languages. | 2020.2.2.27029 | Fixed |
+| DE23517 | An *Unhandled Exception Occurred* error appears in Designer when you run a workflow with long SQL queries. | 2020.2.2.27029 | Fixed |
+| DE23549 | Long Pre- and Post-SQL queries are truncated in the **SQL Editor**. | 2020.2.2.27029 | Fixed |
+| DE23569 | Blank screen when publishing from Designer due to CEF 62 not accepting "SameSite=None". | 2020.2.2.27029 | Fixed |
+| DE23605 | Python tool double number conversion. | 2020.2.2.27029 | Fixed |
+| DE23606 | The numeric up/down configuration (**N = x**) does not update the configuration until after another action occurs. As a result, when you run the workflow via CTRL + R, the configuration change is lost. | 2020.2.2.27029 | Fixed |
+| DE23666 | The **Active Documents** button should display items based on the order of tabs as displayed in Designer, not alphabetical order. | 2020.2.2.27029 | Fixed |
+| DE23682 | The incorrect character is used for "Min" text in the Interactive Chart tool when using the Japanese version of Designer. | 2020.2.2.27029 | Fixed |
+| DE23721 | The Iterative macro loses field mapping for static inputs on iteration. | 2020.2.2.27029 | Fixed |
+| DE23783 | YXI files with spaces in the name or in the installation path do not install. | 2020.2.2.27029 | Fixed |
+| DE23788 | When Browse tools are disabled via the **Disable All Browse Tools** setting and the associated workflow is converted to a macro or app, the tools remain disabled without a user-friendly method to enable them. | 2020.2.2.27029 | Fixed |
+| DE23982 | Loading delay after refreshing macro with the **Disable Auto Configure** User Setting. | 2020.2.2.27029 | Fixed |
+| DE24077 | Using the mouse on the Formula tool's select column is not working. | 2020.2.2.27029 | Fixed |
+| DE24148 | Fixed issue on Gallery with a report created with PCXML. Creating a PDF of that report has an extra blank page at the beginning and end of the report. | 2020.2.2.27029 | Fixed |
+| DE24164 | The auto recover functionality in Designer should not include blank or unchanged workflows. | 2020.2.2.27029 | Fixed |
+| DE24178 | CSV field name order is no longer preserved in Transpose and Cross Tab tools. | 2020.2.2.27029 | Fixed |
+| DE24214 | Fixed issue in Browse Data Profiling where special characters were not displayed correctly for Top Values. | 2020.2.2.27029 | Fixed |
+| DE24367 | Fixed issue in Browse Data Profiling where profiling would fail to load if the user clicked off Browse during the initial load of a large data set. | 2020.2.2.27029 | Fixed |
+| DE24461 | Fixed issue in Report Map tool where Grouping broke map layers. | 2020.2.2.27029 | Fixed |
+| DE24605 | In 2020.1, when you print a workflow, the workflow name is not included in the header of the page. | 2020.2.2.27029 | Fixed |
+| Minor Release Version 2020.2.3.27789 |
+| --- |
+| DE23949 | Designer upload to AAH: Workflow fails to upload if the workflow name is longer than 63 characters. | 2020.2.3.27789 | Fixed |
+| DE24737 | Designer always sends database for Snowflake as "CD\_DB". | 2020.2.3.27789 | Fixed |
+| DE25052 | DCM - engine does not output connection metadata from batch and iterative macros. | 2020.2.3.27789 | Fixed |
+| DE25175 | When you upload a workflow from Designer to AAH, no error message shows when saving a simple workflow fails. | 2020.2.3.27789 | Fixed |
+| DE25229 | Unlicensed users are able to publish workflows from Designer to AAH. | 2020.2.3.27789 | Fixed |
+| DE25260 | DCM metadata is incorrect for Output tool. | 2020.2.3.27789 | Fixed |
+| DE25311 | Input tool with .xls file fails to upload from Designer to AAH. | 2020.2.3.27789 | Fixed |
+| DE25405 | Wrong datasource is created when DSN name equals servername. | 2020.2.3.27789 | Fixed |
+
+
+
+
+| Known |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| DE23527 | Issue in Report Table tool where rule configurations are not applied correctly to the table. | 2020.2.2.27029 | Known |
+| DE23588 | Issue in Report Chart tool where secondary y-axis labels overlap primary y-axis labels. | 2020.2.2.27029 | Known |
+| DE23592 | Annotations should not be translated because they are user inputs. | 2020.2.2.27029 | Known |
+| DE23607 | Browse Everywhere displays the *No data available. (Use Ctrl+R to run the workflow.)* error.  | 2020.2.2.27029 | Known |
+| DE23627 | Unhandled exception with a relative file path in macro file browse. | 2020.2.2.27029 | Known |
+| DE23664 | Alteryx files cannot be dragged onto the canvas while the workflow is running. | 2020.2.2.27029 | Known |
+| DE23678 | Unable to import when the column header contains Japanese characters. The Output Data tool with Custom Mapping does not recognize Japanese field names. | 2020.2.2.27029 | Known |
+| DE23679 | When connecting to the Oracle table in Japanese via OCI, an ORA-00911 error displays *DataWrapOCI: Unable to Prepare the Query*. | 2020.2.2.27029 | Known |
+| DE23706 | Timestamp data writes to DataBricks as a string. | 2020.2.2.27029 | Known |
+| DE23743 | Issue in Report Table tool where the user cannot save an expression in Formula for column rule. | 2020.2.2.27029 | Known |
+| DE23753 | Rate=0 results in null payment via the FinancePMT function. | 2020.2.2.27029 | Known |
+| DE23754 | The FinancePMT function produces a different result than Excel PMT. | 2020.2.2.27029 | Known |
+| DE23808 | In the Insight tool, there is an issue where the Filter options close when you select a column. | 2020.2.2.27029 | Known |
+| DE23853 | Output Records, Fields, and the number of Iterations for workflows differ in original Engine and AMP when running with Iterative Macros. | 2020.2.2.27029 | Known |
+| DE23854 | Running a workflow with Iterative Macros results in empty output. Output Records, Fields, and the number of Iterations for the workflow differ in the original Engine and AMP. | 2020.2.2.27029 | Known |
+| DE23857 | When running a workflow with JSON Parse in Iterative Macros, output Records, Fields, and number of Iterations for the workflow differ in original Engine and AMP. | 2020.2.2.27029 | Known |
+| DE23877 | Macro which ends with Child Macro does not pass data to FieldInfo tool. | 2020.2.2.27029 | Known |
+| DE23900 | The XML View of the Table tool contains localized content. This should not be the case. | 2020.2.2.27029 | Known |
+| DE23914 | Auto Field tool is not handling Integers properly via AMP engine. | 2020.2.2.27029 | Known |
+| DE23923 | Missing link for opening Connect search from Designer. | 2020.2.2.27029 | Known |
+| DE23958 | Using the AMP engine, Designer does not report intentional field conversion errors when processing a workflow with the **Multi-Field Formula** tool. | 2020.2.2.27029 | Known |
+| DE24007 | The TS Forecast tool does not correctly distribute Multi Byte Character Set (MBCS) strings from inputs to columns headers. | 2020.2.2.27029 | Known |
+| DE24017 | Regardless of configuration, the AMP engine's AlteryxEngineCmd.exe process runs at 'Below Normal' base priority. | 2020.2.2.27029 | Known |
+| DE24027 | The **Record Limit for All Inputs** setting does network when the AMP engine is turned on. | 2020.2.2.27029 | Known |
+| DE24092 | Use of the **Buffer** tool causes gaps in the resulting buffer. | 2020.2.2.27029 | Known |
+| DE24118 | Disabling Output not working with macros in apps. | 2020.2.2.27029 | Known |
+| DE24179 | Designer rewrites the same data to a .hyper file that is being read in from the Input Data tool. | 2020.2.2.27029 | Known |
+| DE24202 | Sort/Join Memory setting changes are not reflected in the original Engine and AMP engine workflow run without exiting and relaunching Designer. | 2020.2.2.27029 | Known |
+| DE24237 | Not possible to copy from Select, Group By, or Join tools in versions 2019.4 and up. | 2020.2.2.27029 | Known |
+| DE24239 | Multi-Row Formula showing "amp;" when using the "&" character in a New field. | 2020.2.2.27029 | Known |
+| DE24306 | Clicking the splash screen while loading sometimes causes Designer to open behind other windows without turning on the Taskbar icon. | 2020.2.2.27029 | Known |
+| DE24347 | Render tools do not display Chinese or Japanese fonts and return this error: *The font ???? could not be found. The default font "Arial" will be used instead*. | 2020.2.2.27029 | Known |
+| DE24368 | Calgary workflow causes AMP engine to hang occasionally. | 2020.2.2.27029 | Known |
+| DE24373 | Connection Errors don't show in Config Runs using AMP engine. | 2020.2.2.27029 | Known |
+| DE24477 | An Excel file with a named range, or a specified range with a header that contains a filter, doesn't produce the expected result. | 2020.2.2.27029 | Known |
+| DE24513 | Join tool shows "?" instead of the correct progress scale using AMP engine. | 2020.2.2.27029 | Known |
+| DE24553 | The Publish to Tableau Server tool doesn't create a .tdsx file with .hyper Output. | 2020.2.2.27029 | Known |
+| DE24578 | Large spatial workflow crashing at 6 hours every time. | 2020.2.2.27029 | Known |
+| DE24610 | Multi Byte Character Set (MBCS) field names are rendered incorrectly in the Report Text tool | 2020.2.2.27029 | Known |
+| DE24637 | User is not able to delete annotations in the tool. | 2020.2.2.27029 | Known |
+| DE24638 | Users saving an Assisted Modeling model with the Output Data tool must keep **Save Source & Description** selected. Users may run into issues when attempting to Union models coming from a different Assisted Modeling tool pipeline. | 2020.2.2.27029 | Known |
+| DE24650 | Browse Everywhere doesn't display records from Input Data tool using original engine. | 2020.2.2.27029 | Known |
+| DE24653 | Dictionary sort order differs between the original Engine and AMP engine. | 2020.2.2.27029 | Known |
+| DE24671 | A .xlsx legacy Sheet Name containing pipes produces an error. | 2020.2.2.27029 | Known |
+| DE24694 | Confusion matrix in HTML report, when viewed in Internet Explorer, might be black and white. | 2020.2.2.27029 | Known |
+| DE24701 | Issue in Report Text tool where italicized font also makes font bold weight. | 2020.2.2.27029 | Known |
+| DE24736 | The Oracle connection fails with a password that contains special characters. | 2020.2.2.27029 | Known |
+| DE24874 | Reporting tools fail to load upstream data with multi-byte characters in Temp Directory path. | 2020.2.2.27029 | Known |
+| DE25014 | Designer shows the messages inside a macro, despite the **Show All Macro Messages** function being disabled (in the original engine). | 2020.2.2.27029 | Known |
+| DE25056 | The **ToNumber()** function hangs when it's unable to identify parts of the string that are supposed to be converted to a number. | 2020.2.2.27029 | Known |
+| DE25057 | The Alteryx application stops working when browsing the data profile on date-time data types. | 2020.2.2.27029 | Known |
+| DE25107 | The Alteryx application terminates and Windows logs out when you run a workflow with the Multi Field Binning tool and AMP. | 2020.2.2.27029 | Known |
+| DE25111 | The OverSample tool causes slow processing of a workflow with AMP. | 2020.2.2.27029 | Known |
+| DE25231 | Multiple tools connected to the macro output produces an error when running a workflow with the original engine. | 2020.2.2.27029 | Known |
+| \* | PDF Input tool displays "\" in the path incorrectly when Designer is toggled to Chinese. | 2020.2.2.27029 | Known |
+| \* | Image to Text tool does not process single digits. This is due to the tool (under the hood) using the Google Tesseract OCR model. | 2020.2.2.27029 | Known |
+| \* | Text Pre-Processing Tool: Additional stopwords only work with the lowercase form of a word. | 2020.2.2.27029 | Known |
+| \* | Text Pre-Processing tool has issues processing with phone numbers that contain brackets. | 2020.2.2.27029 | Known |
+| \* | Text Pre-processing tool is producing less than ideal processing results due to the underlying open-source package. For example:
+ * "==" used as a header or separator becomes "= =", even with punctuation filtered.
+* "name(s)" becomes "name(s".
+ | 2020.2.2.27029 | Known |
+
+
+\*This defect does not have an associated defect number.
+
+
+
+
+
+
+
+
+Was This Page Helpful?
+
+
+
+
+N/A
+
+
+
+Yes
+
+
+
+No
+
+
+
+
+
+
+
+
+ 
+Have a comment? Please leave it here.
+
+
+
+
+Running into problems or issues with your Alteryx product? Visit the [Alteryx Community](https://community.alteryx.com/?category.id=external "Community") or contact [support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Support"). Can't submit this form? [Email us](mailto:helpfeedback@alteryx.com?subject=Help%20Feedback&body=URL%20of%20Help%20Page%3A%0AFeedback%3A).
+
+
+
+
+ 
+ 
+
+
+Leave this field blank
+
+
+
+
+
+
+
+
+
+#### In this Release Note:
+
+
+* [New Features](#new-features)
+* [Fixed and Known Issues](#fixed-and-known-issues)
+
+
+
+
+
+
+
+
+
+![](/themes/custom/themekit/images/alteryx-documentation-navy.png)
+
+
+Release Notes
+-------------
+
+
+* [Designer](/release-notes/designer/designer-20223-release-notes)Toggle menu
+	+ [2023.1](/release-notes/designer/designer-20231-release-notes)
+	+ [2022.3](/release-notes/designer/designer-20223-release-notes)
+	+ [2022.2 FIPS](/release-notes/designer/designer-fips-20222-release-notes)
+	+ [2022.1](/release-notes/designer/designer-20221-release-notes)
+	+ [2021.4](/release-notes/designer/designer-20214-release-notes)
+	+ [2021.3](/release-notes/designer/designer-20213-release-notes)
+	+ [2021.2](/release-notes/designer/designer-20212-release-notes)
+	+ [2021.1](/release-notes/designer/designer-20211-release-notes)
+	+ [2020.4](/release-notes/designer/designer-20204-release-notes)
+	+ [2020.3](/release-notes/designer/designer-20203-release-notes)
+	+ [2020.2](/release-notes/designer/designer-20202-release-notes)
+	+ [2020.1](/release-notes/designer/designer-20201-release-notes)
+	+ [2019.4](/release-notes/designer/designer-20194-release-notes "Designer 2019.4 Release Notes")
+	+ [2019.3](/release-notes/designer/designer-20193-release-notes "Designer 2019.3 Release Notes")
+	+ [2019.2](/release-notes/designer/designer-20192-release-notes "Designer 2019.2 Release Notes")
+	+ [2019.1](/release-notes/designer/designer-20191-release-notes "Designer 2019.1 Release Notes")
+	+ [2018.4](/release-notes/designer/designer-20184-release-notes "Designer 2018.4 Release Notes")
+	+ [2018.3](/release-notes/designer/designer-20183-release-notes "Designer 2018.3 Release Notes")
+	+ [2018.2](/release-notes/designer/designer-20182-release-notes "Designer 2018.2 Release Notes")
+	Show Less
+* [Server](/release-notes/server/server-20211-release-notes)Toggle menu
+	+ [2023.1](/release-notes/server/server-20231-release-notes)
+	+ [2022.3](/release-notes/server/server-20223-release-notes)
+	+ [2022.2](/release-notes/server/server-fips-20222-release-notes)
+	+ [2022.1](/release-notes/server/server-20221-release-notes)
+	+ [2021.4](/release-notes/server/server-20214-release-notes)
+	+ [2021.3](/release-notes/server/server-20213-release-notes)
+	+ [2021.2](/release-notes/server/server-20212-release-notes)
+	+ [2021.1](/release-notes/server/server-20211-release-notes)
+	+ [2020.4](/release-notes/server/server-20204-release-notes)
+	+ [2020.3](/release-notes/server/server-20203-release-notes)
+	+ [2020.2](/release-notes/server/server-20202-release-notes)
+	+ [2020.1](/release-notes/server/server-20201-release-notes)
+	+ [2019.4](/release-notes/server/server-20194-release-notes)
+	+ [2019.3](/release-notes/server/server-20193-release-notes "Server 2019.3 Release Notes")
+	+ [2019.2](/release-notes/server/server-20192-release-notes)
+	+ [2019.1](/release-notes/server/server-20191-release-notes)
+	+ [2018.4](/release-notes/server/server-20184-release-notes)
+	+ [2018.3](/release-notes/server/server-20183-release-notes)
+	+ [2018.2](/release-notes/server/server-20182-release-notes)
+	Show More
+* [Analytics Hub](/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)Toggle menu
+	+ [2021.2](/release-notes/alteryx-analytics-hub/analytics-hub-20212-release-notes)
+	+ [2021.1](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)
+	+ [2020.4](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20204-release-notes)
+	+ [2020.3](/release-notes/alteryx-analytics-hub/analytics-hub-20203-release-notes)
+	+ [2020.2](/release-notes/alteryx-analytics-hub/analytics-hub-20202-release-notes)
+* [Connect](/release-notes/connect/connect-20204-release-notes)Toggle menu
+	+ [2023.1](/release-notes/connect/connect-20231-release-notes)
+	+ [2022.3](/release-notes/connect/connect-20223-release-notes)
+	+ [2022.1](/release-notes/connect/connect-20221-release-notes)
+	+ [2021.4](/release-notes/connect/connect-20214-release-notes)
+	+ [2021.3](/release-notes/connect/connect-20213-release-notes)
+	+ [2021.2](/release-notes/connect/connect-20212-release-notes)
+	+ [2021.1](/release-notes/connect/connect-20211-release-notes)
+	+ [2020.4](/release-notes/connect/connect-20204-release-notes)
+	+ [2020.3](/release-notes/connect/connect-20203-release-notes)
+	+ [2020.2](/release-notes/connect/connect-20202-release-notes)
+	+ [2020.1](/release-notes/connect/connect-20201-release-notes)
+	+ [2019.4](/release-notes/connect/connect-20194-release-notes "Connect 2019.4 Release Notes")
+	+ [2019.3](/release-notes/connect/connect-20193-release-notes "Connect 2019.3 Release Notes")
+	+ [2019.2](/release-notes/connect/connect-20192-release-notes "Connect 2019.2 Release Notes")
+	+ [2019.1](/release-notes/connect/connect-20191-release-notes "Connect 2019.1 Release Notes")
+	+ [2018.4](/release-notes/connect/connect-20184-release-notes "Connect 2018.4 Release Notes")
+	+ [2018.3](/release-notes/connect/connect-20183-release-notes "Connect 2018.3 Release Notes")
+	+ [2018.2](/release-notes/connect/connect-20182-release-notes "Connect 2018.2 Release Notes")
+	+ [3.0](/release-notes/connect/connect-30-release-notes "Connect 3.0 Release Notes")
+	+ [2.0](/release-notes/connect/connect-20-release-notes "Connect 2.0 Release Notes")
+	+ [1.0](/release-notes/connect/connect-10-release-notes "Connect 1.0 Release Notes")
+	Show More
+* [Promote](/release-notes/promote/promote-20204-release-notes)Toggle menu
+	+ [2022.3](https://help.alteryx.com/release-notes/promote/promote-20223-release-notes)
+	+ [2022.2](https://help.alteryx.com/release-notes/promote/promote-20222-release-notes)
+	+ [2022.1](https://help.alteryx.com/release-notes/promote/promote-20221-release-notes)
+	+ [2021.4](https://help.alteryx.com/release-notes/promote/promote-20214-release-notes)
+	+ [2021.3](/release-notes/promote/promote-20213-release-notes)
+	+ [2021.2](https://help.alteryx.com/release-notes/promote/promote-20212-release-notes)
+	+ [2021.1](https://help.alteryx.com/release-notes/promote/promote-20211-release-notes)
+	+ [2020.4](/release-notes/promote/promote-20204-release-notes)
+	+ [2020.3](/release-notes/promote/promote-20203-release-notes)
+	+ [2020.2](/release-notes/promote/promote-20202-release-notes)
+	+ [2020.1](/release-notes/promote/promote-20201-release-notes)
+	+ [2019.4](/release-notes/promote/promote-20194-release-notes "Promote 2019.4 Release Notes")
+	+ [2019.3](/release-notes/promote/promote-20193-release-notes)
+	+ [2019.2](/release-notes/promote/promote-20192-release-notes)
+	+ [2019.1](/release-notes/promote/promote-20191-release-notes)
+	+ [2018.4](/release-notes/promote/promote-20184-release-notes)
+	+ [2018.3](/release-notes/promote/promote-20183-release-notes)
+	+ [2018.2](/release-notes/promote/promote-20182-release-notes)
+	Show More
+* [Auto Insights](https://help.alteryx.com/release-notes/auto-insights/auto-insights-release-notes)
+* [Licensing & Downloads Portal Release Notes](/release-notes/product-activation-and-licensing/licensing-downloads-portal-release-notes)
+* [Machine Learning](https://docs.trifacta.com/display/AAC/Release+Notes+for+Machine+Learning+-+Application)
+
+
+
+
+
+
+
+
+
+
+Breadcrumb
+----------
+
+
+1. [Home](/)
+2. [Release Notes & Help Versions](/release-notes)
+
+
+
+
+
+
+
+
+
+
+
+[![Alteryx](/themes/custom/themekit/alteryx_logo.png)](https://help.alteryx.com/)
+
+
+
+
+Select your language
+EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Cookie Settings](#)
+
+
+ 
+
+
+#### Ask The Community
+
+
+
+
+ Post questions and get answers from our community of data science and analytic experts.
+
+
+
+
+[Ask Now](https://community.alteryx.com/?category_id=external)
+
+
+
+
+
+#### Contact Support
+
+
+
+
+[Contact](https://community.alteryx.com/t5/Support/bd-p/SupportPage)
+
+
+
+
+
+ 
+
+Product Menu
+------------
+
+
+* [About](/20231/designer/about)
+* [Credits](/credits)
+* [Usage Data](/improving-our-products-usage-data)
+
+
+
+
+Footer Main Navigation
+----------------------
+
+
+* [Release Notes](/release-notes "Release Notes")
+* [License and Activate](/product-activation-and-licensing "License & Activation")
+* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
+
+
+
+
+ 
+ 
+
+{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/9576","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ckeditorheight":{"offset":1,"line\_height":1.5,"unit":"em","disable\_autogrow":null},"data":{"searchString":"Search Help \u0026 Documentation"},"lang\_dropdown":{"lang-dropdown-form":{"key":"lang-dropdown-form"}},"ajaxTrustedUrl":{"form\_action\_p\_pvdeGsVG5zNF\_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"4a7f5171b5c676338e4fc431c7e1a6cf24d8a4b2750c3964cc5b7ae3003b6388"}}
+
+window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"92abcb314d","applicationID":"597213089","transactionName":"ZFZRbEAECBAFVk1aXF0ccltGDAkNS3FLRkNSX29WXQEDPydaV0dBXF9fXUA5KAwAUG9aVkRwXFZGFwkPCFBLHg1FWlZP","queueTime":2,"applicationTime":872,"atts":"SBFSGggeGx4=","errorBeacon":"bam.nr-data.net","agent":""}
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. [Privacy Policy](https://www.alteryx.com/privacy)
+
+Cookie Settings Accept All Cookies![Alteryx](https://cdn.cookielaw.org/logos/9a0f53e0-b5e2-4698-980d-254cf308dbfd/8a7de3be-bd44-42f5-9b24-bb4778797183/62bc9a95-f108-4fab-ae37-4ae32da238a6/a-corporateblue-01.png)Privacy Preference Center
+-------------------------
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+   
+[More information](https://www.alteryx.com/cookie-policy)Allow All###  Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always ActiveThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+‎#### Performance Cookies
+
+  Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+‎#### Functional Cookies
+
+  Functional Cookies These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+‎#### Targeting Cookies
+
+  Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+‎Back Button### Performance Cookies
+
+  Search IconFilter IconClear checkbox label labelApply CancelConsent Leg.Interest checkbox label label checkbox label label checkbox label label* ### 
+
+#### 
+
+View Cookies
+	+ Namecookie name
+ Confirm My Choices[![Powered by Onetrust](https://cdn.cookielaw.org/logos/static/powered_by_logo.svg "Powered by OneTrust Opens in a new Tab")](https://www.onetrust.com/products/cookie-consent/)

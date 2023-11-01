@@ -1,0 +1,57 @@
+{
+    "agents": {
+        "alteryx": {
+            "meta": "Alteryx releases notes agent",
+            "locations": [
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20231-release-notes",
+                    "meta": "2023.1"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20223-release-notes",
+                    "meta": "2022.3"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20221-release-notes",
+                    "meta": "2022.1"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20214-release-notes",
+                    "meta": "2021.4"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20214-release-notes",
+                    "meta": "2021.4"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20213-release-notes",
+                    "meta": "2021.3"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20212-release-notes",
+                    "meta": "2021.2"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20211-release-notes",
+                    "meta": "2021.1"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20204-release-notes",
+                    "meta": "2020.4"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20203-release-notes",
+                    "meta": "2020.3"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20202-release-notes",
+                    "meta": "2020.2"
+                },
+                {
+                    "url": "https://help.alteryx.com/release-notes/designer/designer-20201-release-notes",
+                    "meta": "2020.1"
+                }
+            ]
+        }
+    }
+}

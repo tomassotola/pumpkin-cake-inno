@@ -1,0 +1,651 @@
+
+
+[Skip to main content](#main-content)
+
+
+
+
+
+
+
+
+
+
+[![Home](/themes/custom/themekit/logo.png)](/ "Home")
+
+
+
+
+ 
+
+ 
+
+
+
+Select your language
+EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Secondary Menu
+--------------
+
+
+* [Community](https://community.alteryx.com "Community")
+* [Developer Help](/developer-help)
+* [Support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Get Support")
+
+
+
+
+Main navigation
+---------------
+
+
+* [Release Notes](/release-notes "Release Notes")
+* [License and Activate](/product-activation-and-licensing "License & Activation")
+* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
+
+
+
+
+  
+
+
+
+
+ 
+
+
+
+Designer 2021.1 Release Notes
+=============================
+
+
+
+Version: 
+
+ 2021.1
+
+Last modified: July 20, 2022
+
+
+
+
+| Release Note Product Versions |
+| --- |
+| Version | Release Date | Release | End of Support |
+| --- | --- | --- | --- |
+| 2021.1.2.20534 | February 10, 2021 | Major | August 10, 2022 |
+| 2021.1.3.22649 | February 25, 2021 | Minor | August 10, 2022 |
+| 2021.1.4.26400 | March 25, 2021 | Minor | August 10, 2022 |
+| 2021.1.5.42625 | July 8, 2021 | Minor | August 10, 2022 |
+| 2021.1.6.53528 | September 7, 2021 | Minor | August 10, 2022 |
+| 2021.1.7.08014 | May 24, 2022 | Minor | August 10, 2022 |
+
+
+New Features
+------------
+
+
+#### Python Tool Base Folder Update for 2021.1.4
+
+
+The Python tool base folder name was updated in version 2021.1.4. The folder is now called DesignerBaseTools\_vEnv. It was previously called Jupytertool\_vEnv.
+
+
+#### Updates to Results Window Error Messages
+
+
+We have updated the text for several error messages that you might encounter in the Designer Results window. These updates help you identify what caused the error and what you can do to prevent it. In addition, certain error messages are now clickable and will take you to a Community article with more information about the error and how to address it.
+
+
+#### Licensing Update for Versions 11.7 and Older
+
+
+You can’t upgrade *directly* from version 11.7 or older to version 2021.1. If you are using Designer version 11.7 or previous and want to upgrade to 2021.1, you have to first upgrade to version 2020.4 or previous. Then you can upgrade to 2021.1.
+
+
+#### New Intelligence Suite Tools
+
+
+The Alteryx Intelligence Suite has 4 new tools that help you assess the health of your data, set feature types, build features from multiple data streams, and automatically create machine learning models. The tools are AutoML, Build Features, Data Health, and Feature Types. You can find them in the Machine Learning category in Designer.
+
+
+#### Text Pre-processing Tool Update
+
+
+The Text Pre-processing tool now has a second input anchor that allows you to pass in lists of stop words.
+
+
+#### Use AMP Engine for All New Workflows
+
+
+You can now enable a [user setting](/node/6131 "User Setting") to use the AMP Engine for all new workflows that you create.
+
+
+#### Designer Keyboard Navigation Upgrades
+
+
+You can now navigate the tool palette with the keyboard and use the Enter key to place a tool on the canvas. You can also double-click a tool on the tool palette to add it to the canvas. Visit [Shortcuts in Alteryx Designer](/20231/designer/shortcuts-alteryx-designer "Shortcuts in Alteryx Designer") to read more about this feature.
+
+
+#### Find and Replace Update
+
+
+We made several updates to the user interface of the [Find and Replace window](/20231/designer/find-and-replace "Find and Replace window").
+
+
+#### HTML Developer Tools
+
+
+Users can now access [developer tools](/developer-help/html-developer-tools "developer tools") via **Options** > **Advanced Options** > **Show HTML Developer Tools**.
+
+
+#### Download Tool Update
+
+
+The [Download tool](/20231/designer/download-tool "Download tool") now has a **Throttle Records** checkbox. Use this to indicate the number of records that you want to pass through the tool per minute.
+
+
+#### Analytic Applications Support in AMP
+
+
+The running of Analytic Applications is already well utilized with the original engine. Now there is support for Analytic Applications with AMP.
+
+
+#### Build Custom Formula Functions on AMP Using XML
+
+
+As a Designer user working with AMP, you can now use Custom Formula Functions. You can now create specific functions with XML files and use them in workflows with AMP.
+
+
+#### Prevent Deadlocks for Grouping and Blocking Tools with AMP
+
+
+When you build and run workflows that contain grouping and blocking tools (Join, Join Multiple, Tile, Fuzzy Match, Sorting, etc.) with a low memory limit set, you won’t experience the hang issue on the Join tool anymore.
+
+
+#### Improved Error Messaging when Connecting to Alteryx Analytics Hub
+
+
+If you encounter an error when you connect Designer to Alteryx Analytics Hub, improved messaging lets you know what action you need to take to resolve the error.
+
+
+#### New Localization User Setting
+
+
+You can now customize the date format that displays in the **Messages** tab of the **Results** window.
+
+
+#### New One Tool Examples
+
+
+New [One Tool Examples](/node/6381#tools-with-a-one-tool-example "One Tool Examples") are available for tools in the Predictive, Time Series, AB Analysis, Data Investigation, and Machine Learning tool categories.
+
+
+#### New One Model Example
+
+
+A new [One Model Example](/node/6381#learn-one-model-at-a-time "One Model Example") is available for Text Mining tools.
+
+
+#### Updated Version of Hyper API
+
+
+We updated the version of Hyper API to V0.0.11889. Users can now see increased performance when reading and writing Hyper files.
+
+
+#### Snowflake Internal Stage Bulkloader Upgrade
+
+
+We added options to Snowflake Bulk Loader (Local Staging). This allows users to select how to chunk and compress files for bulk loading and can increase performance.
+
+
+Fixed and Known Issues
+----------------------
+
+
+
+
+| Fixed
+Major Release Version 2021.1.2.20534 |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| DE17621 | Repeatable Defect: Inbound named pipe::not enough bytes read. | 2021.1.2.20534 | Fixed |
+| DE18670 | Incorrect DPV codes for ranges of addresses. | 2021.1.2.20534 | Fixed |
+| DE21254 | Append Field Map does not allow Custom Mapping for Tableau TDE and Hyper. | 2021.1.2.20534 | Fixed |
+| DE22651 | Unable to input/output Japanese Hyper. | 2021.1.2.20534 | Fixed |
+| DE23955 | Polygon with hyper file from Alteryx cannot automatically zoom. | 2021.1.2.20534 | Fixed |
+| DE24294 | Allocator Deadlock warning message with AMP. Warning messages related to Grouping and Blocking tools have been addressed. | 2021.1.2.20534 | Fixed |
+| DE25056 | ToNumber() function hangs if the string is not easily parsed. | 2021.1.2.20534 | Fixed |
+| DE25966 | Browse tool crashes when selecting a Date type field (large datasets). | 2021.1.2.20534 | Fixed |
+| DE26015 | Browse tool results in App Results are duplicated when Performance Profiling is turned on. | 2021.1.2.20534 | Fixed |
+| DE26027 | Download tool: "InboundNamedPipe GetOverlappedResult: The pipe has been ended". | 2021.1.2.20534 | Fixed |
+| DE26087 | Global Search field gets hidden when Designer window size is set to the minimum possible. | 2021.1.2.20534 | Fixed |
+| DE26383 | Tree View ordering of Actions in Interface Designer is not being used by AMP. | 2021.1.2.20534 | Fixed |
+| DE26477 | Report Text tool PCXML Expert Mode paired with Email tool (Blank email template). | 2021.1.2.20534 | Fixed |
+| DE26519 | Browse tool lands off-screen. No ability to scroll to it. | 2021.1.2.20534 | Fixed |
+| DE26691 | Cache option doesn't function with AMP when the "Disable All Tools that Write Output" option is selected. | 2021.1.2.20534 | Fixed |
+| DE26702 | Error when running locked workflows using AMP. | 2021.1.2.20534 | Fixed |
+| DE26851 | Render tool output from R anchor from the Forest Model tool is garbled. | 2021.1.2.20534 | Fixed |
+| DE26905 | Workflow never finishes running with Skip Field Names checked in Excel XLSX. | 2021.1.2.20534 | Fixed |
+| DE26936 | Unable to keep layout settings in other languages. | 2021.1.2.20534 | Fixed |
+| DE26961 | Updating values using workflow constants fails with AMP. | 2021.1.2.20534 | Fixed |
+| DE27026 | Tile tool with no Unique Field selected - Internal Error, Anchor was not closed with AMP. | 2021.1.2.20534 | Fixed |
+| DE27088 | Open Containing Folder: The correct folder is not opened when the path contains a comma. | 2021.1.2.20534 | Fixed |
+| DE27095 | Alteryx Analytics Hub: Workflow name with single quotes hangs when saving. | 2021.1.2.20534 | Fixed |
+| DE27111 | Unable to edit Paper size field in Render tool in Japanese Designer. | 2021.1.2.20534 | Fixed |
+| DE27143 | Arrange tool over-translation. | 2021.1.2.20534 | Fixed |
+| DE27188 | Fixed decimal produces negative zero for a sum with AMP. | 2021.1.2.20534 | Fixed |
+| DE27339 | OleDB connection error with SQL Server on AMP. | 2021.1.2.20534 | Fixed |
+| DE27350 | Writing to Hyper file using "Create New Extract File" will overwrite the file if it exists. | 2021.1.2.20534 | Fixed |
+| DE27458 | 2020Q2 Data issue ConsumerView Fields not Licensed. | 2021.1.2.20534 | Fixed |
+| DE27664 | Reports coming from Predictive tools are not translating. | 2021.1.2.20534 | Fixed |
+| DE27740 | Generate Rows Browse Everywhere is not working with AMP. | 2021.1.2.20534 | Fixed |
+| DE27867 | Publish to Tableau Server tool fails with error: "The file was not uploaded successfully." | 2021.1.2.20534 | Fixed |
+| DE27879 | Summarize tool combine groups spatial objects when it shouldn't with AMP. | 2021.1.2.20534 | Fixed |
+| DE27985 | Multibyte character field names read incorrectly for Tableau Hyper. | 2021.1.2.20534 | Fixed |
+| DE28045 | File format options with Snowflake Local Staging don't populate when creating an In DB connection. | 2021.1.2.20534 | Fixed |
+| DE28047 | The Data Cleansing tool doesn't work in 2020.4 when the field name contains line breaks. | 2021.1.2.20534 | Fixed |
+| US72212 | Abbreviations for the month of March not recognized for DateTime. | 2021.1.2.20534 | Fixed |
+| US73727 | The calendar widget does not work in 20.3 for the Interface Date and AB Trend tool. | 2021.1.2.20534 | Fixed |
+| Minor Release Version 2021.1.3.22649 |
+| --- |
+| DE28369,
+ DE28648 | Un-updated Python library causing the Word Cloud to break. | 2021.1.3.22649 | Fixed |
+| DE28677 | Workflows and Schedules utilizing Server Data Connections get stuck in queue in an initializing state. | 2021.1.3.22649 | Fixed |
+| Minor Release Version 2021.1.4.26400 |
+| --- |
+| DE28650 | Writing fields larger than 16 MB to MSSQL or Snowflake fails with an unknown error. | 2021.1.4.26400 | Fixed |
+| Minor Release Version 2021.1.5.42625 |
+| --- |
+| DE28819 | Workflows with Download tool fail with a 500 error in version 2020.3. | 2021.1.5.42625 | Fixed |
+| Minor Release Version 2021.1.6.53528 |
+| --- |
+| TBO-836 | Revert breaking change to Lock Workflow feature when in FIPS environments. | 2021.1.6.53528 | Fixed |
+| Minor Release Version 2021.1.7.08014 |
+| --- |
+| TELC-2658
+ DE34056 | Unable to write to HDFS with Kerberos when Tokens are larger than a certain size. | 2021.1.7.08014 | Fixed |
+
+
+
+
+| Known |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| DE27463 | Due to an issue with the way the AMP engine assigns IDs to tools when you drag them onto the canvas, Assisted Modeling might not be able to output the Machine Learning tools onto the canvas when AMP is enabled. To use Assisted Modeling, [disable AMP](https://help.alteryx.com/current/designer/alteryx-amp-engine#how-to-switch-on-amp). | 2021.1.2.20534 | Known |
+| DE27554 | OCI CLOB error with special and multibyte characters. | 2021.1.2.20534 | Known |
+| DE27905 | Oracle Database Connections limit the User Name to 30 characters when using Active Query Builder. | 2021.1.2.20534 | Known |
+| DE27935 | Alteryx Designer Report Map functionality broken. | 2021.1.2.20534 | Known |
+| DE27952 | Sorting results returns 0 results after switching workflows. | 2021.1.2.20534 | Known |
+| DE27953 | Alteryx Designer Unhandled Exception error with nested containers. | 2021.1.2.20534 | Known |
+| DE27954 | Workflows using MSSQL DB failed after upgrade to version 2020.3 with an unknown error. | 2021.1.2.20534 | Known |
+| DE27955 | With the original engine the Test tool checkbox "Don't report errors if there are other errors" is not working. | 2021.1.2.20534 | Known |
+| DE27980 | Cached macros lose output connection when saved and reopened. | 2021.1.2.20534 | Known |
+| DE28074 | Spline Model tool in Japanese Designer does not work with its default set values. | 2021.1.2.20534 | Known |
+| DE28137 | Workflow with warnings returns an irrelevant message to the caller workflow. | 2021.1.2.20534 | Known |
+| DE28143 | BigQuery Input and Output Connectors only pull in 50 projects. | 2021.1.2.20534 | Known |
+| DE28167 | The Message tool is incorrectly referencing data with the original engine. | 2021.1.2.20534 | Known |
+| DE28192 | Oracle Store Proc in post SQL being executed twice when it fails. | 2021.1.2.20534 | Known |
+| DE28207 | "The Allocator would appear to be deadlocked" warning while reading .yxdb file with 400 MB memory limitation with AMP. | 2021.1.2.20534 | Known |
+| DE28211 | MBCS Getting garbled from Report Text tool and other Compose tools. | 2021.1.2.20534 | Known |
+| DE28294 | Multi-byte characters turning to a question mark (?) in the body of the Email tool in Designer. | 2021.1.2.20534 | Known |
+| DE28307 | Cannot output some Chinese characters using Reporting tools. | 2021.1.2.20534 | Known |
+| DE28313 | Data not passing through Block Until Done when reading from Salesforce with AMP. | 2021.1.2.20534 | Known |
+| DE28328 | Error messages from the original engine tools in disabled Tool Containers with AMP. | 2021.1.2.20534 | Known |
+| DE28341 | Reading a zip archive from a downloaded temp file won't configure reading a file from the archive. | 2021.1.2.20534 | Known |
+| DE28758 | Different Designer versions execute the same workflow within different duration on non-English OS. | 2021.1.2.20534 | Known |
+| TCPE-104 | Report and interactive outputs cause intermittent Designer crash. | 2021.1.2.20534 | Known |
+
+
+Security Updates
+----------------
+
+
+
+
+| Fixed
+Minor Release Version 2021.1.5.42625 |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| DE33626 | Disabled external entity parsing for Excel inputs. | 2021.1.5.42625 | Fixed |
+| DE33627 | Set entity expansion limit to 0 for Excel inputs. | 2021.1.5.42625 | Fixed |
+| Minor Release Version 2021.1.7.08014 |
+| --- |
+| TELC-2814
+ GCSE-422 | AMP Engine may log sensitive information when processing workflows that contain Gallery Connections. | 2021.1.7.08014 | Fixed |
+
+
+
+
+
+
+
+
+Was This Page Helpful?
+
+
+
+
+N/A
+
+
+
+Yes
+
+
+
+No
+
+
+
+
+
+
+
+
+ 
+Have a comment? Please leave it here.
+
+
+
+
+Running into problems or issues with your Alteryx product? Visit the [Alteryx Community](https://community.alteryx.com/?category.id=external "Community") or contact [support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Support"). Can't submit this form? [Email us](mailto:helpfeedback@alteryx.com?subject=Help%20Feedback&body=URL%20of%20Help%20Page%3A%0AFeedback%3A).
+
+
+
+
+ 
+ 
+
+
+Leave this field blank
+
+
+
+
+
+
+
+
+
+#### In this Release Note:
+
+
+* [New Features](#new-features)
+* [Fixed and Known Issues](#fixed-and-known-issues)
+* [Security Updates](#security-updates)
+
+
+
+
+
+
+
+
+
+![](/themes/custom/themekit/images/alteryx-documentation-navy.png)
+
+
+Release Notes
+-------------
+
+
+* [Designer](/release-notes/designer/designer-20223-release-notes)Toggle menu
+	+ [2023.1](/release-notes/designer/designer-20231-release-notes)
+	+ [2022.3](/release-notes/designer/designer-20223-release-notes)
+	+ [2022.2 FIPS](/release-notes/designer/designer-fips-20222-release-notes)
+	+ [2022.1](/release-notes/designer/designer-20221-release-notes)
+	+ [2021.4](/release-notes/designer/designer-20214-release-notes)
+	+ [2021.3](/release-notes/designer/designer-20213-release-notes)
+	+ [2021.2](/release-notes/designer/designer-20212-release-notes)
+	+ [2021.1](/release-notes/designer/designer-20211-release-notes)
+	+ [2020.4](/release-notes/designer/designer-20204-release-notes)
+	+ [2020.3](/release-notes/designer/designer-20203-release-notes)
+	+ [2020.2](/release-notes/designer/designer-20202-release-notes)
+	+ [2020.1](/release-notes/designer/designer-20201-release-notes)
+	+ [2019.4](/release-notes/designer/designer-20194-release-notes "Designer 2019.4 Release Notes")
+	+ [2019.3](/release-notes/designer/designer-20193-release-notes "Designer 2019.3 Release Notes")
+	+ [2019.2](/release-notes/designer/designer-20192-release-notes "Designer 2019.2 Release Notes")
+	+ [2019.1](/release-notes/designer/designer-20191-release-notes "Designer 2019.1 Release Notes")
+	+ [2018.4](/release-notes/designer/designer-20184-release-notes "Designer 2018.4 Release Notes")
+	+ [2018.3](/release-notes/designer/designer-20183-release-notes "Designer 2018.3 Release Notes")
+	+ [2018.2](/release-notes/designer/designer-20182-release-notes "Designer 2018.2 Release Notes")
+	Show Less
+* [Server](/release-notes/server/server-20211-release-notes)Toggle menu
+	+ [2023.1](/release-notes/server/server-20231-release-notes)
+	+ [2022.3](/release-notes/server/server-20223-release-notes)
+	+ [2022.2](/release-notes/server/server-fips-20222-release-notes)
+	+ [2022.1](/release-notes/server/server-20221-release-notes)
+	+ [2021.4](/release-notes/server/server-20214-release-notes)
+	+ [2021.3](/release-notes/server/server-20213-release-notes)
+	+ [2021.2](/release-notes/server/server-20212-release-notes)
+	+ [2021.1](/release-notes/server/server-20211-release-notes)
+	+ [2020.4](/release-notes/server/server-20204-release-notes)
+	+ [2020.3](/release-notes/server/server-20203-release-notes)
+	+ [2020.2](/release-notes/server/server-20202-release-notes)
+	+ [2020.1](/release-notes/server/server-20201-release-notes)
+	+ [2019.4](/release-notes/server/server-20194-release-notes)
+	+ [2019.3](/release-notes/server/server-20193-release-notes "Server 2019.3 Release Notes")
+	+ [2019.2](/release-notes/server/server-20192-release-notes)
+	+ [2019.1](/release-notes/server/server-20191-release-notes)
+	+ [2018.4](/release-notes/server/server-20184-release-notes)
+	+ [2018.3](/release-notes/server/server-20183-release-notes)
+	+ [2018.2](/release-notes/server/server-20182-release-notes)
+	Show More
+* [Analytics Hub](/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)Toggle menu
+	+ [2021.2](/release-notes/alteryx-analytics-hub/analytics-hub-20212-release-notes)
+	+ [2021.1](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)
+	+ [2020.4](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20204-release-notes)
+	+ [2020.3](/release-notes/alteryx-analytics-hub/analytics-hub-20203-release-notes)
+	+ [2020.2](/release-notes/alteryx-analytics-hub/analytics-hub-20202-release-notes)
+* [Connect](/release-notes/connect/connect-20204-release-notes)Toggle menu
+	+ [2023.1](/release-notes/connect/connect-20231-release-notes)
+	+ [2022.3](/release-notes/connect/connect-20223-release-notes)
+	+ [2022.1](/release-notes/connect/connect-20221-release-notes)
+	+ [2021.4](/release-notes/connect/connect-20214-release-notes)
+	+ [2021.3](/release-notes/connect/connect-20213-release-notes)
+	+ [2021.2](/release-notes/connect/connect-20212-release-notes)
+	+ [2021.1](/release-notes/connect/connect-20211-release-notes)
+	+ [2020.4](/release-notes/connect/connect-20204-release-notes)
+	+ [2020.3](/release-notes/connect/connect-20203-release-notes)
+	+ [2020.2](/release-notes/connect/connect-20202-release-notes)
+	+ [2020.1](/release-notes/connect/connect-20201-release-notes)
+	+ [2019.4](/release-notes/connect/connect-20194-release-notes "Connect 2019.4 Release Notes")
+	+ [2019.3](/release-notes/connect/connect-20193-release-notes "Connect 2019.3 Release Notes")
+	+ [2019.2](/release-notes/connect/connect-20192-release-notes "Connect 2019.2 Release Notes")
+	+ [2019.1](/release-notes/connect/connect-20191-release-notes "Connect 2019.1 Release Notes")
+	+ [2018.4](/release-notes/connect/connect-20184-release-notes "Connect 2018.4 Release Notes")
+	+ [2018.3](/release-notes/connect/connect-20183-release-notes "Connect 2018.3 Release Notes")
+	+ [2018.2](/release-notes/connect/connect-20182-release-notes "Connect 2018.2 Release Notes")
+	+ [3.0](/release-notes/connect/connect-30-release-notes "Connect 3.0 Release Notes")
+	+ [2.0](/release-notes/connect/connect-20-release-notes "Connect 2.0 Release Notes")
+	+ [1.0](/release-notes/connect/connect-10-release-notes "Connect 1.0 Release Notes")
+	Show More
+* [Promote](/release-notes/promote/promote-20204-release-notes)Toggle menu
+	+ [2022.3](https://help.alteryx.com/release-notes/promote/promote-20223-release-notes)
+	+ [2022.2](https://help.alteryx.com/release-notes/promote/promote-20222-release-notes)
+	+ [2022.1](https://help.alteryx.com/release-notes/promote/promote-20221-release-notes)
+	+ [2021.4](https://help.alteryx.com/release-notes/promote/promote-20214-release-notes)
+	+ [2021.3](/release-notes/promote/promote-20213-release-notes)
+	+ [2021.2](https://help.alteryx.com/release-notes/promote/promote-20212-release-notes)
+	+ [2021.1](https://help.alteryx.com/release-notes/promote/promote-20211-release-notes)
+	+ [2020.4](/release-notes/promote/promote-20204-release-notes)
+	+ [2020.3](/release-notes/promote/promote-20203-release-notes)
+	+ [2020.2](/release-notes/promote/promote-20202-release-notes)
+	+ [2020.1](/release-notes/promote/promote-20201-release-notes)
+	+ [2019.4](/release-notes/promote/promote-20194-release-notes "Promote 2019.4 Release Notes")
+	+ [2019.3](/release-notes/promote/promote-20193-release-notes)
+	+ [2019.2](/release-notes/promote/promote-20192-release-notes)
+	+ [2019.1](/release-notes/promote/promote-20191-release-notes)
+	+ [2018.4](/release-notes/promote/promote-20184-release-notes)
+	+ [2018.3](/release-notes/promote/promote-20183-release-notes)
+	+ [2018.2](/release-notes/promote/promote-20182-release-notes)
+	Show More
+* [Auto Insights](https://help.alteryx.com/release-notes/auto-insights/auto-insights-release-notes)
+* [Licensing & Downloads Portal Release Notes](/release-notes/product-activation-and-licensing/licensing-downloads-portal-release-notes)
+* [Machine Learning](https://docs.trifacta.com/display/AAC/Release+Notes+for+Machine+Learning+-+Application)
+
+
+
+
+
+
+
+
+
+
+Breadcrumb
+----------
+
+
+1. [Home](/)
+2. [Release Notes & Help Versions](/release-notes)
+
+
+
+
+
+
+
+
+
+
+
+[![Alteryx](/themes/custom/themekit/alteryx_logo.png)](https://help.alteryx.com/)
+
+
+
+
+Select your language
+EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Cookie Settings](#)
+
+
+ 
+
+
+#### Ask The Community
+
+
+
+
+ Post questions and get answers from our community of data science and analytic experts.
+
+
+
+
+[Ask Now](https://community.alteryx.com/?category_id=external)
+
+
+
+
+
+#### Contact Support
+
+
+
+
+[Contact](https://community.alteryx.com/t5/Support/bd-p/SupportPage)
+
+
+
+
+
+ 
+
+Product Menu
+------------
+
+
+* [About](/20231/designer/about)
+* [Credits](/credits)
+* [Usage Data](/improving-our-products-usage-data)
+
+
+
+
+Footer Main Navigation
+----------------------
+
+
+* [Release Notes](/release-notes "Release Notes")
+* [License and Activate](/product-activation-and-licensing "License & Activation")
+* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
+
+
+
+
+ 
+ 
+
+{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/14681","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ckeditorheight":{"offset":1,"line\_height":1.5,"unit":"em","disable\_autogrow":null},"data":{"searchString":"Search Help \u0026 Documentation"},"lang\_dropdown":{"lang-dropdown-form":{"key":"lang-dropdown-form"}},"ajaxTrustedUrl":{"form\_action\_p\_pvdeGsVG5zNF\_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"4a7f5171b5c676338e4fc431c7e1a6cf24d8a4b2750c3964cc5b7ae3003b6388"}}
+
+window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"92abcb314d","applicationID":"597213089","transactionName":"ZFZRbEAECBAFVk1aXF0ccltGDAkNS3FLRkNSX29WXQEDPydaV0dBXF9fXUA5KAwAUG9aVkRwXFZGFwkPCFBLHg1FWlZP","queueTime":3,"applicationTime":949,"atts":"SBFSGggeGx4=","errorBeacon":"bam.nr-data.net","agent":""}
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. [Privacy Policy](https://www.alteryx.com/privacy)
+
+Cookie Settings Accept All Cookies![Alteryx](https://cdn.cookielaw.org/logos/9a0f53e0-b5e2-4698-980d-254cf308dbfd/8a7de3be-bd44-42f5-9b24-bb4778797183/62bc9a95-f108-4fab-ae37-4ae32da238a6/a-corporateblue-01.png)Privacy Preference Center
+-------------------------
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+   
+[More information](https://www.alteryx.com/cookie-policy)Allow All###  Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always ActiveThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+‎#### Performance Cookies
+
+  Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+‎#### Functional Cookies
+
+  Functional Cookies These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+‎#### Targeting Cookies
+
+  Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+‎Back Button### Performance Cookies
+
+  Search IconFilter IconClear checkbox label labelApply CancelConsent Leg.Interest checkbox label label checkbox label label checkbox label label* ### 
+
+#### 
+
+View Cookies
+	+ Namecookie name
+ Confirm My Choices[![Powered by Onetrust](https://cdn.cookielaw.org/logos/static/powered_by_logo.svg "Powered by OneTrust Opens in a new Tab")](https://www.onetrust.com/products/cookie-consent/)

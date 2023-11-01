@@ -1,0 +1,50 @@
+version: "3.8"
+services:
+  elasticsearchai:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+    container_name: elasticsearchai
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - ${ES_PORT}:9200
+    restart: always
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+      - http.cors.allow-origin="*"
+      - http.cors.enabled=true
+      - http.cors.allow-credentials=true
+      - http.cors.allow-methods=OPTIONS, HEAD, GET, POST, PUT, DELETE
+      - http.cors.allow-headers=X-Requested-With, X-Auth-Token, Content-Type, Content-Length, Authorization, Access-Control-Allow-Headers, Accept, x-elastic-client-meta
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+  kibanaai:
+    depends_on:
+      - elasticsearchai
+    image: docker.elastic.co/kibana/kibana:${STACK_VERSION}
+    container_name: kibanaai
+    volumes:
+      - kibana-data:/usr/share/kibana/data
+    ports:
+      - ${KIBANA_PORT}:5601
+    restart: always
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearchai:9200
+  app:
+    depends_on:
+      - kibanaai
+    build: ./frontend
+    image: frontend
+    container_name: frontend
+    command: npm start
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend:/app
+volumes:
+  elasticsearch-data:
+    driver: local
+  kibana-data:
+    driver: local
