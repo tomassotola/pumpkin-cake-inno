@@ -1,86 +1,1133 @@
 
-
-[Skip to main content](#main-content)
-
-
-
-
-
-
-
-
-
-
-[![Home](/themes/custom/themekit/logo.png)](/ "Home")
-
-
-
-
- 
-
- 
-
-
-
-Select your language
-EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Secondary Menu
---------------
-
-
-* [Community](https://community.alteryx.com "Community")
-* [Developer Help](/developer-help)
-* [Support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Get Support")
-
-
-
-
-Main navigation
----------------
-
-
-* [Release Notes](/release-notes "Release Notes")
-* [License and Activate](/product-activation-and-licensing "License & Activation")
-* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
-
-
-
-
-  
-
-
-
-
- 
-
-
-
+ div.skipnav {
+ }
+ div.skipnav a {
+ position: fixed;
+ left: -10000px;
+ top: 1.5em;
+ width: 1px;
+ height: 1px;
+ overflow: hidden;
+ }
+ div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+ background: white;
+ color: black;
+ box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+ position: fixed;
+ left: 2em;
+ top: 1.5em;
+ width: auto;
+ height: auto;
+ overflow: visible;
+ text-decoration: underline;
+ z-index: 99999; /\* has to be higher than the side panel \*/
+ }
+ [Skip to main content](#content-wrapper)Toggle navigation[![Corporate logotype](../../../css/image/corporate-logo.png)](/index.html)* [Release Notes](https://help.alteryx.com/release-notes.html)
+* [Community](https://community.alteryx.com/)
+* [My Alteryx](https://my.alteryx.com/)
+* Select version
+	+ [2023.2 (Current)](/current/index.html)
+	+ [2023.1](/20231/index.html)
+	+ [2022.3](/20223/index.html)
+	+ [2022.2-FIPS](/20222FIPS/index.html)
+	+ [2022.1](/20221/index.html)
+	+ [2021.4](/20214/index.html)
+Toggle navigation[![Corporate logotype](../../../css/image/corporate-logo.png)](/index.html)* [Release Notes](../../release-notes.html)
+	+ [Designer Release Notes](../../release-notes/designer-release-notes.html)
+		- [2023.2](../../release-notes/designer-release-notes/designer-2023-2-release-notes.html)
+		- [2023.1](../../release-notes/designer-release-notes/designer-2023-1-release-notes.html)
+		- [2022.2 FIPS](../../release-notes/designer-release-notes/designer-fips-2022-2-release-notes.html)
+		- [2022.3](../../release-notes/designer-release-notes/designer-2022-3-release-notes.html)
+		- [2022.1](../../release-notes/designer-release-notes/designer-2022-1-release-notes.html)
+		- [2021.4](../../release-notes/designer-release-notes/designer-2021-4-release-notes.html)
+	+ [Server Release Notes](../../release-notes/server-release-notes.html)
+		- [2023.2](../../release-notes/server-release-notes/server-2023-2-release-notes.html)
+		- [2023.1](../../release-notes/server-release-notes/server-2023-1-release-notes.html)
+		- [2022.3](../../release-notes/server-release-notes/server-2022-3-release-notes.html)
+		- [2022.2-FIPS](../../release-notes/server-release-notes/server-fips-2022-2-release-notes.html)
+		- [2022.1](../../release-notes/server-release-notes/server-2022-1-release-notes.html)
+		- [2021.4](../../release-notes/server-release-notes/server-2021-4-release-notes.html)
+	+ [Connect Release Notes](../../release-notes/connect-release-notes.html)
+		- [2023.2](../../release-notes/connect-release-notes/connect-2023-2-release-notes.html)
+		- [2023.1](../../release-notes/connect-release-notes/connect-2023-1-release-notes.html)
+		- [2022.3](../../release-notes/connect-release-notes/connect-2022-3-release-notes.html)
+		- [2022.1](../../release-notes/connect-release-notes/connect-2022-1-release-notes.html)
+		- [2021.4](../../release-notes/connect-release-notes/connect-2021-4-release-notes.html)
+	+ [Promote Release Notes](../../release-notes/promote-release-notes.html)
+		- [2022.3](../../release-notes/promote-release-notes/promote-2022-3-release-notes.html)
+		- [2022.2](../../release-notes/promote-release-notes/promote-2022-2-release-notes.html)
+		- [2022.1](../../release-notes/promote-release-notes/promote-2022-1-release-notes.html)
+		- [2021.4](../../release-notes/promote-release-notes/promote-2021-4-release-notes.html)
+	+ [End of Support for 32-Bit Database Connections FAQs](../../release-notes/end-of-support-for-32-bit-database-connections-faqs.html)
+	+ [Alteryx Embedded Python](../../release-notes/alteryx-embedded-python.html)
+		- [Embedded Python Tool Script](../../release-notes/alteryx-embedded-python/embedded-python-tool-script.html)
+	+ [Licensing & Downloads Portal Release Notes](../../release-notes/licensing---downloads-portal-release-notes.html)
+* [Designer 2023.2](../../designer.html)
+	+ [What's New in Designer](../../designer/what-s-new-in-designer.html)
+	+ [System Requirements](../../designer/system-requirements.html)
+	+ [Get Started](../../designer/get-started.html)
+		- [Get Started with Alteryx Designer](../../designer/get-started/get-started-with-alteryx-designer.html)
+		- [Activate Alteryx](../../designer/get-started/activate-designer.html)
+			* [Download and Use Predictive Tools](../../designer/get-started/activate-designer/download-and-use-predictive-tools.html)
+			* [Choose Analytic App](../../designer/get-started/activate-designer/choose-analytic-app.html)
+			* [Upgrade Designer](../../designer/get-started/activate-designer/upgrade-designer.html)
+		- [User Interface](../../designer/get-started/designer-user-interface.html)
+			* [Customize the User Interface](../../designer/get-started/designer-user-interface/customize-the-user-interface.html)
+			* [Main Menus](../../designer/get-started/designer-user-interface/main-menus.html)
+				+ [Find and Replace](../../designer/get-started/designer-user-interface/main-menus/find-and-replace.html)
+				+ [Generate Support File](../../designer/get-started/designer-user-interface/main-menus/generate-support-file.html)
+			* [Search](../../designer/get-started/designer-user-interface/search.html)
+			* [Recommended Tools](../../designer/get-started/designer-user-interface/recommended-tool-category.html)
+		- [User Settings](../../designer/get-started/user-settings.html)
+			* [Code Pages](../../designer/get-started/user-settings/code-pages.html)
+			* [Dark Mode (BETA)](../../designer/get-started/user-settings/dark-mode.html)
+			* [Memory Use](../../designer/get-started/user-settings/memory-use.html)
+			* [System Settings](../../designer/get-started/user-settings/system-settings.html)
+			* [Output Log File](../../designer/get-started/user-settings/output-log-file.html)
+		- [Shortcuts](../../designer/get-started/shortcuts-in-alteryx-designer.html)
+			* [Keyboard Navigation in Designer](../../designer/get-started/shortcuts-in-alteryx-designer/keyboard-navigation-in-designer.html)
+		- [Sample Workflows](../../designer/get-started/sample-workflows-in-designer.html)
+		- [Troubleshooting and FAQ](../../designer/get-started/troubleshooting-and-faq.html)
+		- [About](../../designer/get-started/about.html)
+	+ [Workflows](../../designer/workflows.html)
+		- [Build Workflows](../../designer/workflows/build-workflows.html)
+		- [Templates](../../designer/workflows/templates.html)
+		- [Workflow Configuration](../../designer/workflows/workflow-configuration.html)
+			* [Conversion Errors](../../designer/workflows/workflow-configuration/conversion-errors.html)
+		- [Workflow Management](../../designer/workflows/workflow-management.html)
+			* [Lock Your Workflow](../../designer/workflows/workflow-management/lock-your-workflow.html)
+		- [Workflow Dependencies](../../designer/workflows/workflow-dependencies.html)
+		- [Workflow Optimization](../../designer/workflows/workflow-optimization.html)
+		- [Compare Workflows](../../designer/workflows/compare-workflows.html)
+		- [Results Window](../../designer/workflows/results-window.html)
+			* [Data Manipulations](../../designer/workflows/results-window/results-window-data-manipulations.html)
+		- [Schedule Workflows](../../designer/workflows/schedule-workflows.html)
+			* [Save to Server Messages](../../designer/workflows/schedule-workflows/save-to-server-messages.html)
+		- [Manage Schedules](../../designer/workflows/manage-schedules.html)
+		- [Cloud Execution for Desktop](../../designer/workflows/cloud-execution-for-desktop.html)
+		- [Customer Managed Telemetry](../../designer/workflows/customer-managed-telemetry.html)
+		- [Alteryx AMP Engine](../../designer/workflows/alteryx-amp-engine.html)
+			* [Alteryx Engine and AMP: Main Differences](../../designer/workflows/alteryx-amp-engine/alteryx-engine-and-amp--main-differences.html)
+			* [Engines Parity Utility](../../designer/workflows/alteryx-amp-engine/engines-parity-utility.html)
+			* [Run Command Tool Workaround with AMP Engine](../../designer/workflows/alteryx-amp-engine/run-command-tool-workaround-with-amp-engine.html)
+			* [AMP Memory Use](../../designer/workflows/alteryx-amp-engine/amp-memory-use.html)
+			* [Engine Compatibility Mode](../../designer/workflows/alteryx-amp-engine/engine-compatibility-mode.html)
+			* [Performance Profiling with AMP Engine](../../designer/workflows/alteryx-amp-engine/performance-profiling-with-amp-engine.html)
+			* [Tool Use with AMP](../../designer/workflows/alteryx-amp-engine/tool-use-with-amp.html)
+			* [Automated Crash Reporting](../../designer/workflows/alteryx-amp-engine/automated-crash-reporting.html)
+		- [Run Workflows via Command Line](../../designer/workflows/run-workflows-via-command-line.html)
+		- [Enterprise Utilities](../../designer/workflows/enterprise-utilities.html)
+			* [Customer Managed Telemetry Enterprise Utility](../../designer/workflows/enterprise-utilities/customer-managed-telemetry-enterprise-utility.html)
+			* [Workflow Migration Enterprise Utility](../../designer/workflows/enterprise-utilities/workflow-migration-enterprise-utility.html)
+	+ [Apps and Macros](../../designer/apps-and-macros.html)
+		- [App Building Guidelines](../../designer/apps-and-macros/app-building-guidelines.html)
+		- [Analytic Apps](../../designer/apps-and-macros/analytic-apps.html)
+			* [Alteryx Geocoding App](../../designer/apps-and-macros/analytic-apps/alteryx-geocoding-app.html)
+			* [Calgary Create Link App](../../designer/apps-and-macros/analytic-apps/calgary-create-link-app.html)
+			* [Data Statistics App](../../designer/apps-and-macros/analytic-apps/data-statistics-app.html)
+		- [Macros](../../designer/apps-and-macros/macros.html)
+			* [Batch Macro](../../designer/apps-and-macros/macros/batch-macro.html)
+			* [Iterative Macro](../../designer/apps-and-macros/macros/iterative-macro.html)
+			* [Location Optimizer Macro](../../designer/apps-and-macros/macros/location-optimizer-macro.html)
+			* [Update Missing Macros](../../designer/apps-and-macros/macros/update-missing-macros.html)
+		- [Interface Designer Window](../../designer/apps-and-macros/interface-designer-window.html)
+			* [Understanding Interface Tools](../../designer/apps-and-macros/interface-designer-window/understanding-interface-tools.html)
+		- [Debug Workflow](../../designer/apps-and-macros/debug-workflow.html)
+	+ [Tools](../../designer/tools.html)
+		- [Designer Tools List](../../designer/tools/designer-tools-list.html)
+		- [Tool Configuration](../../designer/tools/tool-configuration.html)
+		- [Connection Configuration](../../designer/tools/connection-configuration.html)
+		- [DCM](../../designer/tools/dcm---designer.html)
+			* [External Vaults](../../designer/tools/dcm---designer/dcm-external-vaults.html)
+				+ [AWS Secrets Manager Configuration](../../designer/tools/dcm---designer/dcm-external-vaults/aws-secrets-manager-configuration.html)
+				+ [CyberArk Conjur Configuration](../../designer/tools/dcm---designer/dcm-external-vaults/cyberark-conjur-configuration.html)
+				+ [HashiCorp Configuration](../../designer/tools/dcm---designer/dcm-external-vaults/hashicorp-configuration.html)
+			* [Supported Connectors and Tools](../../designer/tools/dcm---designer/dcm-supported-connectors-and-tools.html)
+			* [Migration Tool](../../designer/tools/dcm---designer/migration-tool.html)
+		- [In-Database Overview](../../designer/tools/in-database-overview.html)
+		- [Predictive Analytics](../../designer/tools/predictive-analytics.html)
+		- [Alteryx Intelligence Suite](../../designer/tools/alteryx-intelligence-suite.html)
+			* [Computer Vision](../../designer/tools/alteryx-intelligence-suite/computer-vision.html)
+				+ [Barcode](../../designer/tools/alteryx-intelligence-suite/computer-vision/barcode.html)
+				+ [Image Input](../../designer/tools/alteryx-intelligence-suite/computer-vision/image-input.html)
+				+ [Image Output](../../designer/tools/alteryx-intelligence-suite/computer-vision/image-output.html)
+				+ [Image Processing](../../designer/tools/alteryx-intelligence-suite/computer-vision/image-processing.html)
+				+ [Image Profile](../../designer/tools/alteryx-intelligence-suite/computer-vision/image-profile.html)
+				+ [Image Recognition](../../designer/tools/alteryx-intelligence-suite/computer-vision/image-recognition.html)
+				+ [Image Template](../../designer/tools/alteryx-intelligence-suite/computer-vision/image-template.html)
+				+ [Image to Text](../../designer/tools/alteryx-intelligence-suite/computer-vision/image-to-text.html)
+				+ [PDF to Text](../../designer/tools/alteryx-intelligence-suite/computer-vision/pdf-to-text.html)
+			* [Machine Learning](../../designer/tools/alteryx-intelligence-suite/machine-learning.html)
+				+ [Assisted Modeling Tool](../../designer/tools/alteryx-intelligence-suite/machine-learning/assisted-modeling-tool.html)
+					- [Assisted Modeling](../../designer/tools/alteryx-intelligence-suite/machine-learning/assisted-modeling-tool/assisted-modeling.html)
+					- [Expert Modeling](../../designer/tools/alteryx-intelligence-suite/machine-learning/assisted-modeling-tool/expert-modeling.html)
+					- [Machine Learning Glossary](../../designer/tools/alteryx-intelligence-suite/machine-learning/assisted-modeling-tool/machine-learning-glossary.html)
+				+ [AutoML](../../designer/tools/alteryx-intelligence-suite/machine-learning/automl.html)
+				+ [Build Features](../../designer/tools/alteryx-intelligence-suite/machine-learning/build-features.html)
+				+ [Classification Tool](../../designer/tools/alteryx-intelligence-suite/machine-learning/classification-tool.html)
+				+ [Data Health](../../designer/tools/alteryx-intelligence-suite/machine-learning/data-health.html)
+				+ [Feature Types](../../designer/tools/alteryx-intelligence-suite/machine-learning/feature-types.html)
+				+ [Fit Tool](../../designer/tools/alteryx-intelligence-suite/machine-learning/fit-tool.html)
+				+ [Machine Learning DCM Setup](../../designer/tools/alteryx-intelligence-suite/machine-learning/machine-learning-dcm-setup.html)
+				+ [Machine Learning Predict](../../designer/tools/alteryx-intelligence-suite/machine-learning/machine-learning-predict.html)
+				+ [Machine Learning Send](../../designer/tools/alteryx-intelligence-suite/machine-learning/machine-learning-send.html)
+				+ [Predict Tool](../../designer/tools/alteryx-intelligence-suite/machine-learning/predict-tool.html)
+				+ [Regression Tool](../../designer/tools/alteryx-intelligence-suite/machine-learning/regression-tool.html)
+				+ [Transformation Tool](../../designer/tools/alteryx-intelligence-suite/machine-learning/transformation-tool.html)
+			* [Text Mining](../../designer/tools/alteryx-intelligence-suite/text-mining.html)
+				+ [Named Entity Recognition](../../designer/tools/alteryx-intelligence-suite/text-mining/named-entity-recognition.html)
+				+ [Part-of-Speech Tagger](../../designer/tools/alteryx-intelligence-suite/text-mining/part-of-speech-tagger.html)
+				+ [Sentiment Analysis](../../designer/tools/alteryx-intelligence-suite/text-mining/sentiment-analysis.html)
+				+ [Text Classification](../../designer/tools/alteryx-intelligence-suite/text-mining/text-classification.html)
+				+ [Text Pre-processing](../../designer/tools/alteryx-intelligence-suite/text-mining/text-pre-processing.html)
+				+ [Text Summary](../../designer/tools/alteryx-intelligence-suite/text-mining/text-summary.html)
+				+ [Topic Modeling](../../designer/tools/alteryx-intelligence-suite/text-mining/topic-modeling.html)
+				+ [Word Cloud](../../designer/tools/alteryx-intelligence-suite/text-mining/word-cloud.html)
+				+ [Zero-shot Text Classification](../../designer/tools/alteryx-intelligence-suite/text-mining/zero-shot-text-classification.html)
+		- [In/Out](../../designer/tools/in-out-tools.html)
+			* [Auto Insights Uploader Tool](../../designer/tools/in-out-tools/auto-insights-uploader-tool.html)
+			* [Browse Tool](../../designer/tools/in-out-tools/browse-tool.html)
+			* [Date Time Now Tool](../../designer/tools/in-out-tools/date-time-now-tool.html)
+			* [Directory Tool](../../designer/tools/in-out-tools/directory-tool.html)
+			* [Input Data Tool](../../designer/tools/in-out-tools/input-data-tool.html)
+				+ [Reading XML](../../designer/tools/in-out-tools/input-data-tool/reading-xml.html)
+				+ [Choose Table or Specify Query Window](../../designer/tools/in-out-tools/input-data-tool/choose-table-or-specify-query-window.html)
+				+ [Unknown File Types](../../designer/tools/in-out-tools/input-data-tool/unknown-file-types.html)
+				+ [Multi Resolution Raster (Read File, Only)](../../designer/tools/in-out-tools/input-data-tool/multi-resolution-raster--read-file,-only-.html)
+				+ [Input Data Tool (Classic Mode)](../../designer/tools/in-out-tools/input-data-tool/input-data-tool--classic-mode-.html)
+			* [Map Input Tool](../../designer/tools/in-out-tools/map-input-tool.html)
+			* [Output Data Tool](../../designer/tools/in-out-tools/output-data-tool.html)
+				+ [Projection Support](../../designer/tools/in-out-tools/output-data-tool/projection-support.html)
+			* [Text Input Tool](../../designer/tools/in-out-tools/text-input-tool.html)
+			* [Password Encryption](../../designer/tools/in-out-tools/password-encryption.html)
+		- [Preparation](../../designer/tools/preparation.html)
+			* [Auto Field Tool](../../designer/tools/preparation/auto-field-tool.html)
+			* [Create Samples Tool](../../designer/tools/preparation/create-samples-tool.html)
+			* [Data Cleansing Tool](../../designer/tools/preparation/data-cleansing-tool.html)
+			* [Filter Tool](../../designer/tools/preparation/filter-tool.html)
+			* [Formula Tool](../../designer/tools/preparation/formula-tool.html)
+				+ [Constants](../../designer/tools/preparation/formula-tool/constants.html)
+			* [Generate Rows Tool](../../designer/tools/preparation/generate-rows-tool.html)
+			* [Imputation Tool](../../designer/tools/preparation/imputation-tool.html)
+			* [Multi-Field Binning Tool](../../designer/tools/preparation/multi-field-binning-tool.html)
+			* [Multi-Field Formula Tool](../../designer/tools/preparation/multi-field-formula-tool.html)
+			* [Multi-Row Formula Tool](../../designer/tools/preparation/multi-row-formula-tool.html)
+			* [Oversample Field Tool](../../designer/tools/preparation/oversample-field-tool.html)
+			* [Random % Sample Tool](../../designer/tools/preparation/random---sample-tool.html)
+			* [Record ID Tool](../../designer/tools/preparation/record-id-tool.html)
+			* [Sample Tool](../../designer/tools/preparation/sample-tool.html)
+			* [Select Tool](../../designer/tools/preparation/select-tool.html)
+			* [Select Records Tool](../../designer/tools/preparation/select-records-tool.html)
+			* [Sort Tool](../../designer/tools/preparation/sort-tool.html)
+			* [Tile Tool](../../designer/tools/preparation/tile-tool.html)
+			* [Unique Tool](../../designer/tools/preparation/unique-tool.html)
+			* [Date Filter Tool](../../designer/tools/preparation/date-filter-tool.html)
+		- [Join](../../designer/tools/join.html)
+			* [Append Fields Tool](../../designer/tools/join/append-fields-tool.html)
+			* [Find Replace Tool](../../designer/tools/join/find-replace-tool.html)
+			* [Fuzzy Match Tool](../../designer/tools/join/fuzzy-match-tool.html)
+				+ [Fuzzy Match Edit Match Options](../../designer/tools/join/fuzzy-match-tool/fuzzy-match-edit-match-options.html)
+				+ [Fuzzy Match FAQ](../../designer/tools/join/fuzzy-match-tool/fuzzy-match-faq.html)
+			* [Join Tool](../../designer/tools/join/join-tool.html)
+			* [Join Multiple Tool](../../designer/tools/join/join-multiple-tool.html)
+			* [Make Group Tool](../../designer/tools/join/make-group-tool.html)
+			* [Union Tool](../../designer/tools/join/union-tool.html)
+			* [Business Match Tool](../../designer/tools/join/business-match-tool.html)
+			* [Consumer View Matching Tool](../../designer/tools/join/consumer-view-matching-tool.html)
+		- [Parse](../../designer/tools/parse.html)
+			* [DateTime Tool](../../designer/tools/parse/datetime-tool.html)
+			* [RegEx Tool](../../designer/tools/parse/regex-tool.html)
+				+ [Boost-Extended Format String Syntax](../../designer/tools/parse/regex-tool/boost-extended-format-string-syntax.html)
+				+ [Boost-Supported RegEx Character Classes](../../designer/tools/parse/regex-tool/boost-supported-regex-character-classes.html)
+				+ [Collating Element Names](../../designer/tools/parse/regex-tool/collating-element-names.html)
+				+ [POSIX Extended Regular Expression Syntax](../../designer/tools/parse/regex-tool/posix-extended-regular-expression-syntax.html)
+			* [Text To Columns Tool](../../designer/tools/parse/text-to-columns-tool.html)
+			* [XML Parse Tool](../../designer/tools/parse/xml-parse-tool.html)
+		- [Transform](../../designer/tools/transform.html)
+			* [Arrange Tool](../../designer/tools/transform/arrange-tool.html)
+			* [Count Records Tool](../../designer/tools/transform/count-records-tool.html)
+			* [Cross Tab Tool](../../designer/tools/transform/cross-tab-tool.html)
+			* [Running Total Tool](../../designer/tools/transform/running-total-tool.html)
+			* [Summarize Tool](../../designer/tools/transform/summarize-tool.html)
+				+ [Summary Processes](../../designer/tools/transform/summarize-tool/summary-processes.html)
+			* [Transpose Tool](../../designer/tools/transform/transpose-tool.html)
+			* [Weighted Average Tool](../../designer/tools/transform/weighted-average-tool.html)
+		- [In-Database](../../designer/tools/in-database.html)
+			* [Browse In-DB Tool](../../designer/tools/in-database/browse-in-db-tool.html)
+			* [Connect In-DB Tool](../../designer/tools/in-database/connect-in-db-tool.html)
+			* [Data Stream In Tool](../../designer/tools/in-database/data-stream-in-tool.html)
+			* [Data Stream Out Tool](../../designer/tools/in-database/data-stream-out-tool.html)
+			* [Dynamic Input In-DB Tool](../../designer/tools/in-database/dynamic-input-in-db-tool.html)
+			* [Dynamic Output In-DB Tool](../../designer/tools/in-database/dynamic-output-in-db-tool.html)
+			* [Filter In-DB Tool](../../designer/tools/in-database/filter-in-db-tool.html)
+			* [Formula In-DB Tool](../../designer/tools/in-database/formula-in-db-tool.html)
+			* [Join In-DB Tool](../../designer/tools/in-database/join-in-db-tool.html)
+			* [Macro Input In-DB Tool](../../designer/tools/in-database/macro-input-in-db-tool.html)
+			* [Macro Output In-DB Tool](../../designer/tools/in-database/macro-output-in-db-tool.html)
+			* [Sample In-DB Tool](../../designer/tools/in-database/sample-in-db-tool.html)
+			* [Select In-DB Tool](../../designer/tools/in-database/select-in-db-tool.html)
+			* [Summarize In-DB Tool](../../designer/tools/in-database/summarize-in-db-tool.html)
+			* [Union In-DB Tool](../../designer/tools/in-database/union-in-db-tool.html)
+			* [Write Data In-DB Tool](../../designer/tools/in-database/write-data-in-db-tool.html)
+		- [Reporting](../../designer/tools/reporting.html)
+			* [Email Tool](../../designer/tools/reporting/email-tool.html)
+			* [Image Tool](../../designer/tools/reporting/image-tool.html)
+				+ [Image Settings Style Editor](../../designer/tools/reporting/image-tool/image-settings-style-editor.html)
+			* [Insight Tool](../../designer/tools/reporting/insight-tool.html)
+			* [Interactive Chart Tool](../../designer/tools/reporting/interactive-chart-tool.html)
+			* [Layout Tool](../../designer/tools/reporting/layout-tool.html)
+			* [Map Legend Builder Tool](../../designer/tools/reporting/map-legend-builder-tool.html)
+			* [Map Legend Splitter Tool](../../designer/tools/reporting/map-legend-splitter-tool.html)
+			* [Overlay Tool](../../designer/tools/reporting/overlay-tool.html)
+			* [Render Tool](../../designer/tools/reporting/render-tool.html)
+				+ [Render Styles](../../designer/tools/reporting/render-tool/render-styles.html)
+				+ [Text Styles](../../designer/tools/reporting/render-tool/text-styles.html)
+				+ [Background Transparency for PNG Output via Render Tool](../../designer/tools/reporting/render-tool/background-transparency-for-png-output-via-render-tool.html)
+			* [Report Footer Tool](../../designer/tools/reporting/report-footer-tool.html)
+			* [Report Header Tool](../../designer/tools/reporting/report-header-tool.html)
+			* [Report Map Tool](../../designer/tools/reporting/report-map-tool.html)
+				+ [Map Colors](../../designer/tools/reporting/report-map-tool/map-colors.html)
+				+ [Mapfile Reference Document](../../designer/tools/reporting/report-map-tool/mapfile-reference-document.html)
+				+ [Reference Layers](../../designer/tools/reporting/report-map-tool/reference-layers.html)
+			* [Report Text Tool](../../designer/tools/reporting/report-text-tool.html)
+			* [Table Tool](../../designer/tools/reporting/table-tool.html)
+				+ [Table Settings Style Editor](../../designer/tools/reporting/table-tool/table-settings-style-editor.html)
+				+ [Table Style Rules](../../designer/tools/reporting/table-tool/table-style-rules.html)
+			* [Colors](../../designer/tools/reporting/colors.html)
+			* [Reporting FAQ](../../designer/tools/reporting/reporting-faq.html)
+		- [Documentation](../../designer/tools/documentation.html)
+			* [Comment Tool](../../designer/tools/documentation/comment-tool.html)
+			* [Explorer Box Tool](../../designer/tools/documentation/explorer-box-tool.html)
+			* [Tool Container Tool](../../designer/tools/documentation/tool-container-tool.html)
+		- [Spatial](../../designer/tools/spatial.html)
+			* [Guzzler Drivetime Methodology](../../designer/tools/spatial/guzzler-drivetime-methodology.html)
+			* [Buffer Tool](../../designer/tools/spatial/buffer-tool.html)
+			* [Create Points Tool](../../designer/tools/spatial/create-points-tool.html)
+			* [Distance Tool](../../designer/tools/spatial/distance-tool.html)
+			* [Find Nearest Tool](../../designer/tools/spatial/find-nearest-tool.html)
+			* [Generalize Tool](../../designer/tools/spatial/generalize-tool.html)
+			* [Heat Map Tool](../../designer/tools/spatial/heat-map-tool.html)
+			* [Make Grid Tool](../../designer/tools/spatial/make-grid-tool.html)
+			* [Non Overlapping Drivetime Tool](../../designer/tools/spatial/non-overlapping-drivetime-tool.html)
+			* [Poly-Build Tool](../../designer/tools/spatial/poly-build-tool.html)
+			* [Poly-Split Tool](../../designer/tools/spatial/poly-split-tool.html)
+			* [Smooth Tool](../../designer/tools/spatial/smooth-tool.html)
+			* [Spatial Info Tool](../../designer/tools/spatial/spatial-info-tool.html)
+			* [Spatial Match Tool](../../designer/tools/spatial/spatial-match-tool.html)
+				+ [Spatial Match Behavior](../../designer/tools/spatial/spatial-match-tool/spatial-match-behavior.html)
+			* [Spatial Process Tool](../../designer/tools/spatial/spatial-process-tool.html)
+				+ [Spatial Process Results](../../designer/tools/spatial/spatial-process-tool/spatial-process-results.html)
+			* [Trade Area Tool](../../designer/tools/spatial/trade-area-tool.html)
+			* [US and Canada Drivetime Tool](../../designer/tools/spatial/us-and-canada-drivetime-tool.html)
+		- [Interface Tools](../../designer/tools/interface-tools.html)
+			* [Understanding Interface Tools](../../designer/tools/interface-tools/understanding-interface-tools.html)
+			* [Action Tool](../../designer/tools/interface-tools/action-tool.html)
+			* [Check Box Tool](../../designer/tools/interface-tools/check-box-tool.html)
+			* [Condition Tool](../../designer/tools/interface-tools/condition-tool.html)
+			* [Control Parameter Tool](../../designer/tools/interface-tools/control-parameter-tool.html)
+			* [Date Tool](../../designer/tools/interface-tools/date-tool.html)
+			* [DCM Connection Tool](../../designer/tools/interface-tools/dcm-connection-tool.html)
+			* [Drop Down Tool](../../designer/tools/interface-tools/drop-down-tool.html)
+			* [Error Message Tool](../../designer/tools/interface-tools/error-message-tool.html)
+			* [File Browse Tool](../../designer/tools/interface-tools/file-browse-tool.html)
+			* [Folder Browse Tool](../../designer/tools/interface-tools/folder-browse-tool.html)
+			* [List Box Tool](../../designer/tools/interface-tools/list-box-tool.html)
+			* [Macro Input Tool](../../designer/tools/interface-tools/macro-input-tool.html)
+			* [Macro Output Tool](../../designer/tools/interface-tools/macro-output-tool.html)
+			* [Map Tool](../../designer/tools/interface-tools/map-tool.html)
+			* [Numeric Up Down Tool](../../designer/tools/interface-tools/numeric-up-down-tool.html)
+			* [Radio Button Tool](../../designer/tools/interface-tools/radio-button-tool.html)
+			* [Text Box Tool](../../designer/tools/interface-tools/text-box-tool.html)
+			* [Tree Tool](../../designer/tools/interface-tools/tree-tool.html)
+		- [Data Investigation](../../designer/tools/data-investigation.html)
+			* [Association Analysis Tool](../../designer/tools/data-investigation/association-analysis-tool.html)
+			* [Basic Data Profile Tool](../../designer/tools/data-investigation/basic-data-profile-tool.html)
+			* [Contingency Table Tool](../../designer/tools/data-investigation/contingency-table-tool.html)
+			* [Distribution Analysis Tool](../../designer/tools/data-investigation/distribution-analysis-tool.html)
+			* [Field Summary Tool](../../designer/tools/data-investigation/field-summary-tool.html)
+			* [Frequency Table Tool](../../designer/tools/data-investigation/frequency-table-tool.html)
+			* [Heat Plot Tool](../../designer/tools/data-investigation/heat-plot-tool.html)
+			* [Histogram Tool](../../designer/tools/data-investigation/histogram-tool.html)
+			* [Importance Weights Tool](../../designer/tools/data-investigation/importance-weights-tool.html)
+			* [Pearson Correlation Tool](../../designer/tools/data-investigation/pearson-correlation-tool.html)
+			* [Plot of Means Tool](../../designer/tools/data-investigation/plot-of-means-tool.html)
+			* [Scatterplot Tool](../../designer/tools/data-investigation/scatterplot-tool.html)
+			* [Spearman Correlation Tool](../../designer/tools/data-investigation/spearman-correlation-tool.html)
+			* [Violin Plot Tool](../../designer/tools/data-investigation/violin-plot-tool.html)
+			* [Standardize Unit Interval Tool](../../designer/tools/data-investigation/standardize-unit-interval-tool.html)
+			* [Standardize z-score Tool](../../designer/tools/data-investigation/standardize-z-score-tool.html)
+		- [Predictive](../../designer/tools/predictive.html)
+			* [Boosted Model Tool](../../designer/tools/predictive/boosted-model-tool.html)
+			* [Count Regression Tool](../../designer/tools/predictive/count-regression-tool.html)
+			* [Cross-Validation Tool](../../designer/tools/predictive/cross-validation-tool.html)
+			* [DataRobot Automodel Tool](../../designer/tools/predictive/datarobot-automodel-tool.html)
+			* [DataRobot Predict Tool](../../designer/tools/predictive/datarobot-predict-tool.html)
+			* [Decision Tree Tool](../../designer/tools/predictive/decision-tree-tool.html)
+			* [Deploy Tool](../../designer/tools/predictive/deploy-tool.html)
+			* [Forest Model Tool](../../designer/tools/predictive/forest-model-tool.html)
+			* [Gamma Regression Tool](../../designer/tools/predictive/gamma-regression-tool.html)
+			* [Lift Chart Tool](../../designer/tools/predictive/lift-chart-tool.html)
+			* [Linear Regression Tool](../../designer/tools/predictive/linear-regression-tool.html)
+			* [Logistic Regression Tool](../../designer/tools/predictive/logistic-regression-tool.html)
+			* [Model Coefficients Tool](../../designer/tools/predictive/model-coefficients-tool.html)
+			* [Model Comparison Tool](../../designer/tools/predictive/model-comparison-tool.html)
+			* [Naive Bayes Classifier Tool](../../designer/tools/predictive/naive-bayes-classifier-tool.html)
+			* [Nested Test Tool](../../designer/tools/predictive/nested-test-tool.html)
+			* [Network Analysis Tool](../../designer/tools/predictive/network-analysis-tool.html)
+			* [Neural Network Tool](../../designer/tools/predictive/neural-network-tool.html)
+			* [Score Tool](../../designer/tools/predictive/score-tool.html)
+			* [Spline Model Tool](../../designer/tools/predictive/spline-model-tool.html)
+			* [Stepwise Tool](../../designer/tools/predictive/stepwise-tool.html)
+			* [Support Vector Machine Tool](../../designer/tools/predictive/support-vector-machine-tool.html)
+			* [Survival Analysis Tool](../../designer/tools/predictive/survival-analysis-tool.html)
+			* [Survival Score Tool](../../designer/tools/predictive/survival-score-tool.html)
+			* [Test of Means Tool](../../designer/tools/predictive/test-of-means-tool.html)
+			* [Variance Inflation Factors Tool](../../designer/tools/predictive/variance-inflation-factors-tool.html)
+		- [AB Testing](../../designer/tools/ab-testing.html)
+			* [AB Analysis Tool](../../designer/tools/ab-testing/ab-analysis-tool.html)
+			* [AB Controls Tool](../../designer/tools/ab-testing/ab-controls-tool.html)
+			* [AB Treatments Tool](../../designer/tools/ab-testing/ab-treatments-tool.html)
+			* [AB Trend Tool](../../designer/tools/ab-testing/ab-trend-tool.html)
+		- [Time Series](../../designer/tools/time-series.html)
+			* [ARIMA Tool](../../designer/tools/time-series/arima-tool.html)
+			* [ETS Tool](../../designer/tools/time-series/ets-tool.html)
+			* [TS Compare Tool](../../designer/tools/time-series/ts-compare-tool.html)
+			* [TS Covariate Forecast Tool](../../designer/tools/time-series/ts-covariate-forecast-tool.html)
+			* [TS Filler Tool](../../designer/tools/time-series/ts-filler-tool.html)
+			* [TS Forecast Factory Tool](../../designer/tools/time-series/ts-forecast-factory-tool.html)
+			* [TS Forecast Tool](../../designer/tools/time-series/ts-forecast-tool.html)
+			* [TS Model Factory Tool](../../designer/tools/time-series/ts-model-factory-tool.html)
+			* [TS Plot Tool](../../designer/tools/time-series/ts-plot-tool.html)
+		- [Predictive Grouping](../../designer/tools/predictive-grouping.html)
+			* [Append Cluster Tool](../../designer/tools/predictive-grouping/append-cluster-tool.html)
+			* [Find Nearest Neighbors Tool](../../designer/tools/predictive-grouping/find-nearest-neighbors-tool.html)
+			* [K-Centroids Cluster Analysis Tool](../../designer/tools/predictive-grouping/k-centroids-cluster-analysis-tool.html)
+			* [K-Centroids Diagnostics Tool](../../designer/tools/predictive-grouping/k-centroids-diagnostics-tool.html)
+			* [MB Affinity Tool](../../designer/tools/predictive-grouping/mb-affinity-tool.html)
+			* [MB Inspect Tool](../../designer/tools/predictive-grouping/mb-inspect-tool.html)
+			* [MB Rules Tool](../../designer/tools/predictive-grouping/mb-rules-tool.html)
+			* [Multidimensional Scaling Tool](../../designer/tools/predictive-grouping/multidimensional-scaling-tool.html)
+			* [Principal Components Tool](../../designer/tools/predictive-grouping/principal-components-tool.html)
+		- [Prescriptive](../../designer/tools/prescriptive.html)
+			* [Optimization Tool](../../designer/tools/prescriptive/optimization-tool.html)
+			* [Simulation Sampling Tool](../../designer/tools/prescriptive/simulation-sampling-tool.html)
+			* [Simulation Scoring Tool](../../designer/tools/prescriptive/simulation-scoring-tool.html)
+			* [Simulation Summary Tool](../../designer/tools/prescriptive/simulation-summary-tool.html)
+		- [Connectors](../../designer/tools/connectors.html)
+			* [ADL File Input Tool](../../designer/tools/connectors/microsoft-azure-data-lake-file-input-tool.html)
+			* [ADL File Output Tool](../../designer/tools/connectors/microsoft-azure-data-lake-file-output-tool.html)
+			* [Adobe Analytics Tool](../../designer/tools/connectors/adobe-analytics-tool.html)
+			* [Amazon S3 Download Tool](../../designer/tools/connectors/amazon-s3-download-tool.html)
+			* [Amazon S3 Upload Tool](../../designer/tools/connectors/amazon-s3-upload-tool.html)
+			* [Anaplan Input Tool](../../designer/tools/connectors/anaplan-input-tool.html)
+			* [Anaplan Output Tool](../../designer/tools/connectors/anaplan-output-tool.html)
+			* [Automation Anywhere 360 Tool](../../designer/tools/connectors/automation-anywhere-360-tool.html)
+			* [Box Input Tool](../../designer/tools/connectors/box-input-tool.html)
+			* [Box Output Tool](../../designer/tools/connectors/box-output-tool.html)
+			* [Cognitive Services Text Analytics Tool](../../designer/tools/connectors/cognitive-services-text-analytics-tool.html)
+			* [Dataverse Input Tool](../../designer/tools/connectors/dataverse-input-tool.html)
+			* [Dataverse Output Tool](../../designer/tools/connectors/dataverse-output-tool.html)
+			* [Dropbox Input Tool](../../designer/tools/connectors/dropbox-input-tool.html)
+			* [Dropbox Output Tool](../../designer/tools/connectors/dropbox-output-tool.html)
+			* [Dynamics CRM Input Tool](../../designer/tools/connectors/dynamics-crm-input-tool.html)
+			* [Dynamics CRM Output Tool](../../designer/tools/connectors/dynamics-crm-output-tool.html)
+			* [Google Analytics 4 Input Tool](../../designer/tools/connectors/google-analytics-4-input-tool.html)
+			* [Google Analytics Tool](../../designer/tools/connectors/google-analytics-tool.html)
+			* [Google BigQuery Input Tool](../../designer/tools/connectors/google-bigquery-input-tool.html)
+			* [Google BigQuery Output Tool](../../designer/tools/connectors/google-bigquery-output-tool.html)
+			* [Google Drive Input Tool](../../designer/tools/connectors/google-drive-input-tool.html)
+			* [Google Drive Output Tool](../../designer/tools/connectors/google-drive-output-tool.html)
+			* [Google Sheets Input Tool](../../designer/tools/connectors/google-sheets-input-tool.html)
+			* [Google Sheets Output Tool](../../designer/tools/connectors/google-sheets-output-tool.html)
+			* [Marketo Append Tool](../../designer/tools/connectors/marketo-append-tool.html)
+			* [Marketo Input Tool](../../designer/tools/connectors/marketo-input-tool.html)
+			* [Marketo Output Tool](../../designer/tools/connectors/marketo-output-tool.html)
+			* [Microsoft Power BI Output Tool](../../designer/tools/connectors/microsoft-power-bi-output-tool.html)
+			* [MongoDB Input Tool](../../designer/tools/connectors/mongodb-input-tool.html)
+			* [MongoDB Output Tool](../../designer/tools/connectors/mongodb-output-tool.html)
+			* [OneDrive Input Tool](../../designer/tools/connectors/onedrive-input-tool.html)
+			* [OneDrive Output Tool](../../designer/tools/connectors/onedrive-output-tool.html)
+			* [Outlook 365 Input Tool](../../designer/tools/connectors/outlook-365-input-tool.html)
+			* [Power Automate Tool](../../designer/tools/connectors/power-automate-tool.html)
+			* [Publish to Tableau Server Tool](../../designer/tools/connectors/publish-to-tableau-server-tool.html)
+			* [Publish to Tableau Server Tool](../../designer/tools/connectors/publish-to-tableau-server-tool-6545370.html)
+			* [Salesforce Input Tool](../../designer/tools/connectors/salesforce-input-tool.html)
+			* [Salesforce Output Tool](../../designer/tools/connectors/salesforce-output-tool.html)
+			* [ServiceNow Input](../../designer/tools/connectors/servicenow-input.html)
+			* [Salesforce Wave Output Tool](../../designer/tools/connectors/salesforce-wave-output-tool.html)
+			* [SharePoint Input Tool](../../designer/tools/connectors/sharepoint-input-tool.html)
+			* [SharePoint Output Tool](../../designer/tools/connectors/sharepoint-output-tool.html)
+			* [SharePoint List Input Tool](../../designer/tools/connectors/sharepoint-list-input-tool.html)
+			* [SharePoint List Output Tool](../../designer/tools/connectors/sharepoint-list-output-tool.html)
+			* [Tableau Input Tool](../../designer/tools/connectors/tableau-input-tool.html)
+			* [Tableau Output Tool](../../designer/tools/connectors/tableau-output-tool.html)
+		- [Address](../../designer/tools/address.html)
+			* [Australia/New Zealand Geocoder Tool](../../designer/tools/address/australia-new-zealand-geocoder-tool.html)
+			* [CASS Tool](../../designer/tools/address/cass-tool.html)
+				+ [CASS Results Codes](../../designer/tools/address/cass-tool/cass-results-codes.html)
+				+ [Canadian Statement of Accuracy Report](../../designer/tools/address/cass-tool/canadian-statement-of-accuracy-report.html)
+			* [Parse Address Tool](../../designer/tools/address/parse-address-tool.html)
+			* [Reverse Geocoder Tool](../../designer/tools/address/reverse-geocoder-tool.html)
+			* [Street Geocoder Tool](../../designer/tools/address/street-geocoder-tool.html)
+			* [US Geocoder Tool](../../designer/tools/address/us-geocoder-tool.html)
+			* [US ZIP9 Coder Tool](../../designer/tools/address/us-zip9-coder-tool.html)
+			* [Brazil Geocoder Tool](../../designer/tools/address/brazil-geocoder-tool.html)
+			* [Canada Geocoder Tool](../../designer/tools/address/canada-geocoder-tool.html)
+			* [European Geocoder](../../designer/tools/address/european-geocoder.html)
+			* [Mexico Geocoder Tool](../../designer/tools/address/mexico-geocoder-tool.html)
+			* [UK Geocoder Macro](../../designer/tools/address/uk-geocoder-macro.html)
+		- [Demographic Analysis](../../designer/tools/demographic-analysis.html)
+			* [Allocate Append Tool](../../designer/tools/demographic-analysis/allocate-append-tool.html)
+				+ [Demographic Retrieval Methodology](../../designer/tools/demographic-analysis/allocate-append-tool/demographic-retrieval-methodology.html)
+				+ [Geographic Identifiers](../../designer/tools/demographic-analysis/allocate-append-tool/geographic-identifiers.html)
+			* [Allocate Input Tool](../../designer/tools/demographic-analysis/allocate-input-tool.html)
+			* [Allocate Metainfo Tool](../../designer/tools/demographic-analysis/allocate-metainfo-tool.html)
+			* [Allocate Report Tool](../../designer/tools/demographic-analysis/allocate-report-tool.html)
+		- [Behavior Analysis](../../designer/tools/behavior-analysis.html)
+			* [Behavior Metainfo Tool](../../designer/tools/behavior-analysis/behavior-metainfo-tool.html)
+			* [Cluster Code Tool](../../designer/tools/behavior-analysis/cluster-code-tool.html)
+			* [Compare Behavior Tool](../../designer/tools/behavior-analysis/compare-behavior-tool.html)
+			* [Create Profile Tool](../../designer/tools/behavior-analysis/create-profile-tool.html)
+			* [Detail Fields Tool](../../designer/tools/behavior-analysis/detail-fields-tool.html)
+			* [Profile Comparison Report Tool](../../designer/tools/behavior-analysis/profile-comparison-report-tool.html)
+			* [Profile Detail Report Tool](../../designer/tools/behavior-analysis/profile-detail-report-tool.html)
+			* [Profile Input Tool](../../designer/tools/behavior-analysis/profile-input-tool.html)
+			* [Profile Output Tool](../../designer/tools/behavior-analysis/profile-output-tool.html)
+			* [Profile Rank Report Tool](../../designer/tools/behavior-analysis/profile-rank-report-tool.html)
+		- [Calgary](../../designer/tools/calgary.html)
+			* [Calgary Input Tool](../../designer/tools/calgary/calgary-input-tool.html)
+				+ [Calgary Queries](../../designer/tools/calgary/calgary-input-tool/calgary-queries.html)
+			* [Calgary Join Tool](../../designer/tools/calgary/calgary-join-tool.html)
+			* [Calgary Cross Count Tool](../../designer/tools/calgary/calgary-cross-count-tool.html)
+			* [Calgary Cross Count Append Tool](../../designer/tools/calgary/calgary-cross-count-append-tool.html)
+			* [Calgary Loader Tool](../../designer/tools/calgary/calgary-loader-tool.html)
+				+ [Calgary Indexes](../../designer/tools/calgary/calgary-loader-tool/calgary-indexes.html)
+				+ [Building a Raw Index in Calgary Loader](../../designer/tools/calgary/calgary-loader-tool/building-a-raw-index-in-calgary-loader.html)
+				+ [Calgary Data Loads](../../designer/tools/calgary/calgary-loader-tool/calgary-data-loads.html)
+		- [Developer](../../designer/tools/developer.html)
+			* [Apache Spark Code Tool](../../designer/tools/developer/apache-spark-code-tool.html)
+			* [API Output Tool](../../designer/tools/developer/api-output-tool.html)
+			* [Base64 Encoder Tool](../../designer/tools/developer/base64-encoder-tool.html)
+			* [Blob Convert Tool](../../designer/tools/developer/blob-convert-tool.html)
+			* [Blob Input Tool](../../designer/tools/developer/blob-input-tool.html)
+			* [Blob Output Tool](../../designer/tools/developer/blob-output-tool.html)
+			* [Block Until Done Tool](../../designer/tools/developer/block-until-done-tool.html)
+			* [Control Container Tool](../../designer/tools/developer/control-container-tool.html)
+			* [Detour Tool](../../designer/tools/developer/detour-tool.html)
+			* [Detour End Tool](../../designer/tools/developer/detour-end-tool.html)
+			* [Download Tool](../../designer/tools/developer/download-tool.html)
+				+ [Peer Validation Allow List](../../designer/tools/developer/download-tool/peer-validation-allow-list.html)
+			* [Dynamic Input Tool](../../designer/tools/developer/dynamic-input-tool.html)
+			* [Dynamic Rename Tool](../../designer/tools/developer/dynamic-rename-tool.html)
+			* [Dynamic Replace Tool](../../designer/tools/developer/dynamic-replace-tool.html)
+			* [Dynamic Select Tool](../../designer/tools/developer/dynamic-select-tool.html)
+			* [Field Info Tool](../../designer/tools/developer/field-info-tool.html)
+			* [GitHub Commit Tool](../../designer/tools/developer/github-commit-tool.html)
+			* [GitHub Get Last Commit Tool](../../designer/tools/developer/github-get-last-commit-tool.html)
+			* [JSON Parse Tool](../../designer/tools/developer/json-parse-tool.html)
+			* [Message Tool](../../designer/tools/developer/message-tool.html)
+			* [Python Tool](../../designer/tools/developer/python-tool.html)
+			* [R Tool](../../designer/tools/developer/r-tool.html)
+			* [Run Command Tool](../../designer/tools/developer/run-command-tool.html)
+			* [Runner Tool](../../designer/tools/developer/runner-tool.html)
+			* [Server API Tool](../../designer/tools/developer/server-api-tool.html)
+			* [Test Tool](../../designer/tools/developer/test-tool.html)
+			* [Throttle Tool](../../designer/tools/developer/throttle-tool.html)
+		- [Laboratory](../../designer/tools/laboratory.html)
+			* [Connect JSON Builder](../../designer/tools/laboratory/connect-json-builder.html)
+			* [Jupyter Flow](../../designer/tools/laboratory/jupyter-flow.html)
+			* [Key-Value Pair Extraction](../../designer/tools/laboratory/key-value-pair-extraction.html)
+			* [Connect Output](../../designer/tools/laboratory/connect-output.html)
+			* [JSON Build Tool](../../designer/tools/laboratory/json-build-tool.html)
+			* [Make Columns Tool](../../designer/tools/laboratory/make-columns-tool.html)
+			* [Transpose In-DB Tool](../../designer/tools/laboratory/transpose-in-db-tool.html)
+			* [Visual Layout Tool](../../designer/tools/laboratory/visual-layout-tool.html)
+		- [SDK Examples](../../designer/tools/sdk-examples.html)
+			* [HTML - GUI Library Tool](../../designer/tools/sdk-examples/html---gui-library-tool.html)
+		- [Connect](../../designer/tools/connect.html)
+			* [ODBC Loader](../../designer/tools/connect/odbc-tool.html)
+		- [Gravity Model Macro](../../designer/tools/gravity-model-macro.html)
+			* [The Gravity Model](../../designer/tools/gravity-model-macro/the-gravity-model.html)
+	+ [Enterprise Utilities](../../designer/enterprise-utilities.html)
+		- [Customer Managed Telemetry Enterprise Utility](../../designer/enterprise-utilities/customer-managed-telemetry-enterprise-utility.html)
+		- [Workflow Migration Enterprise Utility](../../designer/enterprise-utilities/workflow-migration-enterprise-utility.html)
+	+ [Functions](../../designer/functions.html)
+		- [Functions: Quick Reference](../../designer/functions/functions--quick-reference.html)
+		- [Conditional](../../designer/functions/conditional-functions.html)
+		- [Conversion](../../designer/functions/conversion-functions.html)
+		- [DateTime](../../designer/functions/datetime-functions.html)
+		- [File](../../designer/functions/file-functions.html)
+		- [Finance](../../designer/functions/finance-functions.html)
+		- [Math](../../designer/functions/math-functions.html)
+		- [Math: Bitwise](../../designer/functions/math--bitwise-functions.html)
+		- [Min/Max](../../designer/functions/min-max-functions.html)
+		- [Operators](../../designer/functions/operators.html)
+			* [Null Handling](../../designer/functions/operators/null-handling.html)
+		- [Spatial](../../designer/functions/spatial-functions.html)
+		- [Specialized](../../designer/functions/specialized-functions.html)
+			* [Range Median](../../designer/functions/specialized-functions/range-median.html)
+		- [String](../../designer/functions/string-functions.html)
+		- [Test](../../designer/functions/test-functions.html)
+	+ [Data Sources](../../designer/data-sources.html)
+		- [Azure Advanced Authentication Methods](../../designer/data-sources/azure-advanced-authentication-methods.html)
+			* [Azure Active Directory Integrated Authentication](../../designer/data-sources/azure-advanced-authentication-methods/azure-active-directory-integrated-authentication.html)
+			* [Azure Active Directory Interactive Authentication](../../designer/data-sources/azure-advanced-authentication-methods/azure-active-directory-interactive-authentication.html)
+			* [Azure Active Directory Managed Service Identity](../../designer/data-sources/azure-advanced-authentication-methods/azure-active-directory-managed-service-identity.html)
+			* [Azure Active Directory Password-based Authentication](../../designer/data-sources/azure-advanced-authentication-methods/azure-active-directory-password-based-authentication.html)
+			* [Azure Authentication with Service Principal](../../designer/data-sources/azure-advanced-authentication-methods/azure-authentication-with-service-principal.html)
+		- [Designer Compatibility with Data Connectors](../../designer/data-sources/designer-compatibility-with-data-connectors.html)
+		- [Alteryx Database File Format](../../designer/data-sources/alteryx-database-file-format.html)
+		- [Adobe Analytics](../../designer/data-sources/adobe-analytics.html)
+		- [Amazon Athena](../../designer/data-sources/amazon-athena.html)
+		- [Amazon Aurora](../../designer/data-sources/amazon-aurora.html)
+		- [Amazon Redshift](../../designer/data-sources/amazon-redshift.html)
+		- [Amazon Redshift Spectrum](../../designer/data-sources/amazon-redshift-spectrum.html)
+		- [Amazon S3](../../designer/data-sources/amazon-s3.html)
+		- [Anaplan](../../designer/data-sources/anaplan.html)
+		- [Apache Spark Direct](../../designer/data-sources/apache-spark-direct.html)
+		- [Apache Spark ODBC](../../designer/data-sources/apache-spark-odbc.html)
+		- [Apache Spark on Databricks](../../designer/data-sources/apache-spark-on-databricks.html)
+		- [Apache Spark on Microsoft Azure HDInsight](../../designer/data-sources/apache-spark-on-microsoft-azure-hdinsight.html)
+		- [Automation Anywhere](../../designer/data-sources/automation-anywhere.html)
+		- [Avro](../../designer/data-sources/avro-data-types.html)
+		- [Box](../../designer/data-sources/box.html)
+		- [Cassandra](../../designer/data-sources/apache-cassandra.html)
+		- [Cloudera Impala](../../designer/data-sources/apache-impala.html)
+		- [Databricks](../../designer/data-sources/databricks.html)
+			* [Databricks Azure OAuth Authentication](../../designer/data-sources/databricks/databricks-azure-oauth-authentication.html)
+			* [Databricks Unity Catalog](../../designer/data-sources/databricks/databricks-unity-catalog.html)
+		- [Denodo](../../designer/data-sources/denodo.html)
+		- [Dropbox](../../designer/data-sources/dropbox.html)
+		- [Esri](../../designer/data-sources/esri.html)
+		- [Exasol](../../designer/data-sources/exasol.html)
+		- [Google Analytics](../../designer/data-sources/google-analytics.html)
+		- [Google BigQuery](../../designer/data-sources/google-bigquery.html)
+		- [Google Drive](../../designer/data-sources/google-drive.html)
+		- [Google Sheets](../../designer/data-sources/google-sheets.html)
+		- [Gzip File Support](../../designer/data-sources/gzip-file-support.html)
+		- [Hadoop Distributed File System](../../designer/data-sources/hadoop-distributed-file-system.html)
+		- [Hive](../../designer/data-sources/apache-hive.html)
+		- [IBM DB2](../../designer/data-sources/ibm-db2.html)
+		- [IBM Netezza](../../designer/data-sources/ibm-netezza.html)
+		- [Marketo](../../designer/data-sources/marketo.html)
+		- [Microsoft Access - Alteryx Driver](../../designer/data-sources/microsoft-access---alteryx-driver.html)
+		- [Microsoft Access 2007, 2010, 2013, 2016, 2019, and 2021](../../designer/data-sources/microsoft-access-2007,-2010,-2013,-2016,-2019,-2021.html)
+		- [Microsoft Analytics Platform System](../../designer/data-sources/microsoft-analytics-platform-system.html)
+		- [Microsoft Azure Data Lake Store](../../designer/data-sources/microsoft-azure-data-lake-store.html)
+		- [Microsoft Azure ML](../../designer/data-sources/microsoft-azure-ml.html)
+		- [Microsoft Azure SQL Database](../../designer/data-sources/microsoft-azure-sql-database.html)
+		- [Microsoft Azure SQL Data Warehouse](../../designer/data-sources/microsoft-azure-sql-data-warehouse.html)
+		- [Microsoft Cognitive Services](../../designer/data-sources/microsoft-cognitive-services.html)
+		- [Microsoft Dataverse](../../designer/data-sources/microsoft-dataverse.html)
+		- [Microsoft Dynamics CRM](../../designer/data-sources/microsoft-dynamics-crm.html)
+		- [Microsoft Excel - Alteryx Driver](../../designer/data-sources/microsoft-excel---alteryx-driver.html)
+		- [Microsoft OneDrive](../../designer/data-sources/microsoft-onedrive.html)
+		- [Microsoft Outlook 365](../../designer/data-sources/microsoft-outlook-365.html)
+		- [Microsoft Power Automate](../../designer/data-sources/microsoft-power-automate.html)
+		- [Microsoft Power BI](../../designer/data-sources/microsoft-power-bi.html)
+		- [Microsoft SQL Server 2012, 2014, 2016, and 2019](../../designer/data-sources/microsoft-sql-server-2012,-2014,-2016,-and-2019.html)
+			* [Connect to a SQL Server Database](../../designer/data-sources/microsoft-sql-server-2012,-2014,-2016,-and-2019/connect-to-a-sql-server-database.html)
+		- [Microsoft SharePoint](../../designer/data-sources/microsoft-sharepoint.html)
+			* [Create Certificate for SharePoint List App-Only Authentication](../../designer/data-sources/microsoft-sharepoint/create-certificate-for-sharepoint-list-app-only-authentication.html)
+		- [MongoDB](../../designer/data-sources/mongodb.html)
+		- [MySQL](../../designer/data-sources/mysql.html)
+		- [NetSuite](../../designer/data-sources/netsuite.html)
+		- [ODBC and OLEDB Database Connections](../../designer/data-sources/odbc-and-oledb-database-connections.html)
+		- [Oracle](../../designer/data-sources/oracle.html)
+			* [Connect to an Oracle Database](../../designer/data-sources/oracle/connect-to-an-oracle-database.html)
+		- [Pivotal Greenplum](../../designer/data-sources/pivotal-greenplum.html)
+			* [Configure Pivotal Greenplum Bulk Connection for Writing Data](../../designer/data-sources/pivotal-greenplum/configure-pivotal-greenplum-bulk-connection-for-writing-data.html)
+		- [PostgreSQL](../../designer/data-sources/postgresql.html)
+			* [Configure PosgreSQL Bulk Connection for Writing Data](../../designer/data-sources/postgresql/configure-postgresql-bulk-connection-for-writing-data.html)
+		- [PrestoDB](../../designer/data-sources/presto.html)
+		- [SAP HANA](../../designer/data-sources/sap-hana.html)
+			* [Connect to SAP HANA Cloud With Okta Account](../../designer/data-sources/sap-hana/connect-to-sap-hana-cloud-with-okta-account.html)
+		- [Salesforce](../../designer/data-sources/salesforce.html)
+		- [ServiceNow](../../designer/data-sources/servicenow.html)
+		- [Snowflake](../../designer/data-sources/snowflake.html)
+			* [Snowflake Bulk loading using Oauth Authentication](../../designer/data-sources/snowflake/snowflake-bulk-loading-using-oauth.html)
+			* [Snowflake Connection without DSN](../../designer/data-sources/snowflake/snowflake-connection-without-dsn.html)
+			* [Snowflake OAuth Authentication](../../designer/data-sources/snowflake/snowflake-oauth-authentication.html)
+		- [Tableau](../../designer/data-sources/tableau.html)
+		- [Teradata Aster](../../designer/data-sources/teradata-aster.html)
+		- [Teradata](../../designer/data-sources/teradata.html)
+			* [Teradata Bulk Connections](../../designer/data-sources/teradata/teradata-bulk-connections.html)
+		- [Vertica](../../designer/data-sources/vertica.html)
+		- [UiPath](../../designer/data-sources/uipath.html)
+		- [Generic OAuth Authentication](../../designer/data-sources/generic-oauth-authentication.html)
+	+ [File Types Support](../../designer/file-types-support.html)
+		- [Data Types](../../designer/file-types-support/data-types.html)
+		- [Alteryx File Types](../../designer/file-types-support/alteryx-file-types.html)
+		- [File Format Options](../../designer/file-types-support/file-format-options.html)
+		- [Flat Files](../../designer/file-types-support/flat--ascii--files.html)
+			* [Flat File Layout](../../designer/file-types-support/flat--ascii--files/flat-file-layout.html)
+			* [Output a Flat File](../../designer/file-types-support/flat--ascii--files/output-a-flat-file.html)
+			* [Binary Flat Files](../../designer/file-types-support/flat--ascii--files/binary-flat-files.html)
+		- [Zip File Support](../../designer/file-types-support/zip-file-support.html)
+		- [Alteryx and Temporary Files](../../designer/file-types-support/alteryx-and-temporary-files.html)
+		- [Stat Transfer Supported File Formats](../../designer/file-types-support/stat-transfer-supported-file-formats.html)
+		- [QlikView QVX File Format](../../designer/file-types-support/qlikview-qvx-file-format.html)
+	+ [Connection Setup](../../designer/connection-setup.html)
+		- [Manage Data Connections](../../designer/connection-setup/manage-data-connections.html)
+		- [Manage In-DB Connections](../../designer/connection-setup/manage-in-database-connections.html)
+		- [Connection Setup Considerations](../../designer/connection-setup/connection-setup-considerations.html)
+	+ [Alteryx Designer-FIPS](../../designer/alteryx-designer-fips.html)
+		- [Designer and FIPS: Feature Differences](../../designer/alteryx-designer-fips/alteryx-designer-and-fips--feature-differences.html)
+		- [Designer and FIPS: Tool Differences](../../designer/alteryx-designer-fips/alteryx-designer-and-fips--tool-differences.html)
+	+ [Use Connect Assets](../../designer/use-connect-assets.html)
+	+ [Version Updates](../../designer/version-updates.html)
+* [Server 2023.2](../../server.html)
+	+ [What's New](../../server/what-s-new-in-server-2023-1.html)
+	+ [System Requirements](../../server/system-requirements.html)
+	+ [Get Started](../../server/get-started-with-server.html)
+	+ [Install](../../server/install.html)
+		- [Install or Upgrade](../../server/install/install-or-upgrade-server.html)
+			* [Migration Prep Tool](../../server/install/install-or-upgrade-server/migration-prep-tool.html)
+				+ [Prepare for Migration](../../server/install/install-or-upgrade-server/migration-prep-tool/prepare-for-migration.html)
+				+ [Run the Migration Prep Tool](../../server/install/install-or-upgrade-server/migration-prep-tool/run-the-migration-prep-tool.html)
+				+ [Migration Prep Tool FAQs](../../server/install/install-or-upgrade-server/migration-prep-tool/migration-prep-tool-faqs.html)
+		- [Install the Server Usage Report](../../server/install/install-the-server-usage-report.html)
+		- [Install Custom Tools](../../server/install/install-custom-tools.html)
+		- [Host Recovery Guide](../../server/install/server-host-recovery-guide.html)
+			* [Encryption Key Transfer Process](../../server/install/server-host-recovery-guide/encryption-key-transfer-process.html)
+		- [AlteryxService Commands](../../server/install/alteryxservice-commands.html)
+		- [Server Processes Reference](../../server/install/server-processes-reference.html)
+		- [Downgrade Alteryx Server](../../server/install/downgrade-alteryx-server.html)
+	+ [Configure](../../server/configure.html)
+		- [System Settings](../../server/configure/system-settings.html)
+			* [Environment](../../server/configure/system-settings/environment.html)
+			* [Controller](../../server/configure/system-settings/controller.html)
+			* [Worker](../../server/configure/system-settings/worker.html)
+			* [Server UI](../../server/configure/system-settings/server-ui.html)
+			* [Engine](../../server/configure/system-settings/engine.html)
+			* [DCM](../../server/configure/system-settings/dcm---server.html)
+		- [Configure Controller and Workers](../../server/configure/configure-controller-and-workers.html)
+		- [Configure Server Authentication](../../server/configure/configure-alteryx-server-authentication.html)
+			* [Configure Server for SCIM with Azure Active Directory](../../server/configure/configure-alteryx-server-authentication/configure-alteryx-server-for-scim-with-azure-active-directory.html)
+		- [Configure SMTP](../../server/configure/configure-smtp-for-server-notifications.html)
+		- [Configure SSL/TLS](../../server/configure/configure-server-ssl-tls.html)
+		- [Configure and Use Logs](../../server/configure/configure-and-use-server-logs.html)
+		- [Control Designer Access to Server](../../server/configure/control-designer-access-to-server.html)
+		- [MongoDB Management](../../server/configure/mongodb-management.html)
+			* [MongoDB Backups](../../server/configure/mongodb-management/mongodb-backups.html)
+			* [Set New Credentials](../../server/configure/mongodb-management/set-new-mongodb-credentials.html)
+			* [Advanced Connection Strings](../../server/configure/mongodb-management/mongodb-advanced-connection-strings.html)
+			* [Schema Reference](../../server/configure/mongodb-management/mongodb-schema-reference.html)
+				+ [AlteryxGallery Schema](../../server/configure/mongodb-management/mongodb-schema-reference/alteryxgallery-mongodb-schema.html)
+				+ [AlteryxService Schema](../../server/configure/mongodb-management/mongodb-schema-reference/alteryxservice-mongodb-schema.html)
+		- [Troubleshooting](../../server/configure/troubleshooting.html)
+	+ [Administer Server](../../server/administer-alteryx-server.html)
+		- [Access the Admin Interface](../../server/administer-alteryx-server/access-the-server-admin-interface.html)
+		- [Server Settings](../../server/administer-alteryx-server/alteryx-server-settings.html)
+		- [Users and Groups](../../server/administer-alteryx-server/user-and-group-management.html)
+			* [Add Users](../../server/administer-alteryx-server/user-and-group-management/add-server-users.html)
+			* [User Roles and Permissions](../../server/administer-alteryx-server/user-and-group-management/user-roles-and-permissions.html)
+			* [Manage Groups](../../server/administer-alteryx-server/user-and-group-management/manage-groups.html)
+			* [Enable User Registration](../../server/administer-alteryx-server/user-and-group-management/enable-user-registration.html)
+			* [Reset a User's Password](../../server/administer-alteryx-server/user-and-group-management/reset-a-user-s-server-password.html)
+			* [Deactivate a User](../../server/administer-alteryx-server/user-and-group-management/deactivate-a-user.html)
+			* [Allow User Access to the API](../../server/administer-alteryx-server/user-and-group-management/allow-user-access-to-the-server-api.html)
+		- [Collections](../../server/administer-alteryx-server/collections--admin-interface.html)
+			* [Allow Users to Create Collections](../../server/administer-alteryx-server/collections--admin-interface/allow-users-to-create-collections.html)
+			* [Manage a Collection's Users and Groups](../../server/administer-alteryx-server/collections--admin-interface/manage-a-collection-s-users-and-groups.html)
+			* [Change a Collection's Owner](../../server/administer-alteryx-server/collections--admin-interface/change-a-collection-s-owner.html)
+			* [Migrate Subscriptions to Collections](../../server/administer-alteryx-server/collections--admin-interface/migrate-subscriptions-to-collections.html)
+		- [Subscriptions (Studios)](../../server/administer-alteryx-server/subscriptions--studios-.html)
+		- [Workflows](../../server/administer-alteryx-server/workflows--admin-interface.html)
+			* [Add a Workflow](../../server/administer-alteryx-server/workflows--admin-interface/add-a-workflow-via-the-server-admin-interface.html)
+			* [Workflow Options](../../server/administer-alteryx-server/workflows--admin-interface/workflow-options-in-admin.html)
+			* [Create Workflow Tags](../../server/administer-alteryx-server/workflows--admin-interface/create-workflow-tags.html)
+			* [Enable Users to Run Workflows](../../server/administer-alteryx-server/workflows--admin-interface/enable-users-to-run-workflows.html)
+			* [Workflow Migration](../../server/administer-alteryx-server/workflows--admin-interface/enable-workflows-for-migration.html)
+			* [Safe and Semi-safe Run Modes: Blocked Tools](../../server/administer-alteryx-server/workflows--admin-interface/safe-and-semi-safe-run-modes--blocked-tools,-events,-and-data-connectors.html)
+		- [Jobs](../../server/administer-alteryx-server/jobs--admin-interface.html)
+			* [Jobs Page Overview](../../server/administer-alteryx-server/jobs--admin-interface/jobs-page-overview.html)
+			* [Cancel a Job](../../server/administer-alteryx-server/jobs--admin-interface/cancel-a-job.html)
+		- [Schedules](../../server/administer-alteryx-server/schedules--admin-interface.html)
+			* [Schedules Page Overview](../../server/administer-alteryx-server/schedules--admin-interface/schedules-page-overview.html)
+			* [Enable Users to Schedule Workflows](../../server/administer-alteryx-server/schedules--admin-interface/enable-users-to-schedule-workflows.html)
+			* [Enable Shared Schedules on a Subscription](../../server/administer-alteryx-server/schedules--admin-interface/enable-shared-schedules-on-a-subscription.html)
+			* [Edit or Delete a Schedule](../../server/administer-alteryx-server/schedules--admin-interface/edit-or-delete-a-schedule.html)
+			* [Migrate Schedules](../../server/administer-alteryx-server/schedules--admin-interface/migrate-schedules-to-the-server.html)
+			* [Schedule Forecast](../../server/administer-alteryx-server/schedules--admin-interface/schedule-forecast--admin-interface.html)
+		- [Credentials](../../server/administer-alteryx-server/credentials.html)
+			* [Workflow Credentials Settings](../../server/administer-alteryx-server/credentials/select-the-workflow-credentials-settings-for-your-server.html)
+			* [Add a Credential](../../server/administer-alteryx-server/credentials/add-a-credential.html)
+			* [Share Credentials](../../server/administer-alteryx-server/credentials/share-credentials-with-users-and-groups.html)
+			* [Configure Required Run As User Permissions](../../server/administer-alteryx-server/credentials/configure-required-run-as-user-permissions.html)
+		- [Notifications](../../server/administer-alteryx-server/notifications.html)
+		- [Data Connections](../../server/administer-alteryx-server/data-connections.html)
+		- [Diagnostics](../../server/administer-alteryx-server/diagnostics.html)
+		- [Pages](../../server/administer-alteryx-server/pages.html)
+		- [Links](../../server/administer-alteryx-server/links.html)
+		- [Media](../../server/administer-alteryx-server/media.html)
+		- [Districts](../../server/administer-alteryx-server/districts.html)
+	+ [Use Server](../../server/use-alteryx-server-ui.html)
+		- [Register for an Alteryx Server Account](../../server/use-alteryx-server-ui/register-for-an-alteryx-server-account.html)
+		- [Language and Locale](../../server/use-alteryx-server-ui/language-and-locale.html)
+		- [Confirm Your Email](../../server/use-alteryx-server-ui/confirm-your-email-address.html)
+		- [Server UI Overview](../../server/use-alteryx-server-ui/alteryx-server-ui-overview.html)
+		- [Manage Public Content](../../server/use-alteryx-server-ui/alteryx-server-ui-home--manage-public-content.html)
+		- [My Profile](../../server/use-alteryx-server-ui/my-profile.html)
+		- [Workflows](../../server/use-alteryx-server-ui/workflows--server-user-interface.html)
+			* [Workflow Options](../../server/use-alteryx-server-ui/workflows--server-user-interface/workflow-options-in-server-ui.html)
+			* [Save a Workflow](../../server/use-alteryx-server-ui/workflows--server-user-interface/save-a-workflow-to-server.html)
+			* [Workflow Version History](../../server/use-alteryx-server-ui/workflows--server-user-interface/workflow-version-history.html)
+			* [Publish a Workflow Version](../../server/use-alteryx-server-ui/workflows--server-user-interface/publish-a-workflow-version.html)
+			* [Replace a Workflow](../../server/use-alteryx-server-ui/workflows--server-user-interface/replace-a-workflow.html)
+			* [Run a Workflow As a Different User](../../server/use-alteryx-server-ui/workflows--server-user-interface/run-a-workflow-as-a-different-user.html)
+		- [Analytic Apps](../../server/use-alteryx-server-ui/analytic-apps-in-server.html)
+		- [Collections](../../server/use-alteryx-server-ui/collections--server-user-interface.html)
+			* [Create a Collection](../../server/use-alteryx-server-ui/collections--server-user-interface/create-a-collection.html)
+			* [Manage a Collection's Users](../../server/use-alteryx-server-ui/collections--server-user-interface/manage-a-collection-s-users-and-groups.html)
+			* [Add Workflows to a Collection](../../server/use-alteryx-server-ui/collections--server-user-interface/add-workflows-and-insights-to-a-collection.html)
+			* [Share Schedules to Collections](../../server/use-alteryx-server-ui/collections--server-user-interface/share-schedules-and-results-to-collections.html)
+		- [Schedules](../../server/use-alteryx-server-ui/schedules--server-user-interface.html)
+			* [Schedule a Workflow](../../server/use-alteryx-server-ui/schedules--server-user-interface/schedule-a-workflow.html)
+			* [Share a Schedule](../../server/use-alteryx-server-ui/schedules--server-user-interface/share-a-schedule.html)
+			* [Delete, Disable, or Re-Enable a Schedule](../../server/use-alteryx-server-ui/schedules--server-user-interface/delete,-disable,-or-re-enable-a-schedule.html)
+			* [Time Zone Support](../../server/use-alteryx-server-ui/schedules--server-user-interface/schedules--time-zone-support.html)
+		- [Data Connection Manager](../../server/use-alteryx-server-ui/data-connection-manager--server-ui.html)
+		- [Search for Assets](../../server/use-alteryx-server-ui/search-for-assets.html)
+	+ [Best Practices](../../server/best-practices.html)
+		- [AMP Engine](../../server/best-practices/amp-engine-best-practices.html)
+		- [Backup](../../server/best-practices/backup-best-practices.html)
+			* [Critical Files and Settings to Backup](../../server/best-practices/backup-best-practices/critical-server-files-and-settings-to-backup.html)
+		- [High-Availability](../../server/best-practices/high-availability-best-practices.html)
+			* [Prerequisites](../../server/best-practices/high-availability-best-practices/prerequisites.html)
+			* [Install the Failover Clustering Feature](../../server/best-practices/high-availability-best-practices/install-the-failover-clustering-feature.html)
+			* [Primary Controller Configuration](../../server/best-practices/high-availability-best-practices/primary-controller-configuration.html)
+			* [Failover Controller(s) Configuration](../../server/best-practices/high-availability-best-practices/failover-controller-s--configuration.html)
+			* [Create a Failover Cluster](../../server/best-practices/high-availability-best-practices/create-a-failover-cluster.html)
+			* [Add a Cluster Role](../../server/best-practices/high-availability-best-practices/add-a-cluster-role.html)
+			* [Server UI Node Configuration](../../server/best-practices/high-availability-best-practices/server-ui-node-configuration.html)
+			* [Worker Node Configuration](../../server/best-practices/high-availability-best-practices/worker-node-configuration.html)
+			* [Automated Failover Testing](../../server/best-practices/high-availability-best-practices/automated-failover-testing.html)
+			* [Failover Verification and Testing](../../server/best-practices/high-availability-best-practices/failover-verification-and-testing.html)
+			* [Known Issues](../../server/best-practices/high-availability-best-practices/known-issues-and-concerns.html)
+		- [MongoDB in Server Upgrades](../../server/best-practices/mongodb-in-server-upgrades-best-practices.html)
+		- [Security](../../server/best-practices/security-best-practices.html)
+			* [Deployment Types](../../server/best-practices/security-best-practices/deployment-types.html)
+			* [Secure the Network Layer](../../server/best-practices/security-best-practices/secure-the-network-layer.html)
+			* [Secure the Operating System Layer](../../server/best-practices/security-best-practices/secure-the-operating-system-layer.html)
+			* [Secure the Application Layer](../../server/best-practices/security-best-practices/secure-the-application-layer.html)
+			* [Privacy and Information Leakage](../../server/best-practices/security-best-practices/privacy-and-information-leakage.html)
+			* [Backup](../../server/best-practices/security-best-practices/backup.html)
+			* [Server Hardening](../../server/best-practices/security-best-practices/server-hardening.html)
+			* [Server Configuration](../../server/best-practices/security-best-practices/server-configuration.html)
+			* [Server Administration](../../server/best-practices/security-best-practices/server-administration.html)
+			* [Glossary of Security Terms](../../server/best-practices/security-best-practices/glossary-of-security-terms.html)
+		- [Server Upgrade](../../server/best-practices/server-upgrade-best-practices.html)
+	+ [Alteryx Server-FIPS](../../server/alteryx-server-fips.html)
+		- [Alteryx Server and Server-FIPS: Feature Differences](../../server/alteryx-server-fips/alteryx-server-and-server-fips--feature-differences.html)
+	+ [API](../../server/api-overview.html)
+		- [OAuth1 to OAuth2 Instructions](../../server/api-overview/oauth1-to-oauth2-instructions.html)
+		- [Server API V3](../../server/api-overview/alteryx-server-api-v3.html)
+			* [Configuration and Authorization](../../server/api-overview/alteryx-server-api-v3/server-api-configuration-and-authorization.html)
+			* [Access Server API V3](../../server/api-overview/alteryx-server-api-v3/access-server-api-v3.html)
+			* [Server API V3 Objects](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects.html)
+				+ [User Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/user-endpoints.html)
+				+ [User Group Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/user-group-endpoints.html)
+				+ [Collection Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/collection-endpoints.html)
+				+ [Workflow Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/workflow-endpoints.html)
+				+ [Schedules Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/schedules-endpoints.html)
+				+ [Server Connection Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/server-connection-endpoints.html)
+				+ [Credential Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/credential-endpoints.html)
+				+ [Job Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/jobs-endpoints.html)
+				+ [DCME Endpoints](../../server/api-overview/alteryx-server-api-v3/server-api-v3-objects/dcme-endpoints.html)
+			* [How to Use Postman](../../server/api-overview/alteryx-server-api-v3/how-to-use-postman.html)
+	+ [Glossary](../../server/glossary-of-server-terms.html)
+* [Connect 2023.2](../../connect.html)
+	+ [What's New](../../connect/what-s-new-in-connect-2022-3.html)
+	+ [Get Started](../../connect/get-started.html)
+		- [Get Started with Connect](../../connect/get-started/get-started-with-connect.html)
+		- [System Requirements](../../connect/get-started/connect-system-requirements.html)
+		- [Other Resources](../../connect/get-started/other-resources.html)
+			* [Community Articles](../../connect/get-started/other-resources/alteryx-community-articles.html)
+			* [Videos](../../connect/get-started/other-resources/videos.html)
+		- [EULA and Privacy Policy](../../connect/get-started/eula-and-privacy-policy.html)
+	+ [Install](../../connect/install.html)
+		- [Install Connect](../../connect/install/install-connect.html)
+		- [License Connect](../../connect/install/license-connect.html)
+		- [Upgrade Connect](../../connect/install/upgrade-connect.html)
+		- [Uninstall Connect](../../connect/install/uninstall-connect.html)
+	+ [Administer Connect](../../connect/administer-connect.html)
+		- [Loader Categories](../../connect/administer-connect/loader-categories.html)
+		- [Load Metadata](../../connect/administer-connect/load-metadata.html)
+			* [Alteryx Promote Node](../../connect/administer-connect/load-metadata/load-metadata-from-an-alteryx-promote-node.html)
+			* [Alteryx Server Gallery](../../connect/administer-connect/load-metadata/load-metadata-from-an-alteryx-server-gallery.html)
+			* [Amazon Athena](../../connect/administer-connect/load-metadata/load-metadata-from-amazon-athena.html)
+			* [Amazon Redshift](../../connect/administer-connect/load-metadata/load-metadata-from-an-amazon-redshift-database.html)
+			* [Amazon S3](../../connect/administer-connect/load-metadata/load-metadata-from-amazon-s3.html)
+			* [Databricks](../../connect/administer-connect/load-metadata/load-metadata-from-databricks.html)
+			* [DB2 Database](../../connect/administer-connect/load-metadata/load-metadata-from-a-db2-database.html)
+			* [EXASOL Database](../../connect/administer-connect/load-metadata/load-metadata-from-an-exasol-database.html)
+			* [File System](../../connect/administer-connect/load-metadata/load-metadata-from-a-file-system.html)
+			* [Google BigQuery](../../connect/administer-connect/load-metadata/load-metadata-from-google-bigquery.html)
+			* [HDFS](../../connect/administer-connect/load-metadata/load-metadata-from-an-hdfs-server.html)
+			* [Apache Hive](../../connect/administer-connect/load-metadata/load-metadata-from-apache-hive.html)
+			* [Impala](../../connect/administer-connect/load-metadata/load-metadata-from-an-impala-database.html)
+			* [Microsoft Azure Data Catalog](../../connect/administer-connect/load-metadata/load-metadata-from-microsoft-azure-data-catalog.html)
+			* [Microsoft Azure Data Lake Store Gen1](../../connect/administer-connect/load-metadata/load-metadata-from-a-microsoft-azure-data-lake-store-gen1.html)
+			* [Microsoft Azure Data Lake Store Gen2](../../connect/administer-connect/load-metadata/load-metadata-from-a-microsoft-azure-data-lake-store-gen2.html)
+			* [Microsoft Azure SQL Data Warehouse (Azure Synapse Analytics)](../../connect/administer-connect/load-metadata/load-metadata-from-a-microsoft-azure-sql-data-warehouse--azure-synapse-analytics-.html)
+			* [Microsoft Power BI](../../connect/administer-connect/load-metadata/load-metadata-from-microsoft-power-bi.html)
+			* [Microsoft Power BI On-Premises (Server)](../../connect/administer-connect/load-metadata/load-metadata-from-microsoft-power-bi-on-premises--server-.html)
+			* [Microsoft SQL Server Database](../../connect/administer-connect/load-metadata/load-metadata-from-a-microsoft-sql-server-database.html)
+			* [Microsoft SharePoint Online](../../connect/administer-connect/load-metadata/load-metadata-from-microsoft-sharepoint-online.html)
+			* [MySQL](../../connect/administer-connect/load-metadata/load-metadata-from-a-mysql-database.html)
+			* [Oracle](../../connect/administer-connect/load-metadata/load-metadata-from-an-oracle-database.html)
+			* [PostgreSQL](../../connect/administer-connect/load-metadata/load-metadata-from-a-postgresql-database.html)
+			* [Qlik Sense](../../connect/administer-connect/load-metadata/load-metadata-from-qlik-sense.html)
+			* [QlikView](../../connect/administer-connect/load-metadata/load-metadata-from-qlikview.html)
+			* [SAP HANA](../../connect/administer-connect/load-metadata/load-metadata-from-a-sap-hana-database.html)
+			* [Salesforce](../../connect/administer-connect/load-metadata/load-metadata-from-salesforce.html)
+			* [Snowflake](../../connect/administer-connect/load-metadata/load-metadata-from-a-snowflake-database.html)
+			* [Tableau Server](../../connect/administer-connect/load-metadata/load-metadata-from-tableau-server.html)
+			* [Teradata](../../connect/administer-connect/load-metadata/load-metadata-from-a-teradata-database.html)
+			* [Vertica](../../connect/administer-connect/load-metadata/load-metadata-from-a-vertica-database.html)
+		- [Schedule Metadata Loaders](../../connect/administer-connect/schedule-metadata-loaders.html)
+		- [Fast Deployment of Metadata Loaders](../../connect/administer-connect/fast-deployment-of-metadata-loaders.html)
+		- [Administer Users](../../connect/administer-connect/administer-users.html)
+		- [Administration Console](../../connect/administer-connect/administration-console.html)
+			* [Settings](../../connect/administer-connect/administration-console/settings.html)
+			* [Asset Configuration](../../connect/administer-connect/administration-console/asset-configuration.html)
+			* [Connections](../../connect/administer-connect/administration-console/connections.html)
+			* [Security](../../connect/administer-connect/administration-console/security.html)
+			* [Maintenance](../../connect/administer-connect/administration-console/maintenance.html)
+			* [Performance](../../connect/administer-connect/administration-console/performance.html)
+			* [Log](../../connect/administer-connect/administration-console/log.html)
+			* [Export and Import](../../connect/administer-connect/administration-console/export-and-import.html)
+		- [Windows Authentication](../../connect/administer-connect/windows-authentication.html)
+		- [Adjust Memory Settings](../../connect/administer-connect/adjust-memory-settings.html)
+		- [Back Up and Restore](../../connect/administer-connect/back-up-and-restore.html)
+		- [Restore Invalid Assets](../../connect/administer-connect/restore-invalid-assets.html)
+		- [Review Connect Usage Information](../../connect/administer-connect/review-connect-usage-information.html)
+		- [Upload the Glossary File](../../connect/administer-connect/upload-the-glossary-file.html)
+		- [Maintain Data Lineage](../../connect/administer-connect/maintain-data-lineage.html)
+		- [Permissions](../../connect/administer-connect/permissions.html)
+	+ [Use Connect](../../connect/use-connect.html)
+		- [Understand Connect](../../connect/use-connect/understand-connect.html)
+		- [Understand Assets](../../connect/use-connect/understand-assets.html)
+			* [Analytic Workflows](../../connect/use-connect/understand-assets/analytic-workflows.html)
+			* [Reports](../../connect/use-connect/understand-assets/reports.html)
+			* [Data Sources](../../connect/use-connect/understand-assets/data-sources.html)
+			* [Glossary](../../connect/use-connect/understand-assets/glossary.html)
+			* [People](../../connect/use-connect/understand-assets/people.html)
+			* [Virtual Folders](../../connect/use-connect/understand-assets/virtual-folders.html)
+		- [Create Assets](../../connect/use-connect/create-assets.html)
+		- [Use Assets](../../connect/use-connect/use-assets.html)
+		- [Contribute to Data](../../connect/use-connect/contribute-to-data.html)
+		- [Search for Data](../../connect/use-connect/search-for-data.html)
+		- [Certify Assets](../../connect/use-connect/certify-assets.html)
+		- [Add Glossary Terms](../../connect/use-connect/add-glossary-terms.html)
+		- [Activities Center](../../connect/use-connect/activities-center.html)
+	+ [Develop](../../connect/develop.html)
+		- [Connect API](../../connect/develop/connect-api-overview.html)
+		- [Connect SDK](../../connect/develop/build-connect-loaders--connect-sdk.html)
+* [Promote 2022.1](../../promote.html)
+	+ [Install](../../promote/install.html)
+		- [System Requirements](../../promote/install/system-requirements.html)
+		- [License and Install](../../promote/install/license-and-install.html)
+		- [Certify](../../promote/install/certify.html)
+	+ [Use](../../promote/use.html)
+		- [Manage Models](../../promote/use/manage-models.html)
+		- [Account](../../promote/use/account.html)
+		- [Search](../../promote/use/search.html)
+		- [Deploy](../../promote/use/deploy.html)
+			* [Python Client](../../promote/use/deploy/python-client.html)
+			* [R Client](../../promote/use/deploy/r-client.html)
+			* [Designer Deploy Tool](../../promote/use/deploy/deploy-tool.html)
+		- [FAQ](../../promote/use/faq.html)
+	+ [Administer](../../promote/administer.html)
+		- [Admin Tools](../../promote/administer/admin-tools.html)
+		- [Manage Users](../../promote/administer/manage-users.html)
+		- [Interact with the API](../../promote/administer/interact-with-the-api.html)
+		- [Add Nodes](../../promote/administer/add-nodes.html)
+		- [Remove Nodes](../../promote/administer/remove-nodes.html)
+	+ [Upgrade](../../promote/upgrade.html)
+		- [Upgrade from 2021.4](../../promote/upgrade/upgrade-from-2021-4.html)
+		- [Upgrade from 2020.4](../../promote/upgrade/upgrade-from-2020-4.html)
+		- [Upgrade from 2019.4](../../promote/upgrade/upgrade-from-2019-4.html)
+		- [Upgrade from 2019.3](../../promote/upgrade/upgrade-from-2019-3.html)
+		- [Upgrade from 2019.2](../../promote/upgrade/upgrade-from-2019-2.html)
+		- [Upgrade from 2019.1](../../promote/upgrade/upgrade-from-2019-1.html)
+		- [Upgrade from 2018.4](../../promote/upgrade/upgrade-from-2018-4.html)
+		- [Upgrade from 2018.3](../../promote/upgrade/upgrade-from-2018-3.html)
+* [Product Activation and Licensing](../../license-and-activate.html)
+	+ [Get Started](../../license-and-activate/get-started.html)
+	+ [Install](../../license-and-activate/install.html)
+		- [Download and Install a Product](../../license-and-activate/install/download-and-install-a-product.html)
+		- [Download and Install a Patch Update](../../license-and-activate/install/download-and-install-a-patch-update.html)
+		- [Download and Install an Alteryx Data Set](../../license-and-activate/install/download-and-install-alteryx-data-packages.html)
+		- [Download and Install License Server: Admin Only](../../license-and-activate/install/download-and-install-alteryx-license-server--admin-only.html)
+		- [Admin and Non-Admin Install Guide](../../license-and-activate/install/admin-and-non-admin-install-guide.html)
+		- [Install Two Versions of Designer on the Same Machine](../../license-and-activate/install/install-two-versions-of-designer-on-the-same-machine.html)
+		- [Command Line Install](../../license-and-activate/install/use-command-line-options.html)
+		- [Uninstall a Product](../../license-and-activate/install/uninstall-a-product.html)
+	+ [Activate](../../license-and-activate/activate.html)
+		- [Activate Alteryx Overview](../../license-and-activate/activate/activate-alteryx-overview.html)
+		- [Activate Free Trial](../../license-and-activate/activate/activate-free-trial.html)
+		- [Activate License Online](../../license-and-activate/activate/activate-license-online.html)
+		- [Activate License Offline](../../license-and-activate/activate/activate-license-offline.html)
+		- [Activate Using License Server](../../license-and-activate/activate/activate-using-license-server.html)
+	+ [Manage](../../license-and-activate/manage.html)
+		- [Manage Licenses in Alteryx Designer](../../license-and-activate/manage/manage-licenses-in-alteryx-designer.html)
+		- [Transfer License in Alteryx Designer](../../license-and-activate/manage/transfer-license-in-alteryx-designer.html)
+		- [Manage Partner Data Licenses](../../license-and-activate/manage/manage-partner-data-licenses.html)
+		- [Deactivate License](../../license-and-activate/manage/deactivate-license.html)
+	+ [Upgrade](../../license-and-activate/upgrade.html)
+		- [Upgrade Guide](../../license-and-activate/upgrade/upgrade-guide.html)
+	+ [Administer](../../license-and-activate/administer.html)
+		- [System Requirements](../../license-and-activate/administer/system-requirements.html)
+		- [License Administrator Checklist](../../license-and-activate/administer/license-administrator-checklist.html)
+		- [View Licenses](../../license-and-activate/administer/view-licenses.html)
+		- [Activation: Map License to Machine](../../license-and-activate/administer/activation--map-license-to-machine.html)
+		- [Revoke License from Machine](../../license-and-activate/administer/revoke-license-from-machine.html)
+		- [Administer Machines](../../license-and-activate/administer/administer-machines.html)
+		- [Manage Accounts and Users](../../license-and-activate/administer/manage-accounts-and-users.html)
+		- [Use Command Line Options](../../license-and-activate/administer/use-command-line-options.html)
+		- [Install and Use Alteryx License Server](../../license-and-activate/administer/install-and-use-alteryx-license-server.html)
+			* [Alteryx License Server Reservations](../../license-and-activate/administer/install-and-use-alteryx-license-server/alteryx-license-server-reservations.html)
+			* [Alteryx License Server Partitions](../../license-and-activate/administer/install-and-use-alteryx-license-server/alteryx-license-server-partitions.html)
+			* [Alteryx License Server Product and Feature Reference](../../license-and-activate/administer/install-and-use-alteryx-license-server/alteryx-license-server-product-and-feature-reference.html)
+			* [Alteryx License Server Failover Configuration](../../license-and-activate/administer/install-and-use-alteryx-license-server/alteryx-license-server-failover-configuration.html)
+		- [Administer License Server](../../license-and-activate/administer/administer-alteryx-license-server.html)
+		- [Troubleshoot Licensing Issues](../../license-and-activate/administer/troubleshoot-licensing-issues.html)
+		- [Licensing & Downloads Portal API](../../license-and-activate/administer/licensing---downloads-portal-api.html)
+	+ [Version Support Policy](../../license-and-activate/version-support-policy.html)
+		- [Version Support Policy Archive](../../license-and-activate/version-support-policy/version-support-policy-archive.html)
+	+ [Licensing & Downloads Portal Release Notes](../../license-and-activate/licensing---downloads-portal-release-notes.html)
+	+ [License Server Release Notes](../../license-and-activate/license-server-release-notes.html)
+	+ [Virtual Desktop Infrastructure](../../license-and-activate/virtual-desktop-infrastructure-support.html)
+* [Developer Help](../../developer-help.html)
+	+ [Platform SDK](../../developer-help/platform-sdk.html)
+		- [SDK Quickstart Guide](../../developer-help/platform-sdk/platform-sdk-quickstart-guide.html)
+		- [AYX Plugin CLI](../../developer-help/platform-sdk/ayx-plugin-cli.html)
+			* [CLI Overview](../../developer-help/platform-sdk/ayx-plugin-cli/ayx-plugin-cli-overview.html)
+			* [Command Reference](../../developer-help/platform-sdk/ayx-plugin-cli/ayx-plugin-cli-commands.html)
+		- [AYX UI SDK](../../developer-help/platform-sdk/ayx-ui-sdk.html)
+			* [HTML GUI SDK vs UI SDK](../../developer-help/platform-sdk/ayx-ui-sdk/html-gui-sdk-vs-ui-sdk--key-differences.html)
+		- [AYX Python SDK](../../developer-help/platform-sdk/ayx-python-sdk-v2.html)
+			* [Engine SDK Vs Platform SDK](../../developer-help/platform-sdk/ayx-python-sdk-v2/engine-sdk-vs-platform-sdk--key-differences.html)
+			* [Changes and Improvements in v2](../../developer-help/platform-sdk/ayx-python-sdk-v2/changes-and-improvements-to-python-sdk-in-v2.html)
+			* [Metadata](../../developer-help/platform-sdk/ayx-python-sdk-v2/metadata.html)
+				+ [Metadata Plugin Example](../../developer-help/platform-sdk/ayx-python-sdk-v2/metadata/metadata-plugin-example.html)
+			* [Example Tools](../../developer-help/platform-sdk/ayx-python-sdk-v2/ayx-python-sdk-v2-example-tools.html)
+				+ [DCM Input Example Tool](../../developer-help/platform-sdk/ayx-python-sdk-v2/ayx-python-sdk-v2-example-tools/dcm-input-example-tool.html)
+			* [Release Notes](../../developer-help/platform-sdk/ayx-python-sdk-v2/ayx-python-sdk-release-notes.html)
+		- [Custom Plugin Testing](../../developer-help/platform-sdk/custom-plugin-testing.html)
+			* [Test Client](../../developer-help/platform-sdk/custom-plugin-testing/test-client.html)
+				+ [Command Reference](../../developer-help/platform-sdk/custom-plugin-testing/test-client/test-client-command-reference.html)
+			* [Test Scaffolding](../../developer-help/platform-sdk/custom-plugin-testing/test-scaffolding.html)
+		- [CLI and SDK FAQ](../../developer-help/platform-sdk/cli-and-sdk-faq-in-v2.html)
+		- [Legacy SDKs](../../developer-help/platform-sdk/legacy-sdks.html)
+			* [Quickstart](../../developer-help/platform-sdk/legacy-sdks/custom-tools-quickstart.html)
+			* [Tool Configuration File](../../developer-help/platform-sdk/legacy-sdks/tool-configuration-file.html)
+			* [HTML GUI SDK](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk.html)
+				+ [Lifecycle Methods](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/lifecycle-methods.html)
+					- [SetConfiguration and GetConfiguration](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/lifecycle-methods/setconfiguration-and-getconfiguration.html)
+					- [Lifecycle Methods with Data Items](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/lifecycle-methods/use-beforeload-and-afterload-with-data-items.html)
+					- [Data Items with Widgets](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/lifecycle-methods/using-data-items-with-widgets.html)
+				+ [Supported Data Items](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/supported-data-items.html)
+				+ [Supported Widgets](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/supported-widgets.html)
+				+ [HTML Developer Tools](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/html-developer-tools.html)
+				+ [Example Tools](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/example-html-tools.html)
+				+ [Glossary](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/html-gui-sdk-glossary.html)
+				+ [API Reference](../../developer-help/platform-sdk/legacy-sdks/html-gui-sdk/empty-or-missing-topic.html)
+			* [C++ Engine SDK](../../developer-help/platform-sdk/legacy-sdks/c---sdk.html)
+				+ [Classes](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk.html)
+					- [EngineInterface](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/engineinterface.html)
+					- [PluginInterface](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/plugininterface.html)
+					- [IncomingConnectionInt...](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/incomingconnectioninterface.html)
+					- [PluginOutputConnectio...](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/pluginoutputconnectionhelper.html)
+					- [Record](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/record.html)
+					- [RecordCopier](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/recordcopier-c---class.html)
+					- [RecordInfo](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/recordinfo.html)
+					- [ConfigUtility](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/configutility.html)
+					- [FieldBase](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/fieldbase.html)
+					- [GenericEngine\_Alteryx](../../developer-help/platform-sdk/legacy-sdks/c---sdk/classes-for-c---sdk/genericengine_alteryx.html)
+			* [Python Engine SDK](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk.html)
+				+ [Classes](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes.html)
+					- [AyxPlugin](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/ayxplugin-python-class.html)
+					- [AlteryxEngine](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/alteryxengine-python-class.html)
+					- [Field](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/field-python-class.html)
+					- [OutputAnchor](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/outputanchor-python-class.html)
+					- [OutputAnchorManager](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/outputanchormanager-python-class.html)
+					- [RecordCopier](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/recordcopier-python-class.html)
+					- [RecordCreator](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/recordcreator-python-class.html)
+					- [RecordInfo](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-engine-sdk-classes/recordinfo-for-python-engine-sdk.html)
+				+ [Data](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/data.html)
+				+ [AYX Plugin SDK](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/ayx-plugin-sdk.html)
+				+ [Virtual Environment and Dependencies](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/virtual-environment-and-dependencies.html)
+				+ [YXI Packaging and Installation](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/yxi-packaging-and-installation.html)
+				+ [Python Environment Help Commands](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-environment-help-commands.html)
+				+ [Example Tools](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/example-tools-for-python.html)
+				+ [Python Tool Family](../../developer-help/platform-sdk/legacy-sdks/python-engine-sdk/python-tool-family.html)
+			* [Connect Loader SDK](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk.html)
+				+ [Quickstart](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk/connect-loader-sdk-quickstart.html)
+				+ [Components](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk/components.html)
+				+ [Examples](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk/connect-loader-examples.html)
+					- [Configuration Files Creation](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk/connect-loader-examples/configuration-files-creation-example.html)
+					- [Configuration File Upload Workflow](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk/connect-loader-examples/configuration-file-upload-workflow.html)
+					- [Data Upload Workflow](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk/connect-loader-examples/data-upload-workflow.html)
+				+ [Glossary](../../developer-help/platform-sdk/legacy-sdks/build-connect-loaders--connect-sdk/glossary.html)
+			* [Custom Formula Functions](../../developer-help/platform-sdk/legacy-sdks/build-custom-formula-functions.html)
+			* [Macro](../../developer-help/platform-sdk/legacy-sdks/macro.html)
+			* [Version a Tool](../../developer-help/platform-sdk/legacy-sdks/version-a-tool.html)
+			* [Package a Tool](../../developer-help/platform-sdk/legacy-sdks/package-a-tool.html)
+			* [Verification Checklist](../../developer-help/platform-sdk/legacy-sdks/tool-verification-checklist.html)
+	+ [APIs](../../developer-help/apis.html)
+		- [Get Started with APIs](../../developer-help/apis/get-started-with-apis.html)
+		- [AlteryxEngine API](../../developer-help/apis/alteryxengine-api-overview.html)
+			* [Methods](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods.html)
+				+ [AlteryxAllowDesktopInteraction](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxallowdesktopinteraction.html)
+				+ [AlteryxGetUserSettingsPath](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxgetusersettingspath.html)
+				+ [AlteryxGetVersion](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxgetversion.html)
+				+ [AlteryxRunModule](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxrunmodule.html)
+				+ [AlteryxRunModule2](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxrunmodule2.html)
+				+ [AlteryxRunModule\_Pipe](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxrunmodule_pipe.html)
+				+ [AlteryxRunModule\_Pipe2](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxrunmodule_pipe2.html)
+				+ [AlteryxRunWizard](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxrunwizard.html)
+				+ [AlteryxRunWizard\_Pipe](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-methods/alteryxrunwizard_pipe.html)
+			* [Callbacks](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-callbacks.html)
+				+ [TCallbackMessage](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-callbacks/tcallbackmessage.html)
+				+ [TCallbackToolProgress](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-callbacks/tcallbacktoolprogress.html)
+			* [AlteryxEngine API Example](../../developer-help/apis/alteryxengine-api-overview/alteryxengine-api-example.html)
+		- [Alteryx Analytics Cloud Platform API Overview](../../developer-help/apis/aacp-api.html)
+		- [Connect API](../../developer-help/apis/connect-api-overview.html)
+			* [Login](../../developer-help/apis/connect-api-overview/login.html)
+			* [Logout](../../developer-help/apis/connect-api-overview/logout.html)
+			* [Get Entry](../../developer-help/apis/connect-api-overview/get-entry.html)
+			* [Lucene Query](../../developer-help/apis/connect-api-overview/use-lucene-query.html)
+			* [Set Lifecycle](../../developer-help/apis/connect-api-overview/set-asset-s-lifecycle.html)
+			* [Create Custom Field](../../developer-help/apis/connect-api-overview/create-or-update-custom-field.html)
+			* [Bind Custom Field to Asset](../../developer-help/apis/connect-api-overview/assign-custom-field-to-asset.html)
+			* [Set Custom Field Value](../../developer-help/apis/connect-api-overview/set-custom-field-value.html)
+			* [Upload Config Files](../../developer-help/apis/connect-api-overview/upload-config-files.html)
+			* [Execute Called Loading Job](../../developer-help/apis/connect-api-overview/execute-the-called-loading--synchronization--job.html)
+			* [Disable CDN](../../developer-help/apis/connect-api-overview/disable-cdn.html)
+		- [Server API](../../developer-help/apis/server-api-overview.html)
+		- [Legacy APIs](../../developer-help/apis/legacy-apis.html)
+			* [.NET API](../../developer-help/apis/legacy-apis/-net-api.html)
+* [Release Notes](https://help.alteryx.com/release-notes.html)
+* [Community](https://community.alteryx.com/)
+* [My Alteryx](https://my.alteryx.com/)
+* Select version
+	+ [2023.2 (Current)](/current/index.html)
+	+ [2023.1](/20231/index.html)
+	+ [2022.3](/20223/index.html)
+	+ [2022.2-FIPS](/20222FIPS/index.html)
+	+ [2022.1](/20221/index.html)
+	+ [2021.4](/20214/index.html)
+*print*Toggle navigation* [Prev](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-2022-1-release-notes.html)
+* [Next](https://help.alteryx.com/current/en/release-notes/server-release-notes.html)
+* 2023.2
+* [Release Notes](../../release-notes.html)
+* [Designer Release Notes](../designer-release-notes.html)
+* Designer 2021.4 Release Notes
 Designer 2021.4 Release Notes
 =============================
-
-
-
-Version: 
-
- 2021.4
-
-Last modified: September 27, 2023
-
 
 
 
@@ -100,327 +1147,194 @@ Last modified: September 27, 2023
 | 2021.4.2.47868 (Patch 10) | July 31, 2023 | Minor/Patch | February 2, 2024 |
 | 2021.4.2.47884 (Patch 11) | September 27, 2023 | Minor/Patch | February 2, 2024 |
 
-
 *\*\*No items in this release.*
 
+**\*2021.4.2 Patch Update**
 
-
-#### \*2021.4.2 Patch Update
-
-
-
-Alteryx now gives you the ability to [patch your installation of Designer or Server](/product-activation-and-licensing/download-and-install-patch-update "patch your installation of Designer or Server") without the need to perform a full uninstall and reinstall.
-
+Alteryx now gives you the ability to [patch your installation of Designer or Server](../../license-and-activate/install/download-and-install-a-patch-update.html "Download and Install a Patch Update") without the need to perform a full uninstall and reinstall.
 
 The 21.4.2 Patches and all subsequent releases contain an important security fix for AMP Engine.
 
-
-* If you previously installed the base version 2021.4.2.02731, please apply the most recent patch.
+* If you previously installed the base version 2021.4.2.02731, please apply the most recent patch.
 * For all other versions, please install the most recent full version (this version already includes the patch).
-
-
-You can download both items from the [Downloads & Licences portal](https://downloads.alteryx.com/ "Downloads and Licenses portal"). For older patch versions, contact [Fulfillment](mailto:fulfillment@alteryx.com).
-
+You can download both items from the [Downloads & Licences portal](https://downloads.alteryx.com/). For older patch versions, contact [Fulfillment](mailto:fulfillment@alteryx.com).
 
 \*\*If you did not previously install version 2021.4.2.07064, you can install the latest patch, which includes the updates from 2021.4.2.07064.
 
+**Update: 2021.4.2 Release**
 
+We have released version 2021.4.2.02731 to address the issues identified in version 2021.4.1 (noted below).
 
+##### 2021.4.1 Release
 
+We have identified issues in the Alteryx 21.4.1 release that may impact the use of the product. In Designer, we have identified conditions where Excel data may not completely import and may not return an error. This issue and recommended resolution is documented in more detail [in our Community Knowledge Base](https://community.alteryx.com/t5/Alteryx-Server-Knowledge-Base/Issues-in-2021-4-1/ta-p/904217).
 
-#### Update: 2021.4.2 Release
-
-
-We have released version 2021.4.2.02731 to address the issues identified in version 2021.4.1 (noted below).
-
-
-#### 2021.4.1 Release
-
-
-We have identified issues in the Alteryx 21.4.1 release that may impact the use of the product. In Designer, we have identified conditions where Excel data may not completely import and may not return an error. This issue and recommended resolution is documented in more detail [in our Community Knowledge Base](https://community.alteryx.com/t5/Alteryx-Server-Knowledge-Base/Issues-in-2021-4-1/ta-p/904217 "here in our Community Knowledge Base").
-
-
-If you have deployed 21.4.1 into production, we recommend confirming if you are impacted. We recommend [contacting technical support](https://alteryx-community.force.com/CustomerCasePortal/s/createrecord/New_Case_Portal_Case?lang=en "contact our technical support") for assistance if you are reverting 21.4.1 Server in production.
-
+If you have deployed 21.4.1 into production, we recommend confirming if you are impacted. We recommend [contacting technical support](https://alteryx-community.force.com/CustomerCasePortal/s/createrecord/New_Case_Portal_Case?lang=en) for assistance if you are reverting 21.4.1 Server in production.
 
 If you have downloaded but are not using 21.4.1 in production, our general recommendation is to upgrade to the now released 2021.4.2.02731 version.
 
+**Upgrade Considerations**
 
-
-
-#### Upgrade Considerations
-
-
-
-Certain older versions of connectors are not compatible with Designer 2021.4. Go to [Designer Compatibility with Data Connectors](/designer/designer-compatibility-data-connectors "Designer Compatibility with Data Connectors") for an overview or refer to the release notes for individual connectors in the [Community Gallery](https://community.alteryx.com/t5/Community-Gallery/ct-p/Community-gallery "Community Gallery"), and download the latest version to maintain compatibility with Designer.
-
-
-
+Certain older versions of connectors are not compatible with Designer 2021.4. Go to [Designer Compatibility with Data Connectors](../../designer/data-sources/designer-compatibility-with-data-connectors.html "Designer Compatibility with Data Connectors") for an overview or refer to the release notes for individual connectors in the [Community Gallery](https://community.alteryx.com/t5/Community-Gallery/ct-p/Community-gallery), and download the latest version to maintain compatibility with Designer.
 
 New Features
 ------------
 
+### Link Designer with the Alteryx Platform
 
-#### Link Designer with the Alteryx Platform
+You can now [link Designer and the Alteryx Platform](/document/preview/5946722#UUID-dbd21c7d-b296-b8ca-aa0d-14dc01d77146). This lets you save your Designer workflows to the Platform as well as open workflows from the Platform in Designer.Manage Alteryx Links
 
-
-You can now [link Designer and the Alteryx Platform](/20231/designer/manage-alteryx-links "link Designer and the Alteryx Platform"). This lets you save your Designer workflows to the Platform as well as open workflows from the Platform in Designer.
-
-
-#### XML Parse Tool Enhancement
-
+### XML Parse Tool Enhancement
 
 The XML Parse tool now includes an option to not pass the original parsed field downstream.
 
+### Generate Support File
 
-#### Generate Support File
+The tech support file now includes additional information, for example, system information, environment variables, engine logs, ODBC Drivers and Versions, and much more! Go to [Generate Support File](../../designer/get-started/designer-user-interface/main-menus/generate-support-file.html "Generate Support File") to learn more about this feature.
 
+### Reserve Products for Specific Users (Admin-only)
 
-The tech support file now includes additional information, for example, system information, environment variables, engine logs, ODBC Drivers and Versions, and much more! Go to [Generate Support File](/20231/designer/generate-support-file "Generate Support File") to learn more about this feature.
+Administrators can reserve product access for specific users via Reservation Groups. This ensures that users have access to the products and features that they need.
 
+### Public Gallery and Designer
 
-#### Reserve Products for Specific Users (Admin-only)
+You can no longer save workflows from Designer to Public Gallery. Go to the [Public Gallery Migration FAQ](https://community.alteryx.com/t5/Alteryx-Community-Resources/Public-Gallery-Migration-FAQ/ta-p/832485) to learn more.
 
-
-Administrators can reserve product access for specific users via Reservation Groups. This ensures that users have access to the products and features that they need. Go to [Alteryx License Server Reservations](/product-activation-and-licensing/alteryx-license-server-reservations "Alteryx License Server Reservations") to learn more.
-
-
-#### Public Gallery and Designer
-
-
-You can no longer save workflows from Designer to Public Gallery. Go to the [Public Gallery Migration FAQ](https://community.alteryx.com/t5/Alteryx-Community-Resources/Public-Gallery-Migration-FAQ/ta-p/832485 "https://community.alteryx.com/t5/Alteryx-Community-Resources/Public-Gallery-Migration-FAQ/ta-p/832485") to learn more.
-
-
-#### Error Message Enhancements
-
+### Error Message Enhancements
 
 Certain error messages in the Results window now link to Community articles that will help you understand and resolve the errors.
 
+### CEF Upgrade
 
-#### CEF Upgrade
+We upgraded CEF to version 91.0.4472.124. You might encounter a blank screen when authenticating to OneDrive, Dropbox, Dataverse, Box, SharePoint, and Power BI Connectors. Please note that you need to update these connectors to resolve this issue. To learn more about Connector compatibility with Designer, go to [Designer Compatibility with Data Connectors](../../designer/data-sources/designer-compatibility-with-data-connectors.html "Designer Compatibility with Data Connectors").
 
+### New Intelligence Suite Tool
 
-We upgraded CEF to version 91.0.4472.124. You might encounter a blank screen when authenticating to OneDrive, Dropbox, Dataverse, Box, SharePoint, and Power BI Connectors. Please note that you need to update these connectors to resolve this issue. To learn more about Connector compatibility with Designer, go to [Designer Compatibility with Data Connectors](/designer/designer-compatibility-data-connectors "Designer Compatibility with Data Connectors").
+The Alteryx Intelligence Suite now includes a new Text Mining tool. The [Named Entity Recognition](../../designer/tools/alteryx-intelligence-suite/text-mining/named-entity-recognition.html " Named Entity Recognition") tool allows you to train a model that identifies predefined or custom entities, like people, places, or things, in text data.
 
-
-#### New Intelligence Suite Tool
-
-
-The Alteryx Intelligence Suite now includes a new Text Mining tool. The [Named Entity Recognition](/20221/designer/named-entity-recognition-%28archived%29 "Named Entity Recognition tool") tool allows you to train a model that identifies predefined or custom entities, like people, places, or things, in text data.
-
-
-#### New Data Connectors
-
+### New Data Connectors
 
 These Data Connector tools are now available:
 
+* [Google Drive](../../designer/data-sources/google-drive.html "Google Drive")
+* [Anaplan](../../designer/data-sources/anaplan.html "Anaplan")
+* [Automation Anywhere](../../designer/data-sources/automation-anywhere.html "Automation Anywhere")
+* [Outlook 365](../../designer/data-sources/microsoft-outlook-365.html "Microsoft Outlook 365")
+### Data Connection Manager (DCM)
 
-* [Google Drive](/20231/designer/google-drive "Google Drive")
-* [Anaplan](/20231/designer/anaplan "Anaplan")
-* [Automation Anywhere](/20231/designer/automation-anywhere "Automation Anywhere")
-* [Outlook 365](/20231/designer/microsoft-outlook-365 "Outlook 365")
+Data Connection Manager (DCM) is the unified secure vault to store user credentials. Use DCM to improve security by moving your credentials outside the workflow and synchronizing them across the Alteryx product suite. To find out more about this new feature, go to the [DCM help page](../../designer/tools/dcm---designer.html "DCM - Designer").
 
+### Engine Compatibility Mode
 
-#### Data Connection Manager (DCM)
+Engine Compatibility Mode is a new workflow-level configuration option when it's necessary to maintain the order of output records from specific tools across both engines. It provides an easier migration path allowing users to bring workflows that expect specific record ordering from the original engine to AMP. Go to the [Engine Compatibility Mode help page](../../designer/workflows/alteryx-amp-engine/engine-compatibility-mode.html "Engine Compatibility Mode") for more information.
 
-
-Data Connection Manager (DCM) is the unified secure vault to store user credentials. Use DCM to improve security by moving your credentials outside the workflow and synchronizing them across the Alteryx product suite. To find out more about this new feature, go to the [DCM help page](/20231/designer/dcm-designer "DCM Help page").
-
-
-#### Engine Compatibility Mode
-
-
-Engine Compatibility Mode is a new workflow-level configuration option when it's necessary to maintain the order of output records from specific tools across both engines. It provides an easier migration path allowing users to bring workflows that expect specific record ordering from the original engine to AMP. Go to the [Engine Compatibility Mode help page](/20231/designer/engine-compatibility-mode "Engine Compatibility Mode help page") for more information.
-
-
-#### Record Limit for All Inputs Support in AMP
-
+### Record Limit for All Inputs Support in AMP
 
 The global setting Record Limit for all inputs is now supported by AMP. In the Workflow Configuration - Runtime tab, you can set the record limit in one place for all inputs.
 
-
-#### Customer-Managed Telemetry
-
+### Customer-Managed Telemetry
 
 Instrument your Designer desktop installations to log workflow metadata and XML locally. You can use these logs to automate any number of processes, like change control or departmental utilization metrics. To maintain the highest expectations of customer privacy, these logs are customer-managed and are not sent to or logged by Alteryx.
 
-
-### New in 2021.4.2.40860
-
+### New in 2021.4.2.40860
 
 #### Patch Number in About Pane
 
-
-If you install a [Patch update](/product-activation-and-licensing/download-and-install-patch-update "Patch update") for Designer, you can now reference the Patch number in Designer via **Help** > **About**. The Patch number appears next to the Version number.
-
+If you install a [Patch update](../../license-and-activate/install/download-and-install-a-patch-update.html "Download and Install a Patch Update") for Designer, you can now reference the Patch number in Designer via **Help** > **About**. The Patch number appears next to the Version number.
 
 Fixed and Known Issues
 ----------------------
 
 
 
-
-| Fixed
-Major Release Version 2021.4 |
+| FixedMajor Release Version 2021.4 |
 | --- |
-| ID | Description | Version | Issue Status |
+| ID | Description | Version | Issue Status |
 | --- | --- | --- | --- |
 | GDC-1342 | MRR files drop the Class 1 station object. | 2021.4.1.04899 | Fixed |
 | TCPE-11 | When saving to Private Gallery from Designer, Workflow Asset doesn't display when Designer is set to a language other than English, Spanish, and Chinese. | 2021.4.1.04899 | Fixed |
 | TCPE-12 | Connectors blank screen authenticating. Unable to complete authentication via browser in Designer 2021.3.4.54175. Affects Azure sign-in. | 2021.4.1.04899 | Fixed |
 | TCPE-16 | Issue with Data Cleanse tool and Field Info. Invalid char in UTF-8 string. | 2021.4.1.04899 | Fixed |
 | TCPE-17 | 2021.3: Designer can't open or interact with assets (workflows, macros, files) when a folder name within the root directory of a mapped drive begins with a period character "." | 2021.4.1.04899 | Fixed |
-| TCPE-34
- DE34181 | Results window **window state** menu is not localized. | 2021.4.1.04899 | Fixed |
-| TCPE-37
- DE19038 | Scatterplot tool name NW. | 2021.4.1.04899 | Fixed |
-| TCPE-38
- DE18992 | Browse tool functional defect in hover text on Results window. | 2021.4.1.04899 | Fixed |
-| TCPE-39
- DE18478 | Selections in Field Summary tool not persisting. | 2021.4.1.04899 | Fixed |
+| TCPE-34DE34181 | Results window **window state** menu is not localized. | 2021.4.1.04899 | Fixed |
+| TCPE-37DE19038 | Scatterplot tool name NW. | 2021.4.1.04899 | Fixed |
+| TCPE-38DE18992 | Browse tool functional defect in hover text on Results window. | 2021.4.1.04899 | Fixed |
+| TCPE-39DE18478 | Selections in Field Summary tool not persisting. | 2021.4.1.04899 | Fixed |
 | TCPE-45 | Configuration of Interactive Chart tool returns unhandled exception error upon connecting Interface tools. | 2021.4.1.04899 | Fixed |
 | TCPE-67 | In Japanese Designer, Workflow Options linked in Save Workflow to Gallery open a blank interface. | 2021.4.1.04899 | Fixed |
-| TCPE-84
- DE33910 | Data Profiling of the Browse tool doesn't properly return all records. | 2021.4.1.04899 | Fixed |
-| TCPE-104
- GSCE-291 | Report and Interactive outputs of the Field Summary tool intermittently crash Designer. | 2021.4.1.04899 | Fixed |
-| TDALI-756
- DE17377 | Python tool: Websocket issue. Designer stalls when using a YXDB file. | 2021.4.1.04899 | Fixed |
-| TDALI-765
- DE17552 | Configuration of Interactive Chart errors when Interface tools are connected. | 2021.4.1.04899 | Fixed |
-| TDALI-800
- DE18463 | Spark Code tool: Code is lost when tool loses focus. | 2021.4.1.04899 | Fixed |
-| TDALI-814
- DE18761 | Python tool [ayx]: 2019.1 Error when outputting blob information to YXDB. | 2021.4.1.04899 | Fixed |
-| TDALI-859
- DE20635 | Interactive Chart doesn't display after Layout tool with Vertical orientation with Section Break option. | 2021.4.1.04899 | Fixed |
-| TDALI-926
- DE22399 | The Insights tool is generating some additional fields that are showing up in the Axis dropdowns and those fields are missing. | 2021.4.1.04899 | Fixed |
-| TDALI-934
- DE22625 | Decision Tree: Data with ampersands causes "Error: Exception Parse Error Line:" | 2021.4.1.04899 | Fixed |
-| TDALI-976
- DE24239 | Multi-Row Formula showing amp; when using the & character in a new field. | 2021.4.1.04899 | Fixed |
-| TDALI-1035
- DE26396 | Interactive Chart tool: Text label dropdown. | 2021.4.1.04899 | Fixed |
-| TDALI-1049
- DE27099 | Excel file generated from Alteryx has cell format issue when copy & paste in Excel. | 2021.4.1.04899 | Fixed |
-| TDALI-1065
- DE27979 | Configure Insight window information gets lost after premature window closure. | 2021.4.1.04899 | Fixed |
-| TDALI-1076
- DE28237 | Unable to style individual layers of split charts within Interactive Chart tool. | 2021.4.1.04899 | Fixed |
-| TDALI-1097
- DE29348 | The Interactive Chart tool hangs when a user tries to configure it. | 2021.4.1.04899 | Fixed |
-| TDALI-1101
- DE29706 | Python tool generates "Kernel not found" error. | 2021.4.1.04899 | Fixed |
-| TDALI-1122
- DE33876 | Drop Down and Action tools inserted unexpected string onto the value in the Japanese user interface. | 2021.4.1.04899 | Fixed |
-| TDALI-1124
- DE33898 | TS Covariate Forecast tool: Open Example does not work. | 2021.4.1.04899 | Fixed |
-| TDALI-4050
- DE34173 | Excel outputs from the Render tool don't return numeric fields referenced via the Report Text tool. | 2021.4.1.04899 | Fixed |
-| TDALI-4051
- DE11702 | AlteryxRViz: Can't view mouseover text that explains measures in error and info criterion boxes. | 2021.4.1.04899 | Fixed |
-| TDALI-4053
- DE10400 | Linear Regression: Model Performance of Interactive Report: Y-axis title overlays the numbers in some instances. | 2021.4.1.04899 | Fixed |
-| TDALI-4054
- DE10643 | Optimization: The Solution Summary box in the Interactive Report is cut off. | 2021.4.1.04899 | Fixed |
-| TDALI-4099
- DE16911 | Insights: Filter retains selections even when the data set is switched. | 2021.4.1.04899 | Fixed |
-| TDALI-4100
- DE17041 | Insights: No data or broken drill down if you change the datatype after creating the drill down definition. | 2021.4.1.04899 | Fixed |
-| TDALI-4105
- DE23127 | Different languages of Alteryx GUI cause CReW Runner macro to run incorrectly. | 2021.4.1.04899 | Fixed |
-| TDALI-4106
- DE21572 | Python tool: 404 with non-ASCII characters. | 2021.4.1.04899 | Fixed |
+| TCPE-84DE33910 | Data Profiling of the Browse tool doesn't properly return all records. | 2021.4.1.04899 | Fixed |
+| TCPE-104GSCE-291 | Report and Interactive outputs of the Field Summary tool intermittently crash Designer. | 2021.4.1.04899 | Fixed |
+| TDALI-756DE17377 | Python tool: Websocket issue. Designer stalls when using a YXDB file. | 2021.4.1.04899 | Fixed |
+| TDALI-765DE17552 | Configuration of Interactive Chart errors when Interface tools are connected. | 2021.4.1.04899 | Fixed |
+| TDALI-800DE18463 | Spark Code tool: Code is lost when tool loses focus. | 2021.4.1.04899 | Fixed |
+| TDALI-814DE18761 | Python tool [ayx]: 2019.1 Error when outputting blob information to YXDB. | 2021.4.1.04899 | Fixed |
+| TDALI-859DE20635 | Interactive Chart doesn't display after Layout tool with Vertical orientation with Section Break option. | 2021.4.1.04899 | Fixed |
+| TDALI-926DE22399 | The Insights tool is generating some additional fields that are showing up in the Axis dropdowns and those fields are missing. | 2021.4.1.04899 | Fixed |
+| TDALI-934DE22625 | Decision Tree: Data with ampersands causes "Error: Exception Parse Error Line:" | 2021.4.1.04899 | Fixed |
+| TDALI-976DE24239 | Multi-Row Formula showing amp; when using the & character in a new field. | 2021.4.1.04899 | Fixed |
+| TDALI-1035DE26396 | Interactive Chart tool: Text label dropdown. | 2021.4.1.04899 | Fixed |
+| TDALI-1049DE27099 | Excel file generated from Alteryx has cell format issue when copy & paste in Excel. | 2021.4.1.04899 | Fixed |
+| TDALI-1065DE27979 | Configure Insight window information gets lost after premature window closure. | 2021.4.1.04899 | Fixed |
+| TDALI-1076DE28237 | Unable to style individual layers of split charts within Interactive Chart tool. | 2021.4.1.04899 | Fixed |
+| TDALI-1097DE29348 | The Interactive Chart tool hangs when a user tries to configure it. | 2021.4.1.04899 | Fixed |
+| TDALI-1101DE29706 | Python tool generates "Kernel not found" error. | 2021.4.1.04899 | Fixed |
+| TDALI-1122DE33876 | Drop Down and Action tools inserted unexpected string onto the value in the Japanese user interface. | 2021.4.1.04899 | Fixed |
+| TDALI-1124DE33898 | TS Covariate Forecast tool: Open Example does not work. | 2021.4.1.04899 | Fixed |
+| TDALI-4050DE34173 | Excel outputs from the Render tool don't return numeric fields referenced via the Report Text tool. | 2021.4.1.04899 | Fixed |
+| TDALI-4051DE11702 | AlteryxRViz: Can't view mouseover text that explains measures in error and info criterion boxes. | 2021.4.1.04899 | Fixed |
+| TDALI-4053DE10400 | Linear Regression: Model Performance of Interactive Report: Y-axis title overlays the numbers in some instances. | 2021.4.1.04899 | Fixed |
+| TDALI-4054DE10643 | Optimization: The Solution Summary box in the Interactive Report is cut off. | 2021.4.1.04899 | Fixed |
+| TDALI-4099DE16911 | Insights: Filter retains selections even when the data set is switched. | 2021.4.1.04899 | Fixed |
+| TDALI-4100DE17041 | Insights: No data or broken drill down if you change the datatype after creating the drill down definition. | 2021.4.1.04899 | Fixed |
+| TDALI-4105DE23127 | Different languages of Alteryx GUI cause CReW Runner macro to run incorrectly. | 2021.4.1.04899 | Fixed |
+| TDALI-4106DE21572 | Python tool: 404 with non-ASCII characters. | 2021.4.1.04899 | Fixed |
 | TDALI-4107 | Issue with saving changes made inside Insight configuration window. | 2021.4.1.04899 | Fixed |
-| TDALI-4108
- DE34019 | MB rules/inspect: Lift calculation error in the newest version. | 2021.4.1.04899 | Fixed |
+| TDALI-4108DE34019 | MB rules/inspect: Lift calculation error in the newest version. | 2021.4.1.04899 | Fixed |
 | TDALI-4131 | F1 score on the Model Comparison looks inaccurate. | 2021.4.1.04899 | Fixed |
 | TDALI-4172 | Python tool fails with 404 if the workflow path contains "&". | 2021.4.1.04899 | Fixed |
 | TDALI-4205 | When viewing Behavior Profile reports via the Browse tool, Designer crashes without warning. | 2021.4.1.04899 | Fixed |
-| TDCB-1140
- DE14861 | Azure SQL: Writes as Text/Ntext and LUA script not found. | 2021.4.1.04899 | Fixed |
-| TDCB-1168
- DE16093 | Issue with the Filter In-DB tool and trailing whitespace. | 2021.4.1.04899 | Fixed |
-| TDCB-1208
- DE17676 | Visual Query Builder: Snowflake schemas that consist of *only* views don't show. | 2021.4.1.04899 | Fixed |
-| TDCB-1257
- DE20015 | Oracle: Multi-byte character field name with AS query in SQL results in garbled letters. | 2021.4.1.04899 | Fixed |
-| TDCB-1263
- DE20744 | Snowflake: Retrieving all primary keys for an account if the database is not specified in the query. | 2021.4.1.04899 | Fixed |
-| TDCB-1290
- DE23536 | Apache Spark on Microsoft Azure HDInsight: Unable to connect to Azure HDInsight using an In-DB tool. Error: "Could not connect!" | 2021.4.1.04899 | Fixed |
-| TDCB-1294
- DE23678 | OCI: Unable to import a column with Japanese characters in the name. | 2021.4.1.04899 | Fixed |
-| TDCB-1295
- DE23679 | DataWrapOCI ORA-00911 Error message when loading Japanese name table in 2019.4. | 2021.4.1.04899 | Fixed |
-| TDCB-1345
- DE27468 | Oracle: In-db filter tool doesn't filter Unicode characters. | 2021.4.1.04899 | Fixed |
-| TDCB-1353
- DE28666 | In-DB tools: Temp tables don't get cleaned up. | 2021.4.1.04899 | Fixed |
-| TDCB-1355
- DE28769 | 2019.4+ SAP HANA failed due to added ; in forced PreSQL. | 2021.4.1.04899 | Fixed |
-| TDCB-1356
- DE28831 | WHERE SQL clause with Japanese characters (Multi-byte characters) doesn't extract data via Oracle OCI. | 2021.4.1.04899 | Fixed |
-| TDCB-1612
- DE29319 | The Conversion Error limit isn't being triggered when Conversion Errors occur in the Input Data tool. | 2021.4.1.04899 | Fixed |
-| TDCB-1619
- DE29837 | Error when trying to write to a range with Output Options = Append to Existing Sheet: Could not generate a unique name for field. | 2021.4.1.04899 | Fixed |
-| TDCB-1624
- DE30147 | The temp file created by the Output tool to Excel file with "Overwrite Sheet or Range" has no extension associated with it. | 2021.4.1.04899 | Fixed |
-| TDCB-1625
- DE33474 | gdal upgrade to 3.3.0 | 2021.4.1.04899 | Fixed |
-| TDCB-1633
- DE33545 | Simba Snowflake ODBC (v1.04.01.101) missing records. | 2021.4.1.04899 | Fixed |
-| TDCB-1634
- DE33598 | Snowflake Build Loader (Amazon S3) can't append to a table that contains an auto-populated column. | 2021.4.1.04899 | Fixed |
-| TDCB-1638
- DE33705 | Snowflake Bulk Loading: Check for chunk size plus num threads. | 2021.4.1.04899 | Fixed |
-| TDCB-1646
- DE33880 | Access of .xlsx files slow from a network drive in 20.x releases. | 2021.4.1.04899 | Fixed |
-| TDCB-3591
- DE18095 | Inserting rows with the wrong data type doesn't insert, but the log shows success with no warnings. | 2021.4.1.04899 | Fixed |
-| TDCB-3592
- DE30093 | Designer opens .xlsx files that are already open in Excel. | 2021.4.1.04899 | Fixed |
-| TDCB-3594
- DE33648 | Output tool writing data to MS Access causes .accdb file to be in a repair state. | 2021.4.1.04899 | Fixed |
-| TDCB-3596
- DE33789 | Error writing to MS Access when the data source contains a field with data type DateField. | 2021.4.1.04899 | Fixed |
-| TDCB-3609
- DE27905 | Oracle database connections limit the username to 30 characters when using Active Query Builder. | 2021.4.1.04899 | Fixed |
-| TDCB-3614
- DE34038 | Japanese Snowflake table name requires double-quotes. | 2021.4.1.04899 | Fixed |
-| TDCB-3615
- DE25945 | Snowflake: Can't create temporary tables using Connection String and In-DB. | 2021.4.1.04899 | Fixed |
-| TDCB-3621
- DE18240 | Salesforce Input tool doesn't work properly with Interface tools. | 2021.4.1.04899 | Fixed |
-| TDCB-3627
- DE28744 | Error when reading datatype INVERVAL DAY() TO SECOND() from Oracle. | 2021.4.1.04899 | Fixed |
-| TDCB-3633
- DE28192 | Oracle post SQL (in Output tool) being executed twice when it fails. | 2021.4.1.04899 | Fixed |
-| TDCB-3634
- DE22497 | Google Sheets Installer says it's for 11.3 and above, but really is only for 2019.2 and above. | 2021.4.1.04899 | Fixed |
+| TDCB-1140DE14861 | Azure SQL: Writes as Text/Ntext and LUA script not found. | 2021.4.1.04899 | Fixed |
+| TDCB-1168DE16093 | Issue with the Filter In-DB tool and trailing whitespace. | 2021.4.1.04899 | Fixed |
+| TDCB-1208DE17676 | Visual Query Builder: Snowflake schemas that consist of *only* views don't show. | 2021.4.1.04899 | Fixed |
+| TDCB-1257DE20015 | Oracle: Multi-byte character field name with AS query in SQL results in garbled letters. | 2021.4.1.04899 | Fixed |
+| TDCB-1263DE20744 | Snowflake: Retrieving all primary keys for an account if the database is not specified in the query. | 2021.4.1.04899 | Fixed |
+| TDCB-1290DE23536 | Apache Spark on Microsoft Azure HDInsight: Unable to connect to Azure HDInsight using an In-DB tool. Error: "Could not connect!" | 2021.4.1.04899 | Fixed |
+| TDCB-1294DE23678 | OCI: Unable to import a column with Japanese characters in the name. | 2021.4.1.04899 | Fixed |
+| TDCB-1295DE23679 | DataWrapOCI ORA-00911 Error message when loading Japanese name table in 2019.4. | 2021.4.1.04899 | Fixed |
+| TDCB-1345DE27468 | Oracle: In-db filter tool doesn't filter Unicode characters. | 2021.4.1.04899 | Fixed |
+| TDCB-1353DE28666 | In-DB tools: Temp tables don't get cleaned up. | 2021.4.1.04899 | Fixed |
+| TDCB-1355DE28769 | 2019.4+ SAP HANA failed due to added ; in forced PreSQL. | 2021.4.1.04899 | Fixed |
+| TDCB-1356DE28831 | WHERE SQL clause with Japanese characters (Multi-byte characters) doesn't extract data via Oracle OCI. | 2021.4.1.04899 | Fixed |
+| TDCB-1612DE29319 | The Conversion Error limit isn't being triggered when Conversion Errors occur in the Input Data tool. | 2021.4.1.04899 | Fixed |
+| TDCB-1619DE29837 | Error when trying to write to a range with Output Options = Append to Existing Sheet: Could not generate a unique name for field. | 2021.4.1.04899 | Fixed |
+| TDCB-1624DE30147 | The temp file created by the Output tool to Excel file with "Overwrite Sheet or Range" has no extension associated with it. | 2021.4.1.04899 | Fixed |
+| TDCB-1625DE33474 | gdal upgrade to 3.3.0 | 2021.4.1.04899 | Fixed |
+| TDCB-1633DE33545 | Simba Snowflake ODBC (v1.04.01.101) missing records. | 2021.4.1.04899 | Fixed |
+| TDCB-1634DE33598 | Snowflake Build Loader (Amazon S3) can't append to a table that contains an auto-populated column. | 2021.4.1.04899 | Fixed |
+| TDCB-1638DE33705 | Snowflake Bulk Loading: Check for chunk size plus num threads. | 2021.4.1.04899 | Fixed |
+| TDCB-1646DE33880 | Access of .xlsx files slow from a network drive in 20.x releases. | 2021.4.1.04899 | Fixed |
+| TDCB-3591DE18095 | Inserting rows with the wrong data type doesn't insert, but the log shows success with no warnings. | 2021.4.1.04899 | Fixed |
+| TDCB-3592DE30093 | Designer opens .xlsx files that are already open in Excel. | 2021.4.1.04899 | Fixed |
+| TDCB-3594DE33648 | Output tool writing data to MS Access causes .accdb file to be in a repair state. | 2021.4.1.04899 | Fixed |
+| TDCB-3596DE33789 | Error writing to MS Access when the data source contains a field with data type DateField. | 2021.4.1.04899 | Fixed |
+| TDCB-3609DE27905 | Oracle database connections limit the username to 30 characters when using Active Query Builder. | 2021.4.1.04899 | Fixed |
+| TDCB-3614DE34038 | Japanese Snowflake table name requires double-quotes. | 2021.4.1.04899 | Fixed |
+| TDCB-3615DE25945 | Snowflake: Can't create temporary tables using Connection String and In-DB. | 2021.4.1.04899 | Fixed |
+| TDCB-3621DE18240 | Salesforce Input tool doesn't work properly with Interface tools. | 2021.4.1.04899 | Fixed |
+| TDCB-3627DE28744 | Error when reading datatype INVERVAL DAY() TO SECOND() from Oracle. | 2021.4.1.04899 | Fixed |
+| TDCB-3633DE28192 | Oracle post SQL (in Output tool) being executed twice when it fails. | 2021.4.1.04899 | Fixed |
+| TDCB-3634DE22497 | Google Sheets Installer says it's for 11.3 and above, but really is only for 2019.2 and above. | 2021.4.1.04899 | Fixed |
 | TDCB-3780 | In-DB: CSV write to Databricks from Designer throws an error if any of the fields contain the delimiter. | 2021.4.1.04899 | Fixed |
-| TDES-1949
- DE19813 | Restore display issue when minimizing Designer and then opening a workflow from file explorer. | 2021.4.1.04899 | Fixed |
-| TDES-2185
- DE23923 | Missing link for opening Connect search from Designer. | 2021.4.1.04899 | Fixed |
-| TDES-2362
- DE29639 | Connectors toolbar/tab disappears after Power BI install. | 2021.4.1.04899 | Fixed |
-| TDES-2382
- DE30189 | Remove external dependencies warning from built-in macros. | 2021.4.1.04899 | Fixed |
-| TDES-2383
- DE30206 | Missing fields don't retain the original data field size when "Disable Auto Configure" is checked. | 2021.4.1.04899 | Fixed |
-| TDES-2389
- DE33563 | Update for browser version in Designer for SAML dialogs. | 2021.4.1.04899 | Fixed |
-| TDES-2398
- DE33739 | Data Investigation tools missing incoming connection error message. | 2021.4.1.04899 | Fixed |
-| TDES-2431
- DE34246 | Recommendations tab hover text clipping in Japanese. | 2021.4.1.04899 | Fixed |
-| TDES-2436
- DE34183 | The link to the AMP help page from the Workflow Configuration tab is broken for Portuguese and Chinese versions of Designer. | 2021.4.1.04899 | Fixed |
-| TDES-2444
- DE34205 | Compare Workflows doesn't see config changes in Interface question type tools. | 2021.4.1.04899 | Fixed |
+| TDES-1949DE19813 | Restore display issue when minimizing Designer and then opening a workflow from file explorer. | 2021.4.1.04899 | Fixed |
+| TDES-2185DE23923 | Missing link for opening Connect search from Designer. | 2021.4.1.04899 | Fixed |
+| TDES-2362DE29639 | Connectors toolbar/tab disappears after Power BI install. | 2021.4.1.04899 | Fixed |
+| TDES-2382DE30189 | Remove external dependencies warning from built-in macros. | 2021.4.1.04899 | Fixed |
+| TDES-2383DE30206 | Missing fields don't retain the original data field size when "Disable Auto Configure" is checked. | 2021.4.1.04899 | Fixed |
+| TDES-2389DE33563 | Update for browser version in Designer for SAML dialogs. | 2021.4.1.04899 | Fixed |
+| TDES-2398DE33739 | Data Investigation tools missing incoming connection error message. | 2021.4.1.04899 | Fixed |
+| TDES-2431DE34246 | Recommendations tab hover text clipping in Japanese. | 2021.4.1.04899 | Fixed |
+| TDES-2436DE34183 | The link to the AMP help page from the Workflow Configuration tab is broken for Portuguese and Chinese versions of Designer. | 2021.4.1.04899 | Fixed |
+| TDES-2444DE34205 | Compare Workflows doesn't see config changes in Interface question type tools. | 2021.4.1.04899 | Fixed |
 | TDES-3749 | Long workflow names are cut off by pop-up dialogs. | 2021.4.1.04899 | Fixed |
 | TDES-3754 | EULA in Designer routes to the wrong link. | 2021.4.1.04899 | Fixed |
 | TDES-3766 | Gallery Data Connection can't be packaged with Designer 2021.3. | 2021.4.1.04899 | Fixed |
@@ -428,86 +1342,62 @@ Major Release Version 2021.4 |
 | TDES-3777 | Enable and disable Tool Containers adds to XML. | 2021.4.1.04899 | Fixed |
 | TDES-3793 | Entered data in the Runtime tab field in macros are not saved after the run. | 2021.4.1.04899 | Fixed |
 | TDES-3830 | Tool palette crashes when dropping any tool. | 2021.4.1.04899 | Fixed |
-| TDES-3893
- GBETA-97 | An unhandled exception is received if Microsoft Office is not installed. | 2021.4.1.04899 | Fixed |
-| TDSL-676
- DE12264 | Find Replace tool doesn't throw a warning or an error on missing input. | 2021.4.1.04899 | Fixed |
-| TDSL-813
- DE24622 | No payload validation on Interface tools. | 2021.4.1.04899 | Fixed |
-| TDSL-980
- DE29456 | Runner Macros: Error: Runner (1): Tool #2: The external program "SupportingExes\AlteryxRunner.exe" returned an error code: -1073741512. | 2021.4.1.04899 | Fixed |
-| TDSL-3554
- DE24118 | Disabling output not working with macros in apps. | 2021.4.1.04899 | Fixed |
-| TDSL-3717
- DE24761 | Alteryx isn't clearing the temp files when using Gzip Data Input tools. | 2021.4.1.04899 | Fixed |
+| TDES-3893GBETA-97 | An unhandled exception is received if Microsoft Office is not installed. | 2021.4.1.04899 | Fixed |
+| TDSL-676DE12264 | Find Replace tool doesn't throw a warning or an error on missing input. | 2021.4.1.04899 | Fixed |
+| TDSL-813DE24622 | No payload validation on Interface tools. | 2021.4.1.04899 | Fixed |
+| TDSL-980DE29456 | Runner Macros: Error: Runner (1): Tool #2: The external program "SupportingExes\AlteryxRunner.exe" returned an error code: -1073741512. | 2021.4.1.04899 | Fixed |
+| TDSL-3554DE24118 | Disabling output not working with macros in apps. | 2021.4.1.04899 | Fixed |
+| TDSL-3717DE24761 | Alteryx isn't clearing the temp files when using Gzip Data Input tools. | 2021.4.1.04899 | Fixed |
 | TDSL-3788 | Using the Filter tool in AMP in simple mode with a date-time field gives non-deterministic results. | 2021.4.1.04899 | Fixed |
-| TDSL-3790
- DE33753 | Different results output using the AMP engine with Summarize tool. | 2021.4.1.04899 | Fixed |
+| TDSL-3790DE33753 | Different results output using the AMP engine with Summarize tool. | 2021.4.1.04899 | Fixed |
 | TDSL-3862 | Interactive Chart only renders the first Interactive Chart. | 2021.4.1.04899 | Fixed |
-| TDSL-4018
- TDALI-4244 | Browse tool Report tab not showing all reports. | 2021.4.1.04899 | Fixed |
+| TDSL-4018TDALI-4244 | Browse tool Report tab not showing all reports. | 2021.4.1.04899 | Fixed |
 | TDST-1401 | Handling null values for Topic Modeling. | 2021.4.1.04899 | Fixed |
 | TELC-2639 | AMP YXDB reader doesn't stop working when it hits the record limit. | 2021.4.1.04899 | Fixed |
-| TELC-2641
- DE28548 | Using AMP, Error: Fuzzy Match (4) Invalid char in UTF-8 string. | 2021.4.1.04899 | Fixed |
+| TELC-2641DE28548 | Using AMP, Error: Fuzzy Match (4) Invalid char in UTF-8 string. | 2021.4.1.04899 | Fixed |
 | TELC-2642 | AMP: Multi-Dimensional Join doesn't honor with configuration Error or Warn if more than 16 records. | 2021.4.1.04899 | Fixed |
 | TELC-2643 | Conversion errors for truncated files aren't logged when using AMP. | 2021.4.1.04899 | Fixed |
-| TELC-2644
- DE33620 | ConsumerView Matching tool doesn't function on the AMP engine. | 2021.4.1.04899 | Fixed |
+| TELC-2644DE33620 | ConsumerView Matching tool doesn't function on the AMP engine. | 2021.4.1.04899 | Fixed |
 | TELC-2645 | AMP YXDB reader produces packets significantly faster than the downstream tools can consume them. | 2021.4.1.04899 | Fixed |
-| TELC-2657
- DE28548 | Using AMP, Error: Invalid char in UTF-8 string when reading YXDB. | 2021.4.1.04899 | Fixed |
+| TELC-2657DE28548 | Using AMP, Error: Invalid char in UTF-8 string when reading YXDB. | 2021.4.1.04899 | Fixed |
 | TELC-2713 | After upgrade from 2020.3 to 2021.2, all production workflows involving HDFS failed with the error: Failed to retrieve upload redirect URL (hadoop.example.com:50070):HTTP Error 500: Internal Server Error - Unknown error. | 2021.4.1.04899 | Fixed |
-| TELC-2720
- GENG-2494 | AMP Embedded Select: Comma as a decimal separator doesn't work for converting FixedDecimal to String data type. | 2021.4.1.04899 | Fixed |
+| TELC-2720GENG-2494 | AMP Embedded Select: Comma as a decimal separator doesn't work for converting FixedDecimal to String data type. | 2021.4.1.04899 | Fixed |
 | THYP-1146 | The Multi-Field Formula tool doesn't apply expressions correctly via the AMP engine. | 2021.4.1.04899 | Fixed |
 | THYP-1150 | AMP crash with multiple sort/uniques. | 2021.4.1.04899 | Fixed |
 | Minor Release Version 2021.4.2.02731 |
 | --- |
-| TCM-392
- GCSE-357 | Designer 2021.4 Excel XLSX Input Data tool skips initial columns with no data in the first row (Row 1). | 2021.4.2.02731 | Fixed |
-| TDCB-3974
- GCSE-370 | Designer 2021.4 Input Data tool reading Excel file headers truncates data that contains formatting. | 2021.4.2.02731 | Fixed |
-| TDCB-3976
- GCSE-375 | When running a workflow in 2021.4, certain Excel files generate an error that references http://schemas.openxmlformats.org/ spreadsheetml/2006/main. | 2021.4.2.02731 | Fixed |
-| TDCB-3978
- GDC-2104 | Cell that contains new lines and formatting is read-in as a single concatenated string. | 2021.4.2.02731 | Fixed |
+| TCM-392GCSE-357 | Designer 2021.4 Excel XLSX Input Data tool skips initial columns with no data in the first row (Row 1). | 2021.4.2.02731 | Fixed |
+| TDCB-3974GCSE-370 | Designer 2021.4 Input Data tool reading Excel file headers truncates data that contains formatting. | 2021.4.2.02731 | Fixed |
+| TDCB-3976GCSE-375 | When running a workflow in 2021.4, certain Excel files generate an error that references http://schemas.openxmlformats.org/ spreadsheetml/2006/main. | 2021.4.2.02731 | Fixed |
+| TDCB-3978GDC-2104 | Cell that contains new lines and formatting is read-in as a single concatenated string. | 2021.4.2.02731 | Fixed |
 | TKUB-1221 | Dragging and importing XLSX or Excel files onto the canvas causes Designer to forget the selected sheets and returns an error: "Error: Input Data (11): No sheet specified, you must specify a sheet." | 2021.4.2.02731 | Fixed |
 | Minor Release Version 2021.4.2.05617 |
 | --- |
-| TCPE-305
- GCSE-496 | 2021.4: The Date tool (Interface tool) with null or empty date doesn't work in the Gallery. | 2021.4.2.05617 | Fixed |
-| TDES-4123
- GCSE-448 | When you attempt to use the <DefaultGalleryURL> tag in the XML, no Gallery instance is added to Designer 21.4 or above. | 2021.4.2.05617 | Fixed |
+| TCPE-305GCSE-496 | 2021.4: The Date tool (Interface tool) with null or empty date doesn't work in the Gallery. | 2021.4.2.05617 | Fixed |
+| TDES-4123GCSE-448 | When you attempt to use the <DefaultGalleryURL> tag in the XML, no Gallery instance is added to Designer 21.4 or above. | 2021.4.2.05617 | Fixed |
 | Minor Release Version 2021.4.2.35356 |
 | --- |
 | TAAI-6 | Auto Insights Uploader tool added as a default tool. | 2021.4.2.35356 | Fixed |
-| TGAL-6361
- GCSE-415 | Error when running workflows with DCM shared connections for non-owners when using Custom Groups. | 2021.4.2.35356 | Fixed |
+| TGAL-6361GCSE-415 | Error when running workflows with DCM shared connections for non-owners when using Custom Groups. | 2021.4.2.35356 | Fixed |
 | Minor Release Version 2021.4.2.40860 |
 | --- |
 | TDCB-4085 | Designer crashes after you close a workflow with a Connect In-DB tool and a Browse In-DB tool and then create a 2nd workflow with the same tools. | 2021.4.2.40860 | Fixed |
 | Minor Release Version 2021.4.2.47792 |
 | --- |
 | TCPE-456 | 404 error and code loss in the Python tool in workflows that are downloaded from Gallery. | 2021.4.2.47792 | Fixed |
-| TDCB-4214
- GCSE-752 | When writing V\_WString data where the field size = 65535 to Amazon Redshift database, the Output Data tool displays an error: "Error: Output Data (4): Character length for <Field> is currently 65535, exceeding the limit of 65531 bytes. Reduce the length by shrinking the column size." | 2021.4.2.47792 | Fixed |
+| TDCB-4214GCSE-752 | When writing V\_WString data where the field size = 65535 to Amazon Redshift database, the Output Data tool displays an error: "Error: Output Data (4): Character length for <Field> is currently 65535, exceeding the limit of 65531 bytes. Reduce the length by shrinking the column size." | 2021.4.2.47792 | Fixed |
 | Minor Release Version 2021.4.2.47802 |
 | --- |
 | TFLN-1009 | When you enable DCM, certain fields in the configuration user interface don't have the correct labels. | 2021.4.2.47802 | Fixed |
-| Minor Release Version 2021.4.2.47868 |
-| --- |
-| TELC-3619
- GCSE-1297 | Problem with extended characters (for example, a letter with an accent like è) in path and folder names when using AMP engine. | 2021.4.2.47868 | Fixed |
-| TDCE-76
- GCSE-1024 | Teradata Build Loader with LDAP fails in Designer version 2021.4. | 2021.4.2.47868 | Fixed |
-
+| **Minor Release Version 2021.4.2.47868** |
+| TELC-3619GCSE-1297 | Problem with extended characters (for example, a letter with an accent like è) in path and folder names when using AMP engine. | 2021.4.2.47868 | Fixed |
+| TDCE-76GCSE-1024 | Teradata Build Loader with LDAP fails in Designer version 2021.4. | 2021.4.2.47868 | Fixed |
 
 
 
 | Known |
 | --- |
-| ID | Description | Version | Issue Status |
+| ID | Description | Version | Issue Status |
 | --- | --- | --- | --- |
 | GDC-1201 | Apache Spark Code tool processes records only from input anchor #1. | 2021.4.1.04899 | Known |
 | GDC-1202 | Unable to read-in large DB Blob file using OCI Driver. | 2021.4.1.04899 | Known |
@@ -520,40 +1410,24 @@ Major Release Version 2021.4 |
 | GDC-1485 | Syntax Error: expected something like '(' between Left and '.'... with Join In-DB if Table/FieldName SQL Style set as "None". | 2021.4.1.04899 | Known |
 | GDC-1522 | Error "This tool can only be connected to another In-Database tool." on tools following In-db Macro. | 2021.4.1.04899 | Known |
 | GDC-1528 | Teradata bulk loader output option Append (Mark duplicate Rows) doesn't create a new table TableName\_e2 with duplicate rows. | 2021.4.1.04899 | Known |
-| GDC-1618
- GCSE-280 | Error: "An item with the same key has already been added" when selecting Quick Connect (either Oracle or Microsoft SQL Server). | 2021.4.1.04899 | Known |
-| GDC-1848
- GCSE-312 | VQB using Oracle OCI connection not allowing for query condition that includes an en-dash (U+2013). | 2021.4.1.04899 | Known |
-| GDC-1935
- GCSE-328 | Error: "The COPY failed with error: End of record reached while expected to parse column" when trying to update Snowflake using Bulk Connection. | 2021.4.1.04899 | Known |
-| GDC-1937
- GCSE-330 | Snowflake bulk connections: Each chunk of data includes the API commands PUT and COPY. | 2021.4.1.04899 | Known |
+| GDC-1618GCSE-280 | Error: "An item with the same key has already been added" when selecting Quick Connect (either Oracle or Microsoft SQL Server). | 2021.4.1.04899 | Known |
+| GDC-1848GCSE-312 | VQB using Oracle OCI connection not allowing for query condition that includes an en-dash (U+2013). | 2021.4.1.04899 | Known |
+| GDC-1935GCSE-328 | Error: "The COPY failed with error: End of record reached while expected to parse column" when trying to update Snowflake using Bulk Connection. | 2021.4.1.04899 | Known |
+| GDC-1937GCSE-330 | Snowflake bulk connections: Each chunk of data includes the API commands PUT and COPY. | 2021.4.1.04899 | Known |
 | GDC-2499 | Simba Netezza driver doesn't work with Designer 21.4. | 2021.4.1.04899 | Known |
-| GENG-1580
- DE10017 | Question about UTF-8 data. | 2021.4.1.04899 | Known |
-| GENG-1584
- DE10253 | Dell data protection QuickLzBuffered error. | 2021.4.1.04899 | Known |
-| GENG-1812
- DE15582 | MapInfo TAB format: Date-time field type. | 2021.4.1.04899 | Known |
-| GENG-1844
- DE17898 | Buffering issue. | 2021.4.1.04899 | Known |
-| GENG-1957
- DE23627 | Unhandled Exception with relative file path in macro file browse. | 2021.4.1.04899 | Known |
-| GENG-1973
- DE24092 | Buffer tool: Subfoot gaps. | 2021.4.1.04899 | Known |
-| GENG-2032
- DE27659 | AMP cancel running workflow on 1st error in Azure Data Lake File Output tool. | 2021.4.1.04899 | Known |
-| GENG-2041
- DE28167 | Message tool incorrectly referencing data with original Engine. | 2021.4.1.04899 | Known |
-| GENG-2060
- DE33584 | 21.2 AMP Engine error: "The file "debug\_temp.yxmd" does not exist" using Debug mode (Interface Designer). | 2021.4.1.04899 | Known |
-| GENG-2069
- DE33817 | Engine is unable to read files from a directory that contains a dot. | 2021.4.1.04899 | Known |
-| GENG-2297
- DE13411 | Generalize: Closing large interior holes in polygon. | 2021.4.1.04899 | Known |
+| GENG-1580DE10017 | Question about UTF-8 data. | 2021.4.1.04899 | Known |
+| GENG-1584DE10253 | Dell data protection QuickLzBuffered error. | 2021.4.1.04899 | Known |
+| GENG-1812DE15582 | MapInfo TAB format: Date-time field type. | 2021.4.1.04899 | Known |
+| GENG-1844DE17898 | Buffering issue. | 2021.4.1.04899 | Known |
+| GENG-1957DE23627 | Unhandled Exception with relative file path in macro file browse. | 2021.4.1.04899 | Known |
+| GENG-1973DE24092 | Buffer tool: Subfoot gaps. | 2021.4.1.04899 | Known |
+| GENG-2032DE27659 | AMP cancel running workflow on 1st error in Azure Data Lake File Output tool. | 2021.4.1.04899 | Known |
+| GENG-2041DE28167 | Message tool incorrectly referencing data with original Engine. | 2021.4.1.04899 | Known |
+| GENG-2060DE33584 | 21.2 AMP Engine error: "The file "debug\_temp.yxmd" does not exist" using Debug mode (Interface Designer). | 2021.4.1.04899 | Known |
+| GENG-2069DE33817 | Engine is unable to read files from a directory that contains a dot. | 2021.4.1.04899 | Known |
+| GENG-2297DE13411 | Generalize: Closing large interior holes in polygon. | 2021.4.1.04899 | Known |
 | GENG-2329 | Frequency Table tool doesn't work with AMP Engine. | 2021.4.1.04899 | Known |
-| GENG-2333
- DE28721 | "Question Tool Load Error" when debugging the Macro Input In-DB. | 2021.4.1.04899 | Known |
+| GENG-2333DE28721 | "Question Tool Load Error" when debugging the Macro Input In-DB. | 2021.4.1.04899 | Known |
 | GENG-2355 | Group By Action of Summarize tool not recognizing renamed fields via AMP Engine. | 2021.4.1.04899 | Known |
 | GENG-2390 | Data Cleansing tool metadata is not completely retained when the workflow is opened from Gallery following a macro. | 2021.4.1.04899 | Known |
 | GENG-2392 | Error: "InboundNamedPipe GetOverlappedResult: The pipe has been ended" when both "Use AMP Engine" and "Enable Performance Profiling" is checked with Block Until Done in macro. | 2021.4.1.04899 | Known |
@@ -562,431 +1436,108 @@ Major Release Version 2021.4 |
 | GENG-2445 | Warnings for truncated fields are not always reported to user. | 2021.4.1.04899 | Known |
 | GENG-2476 | AMP: Macro skipping batches. | 2021.4.1.04899 | Known |
 | GENG-2501 | AMP is missing the field name in truncation warning with CSV Reader. | 2021.4.1.04899 | Known |
-| GENG-2503
- GDF-254 | AMP Generate Rows tool is not handling special character encoding. | 2021.4.1.04899 | Known |
+| GENG-2503GDF-254 | AMP Generate Rows tool is not handling special character encoding. | 2021.4.1.04899 | Known |
 | GENG-2511 | Sorting: Dictionary Sort doesn't always sort like strings next to each other. | 2021.4.1.04899 | Known |
-| GENG-2532
- GCSE-315 | Render tool PDF reverses Arabic, Hebrew, and other right-to-left (RTL) languages. | 2021.4.1.04899 | Known |
-| GENG-2543
- GCSE-319 | AMP Engine: Macro setup causes Block Until Done tool to not output anything. | 2021.4.1.04899 | Known |
-| TCM-289
- DE33673 | Sharepoint List tools: Error Encountered: Root Element is Missing. | 2021.4.1.04899 | Known |
+| GENG-2532GCSE-315 | Render tool PDF reverses Arabic, Hebrew, and other right-to-left (RTL) languages. | 2021.4.1.04899 | Known |
+| GENG-2543GCSE-319 | AMP Engine: Macro setup causes Block Until Done tool to not output anything. | 2021.4.1.04899 | Known |
+| TCM-289DE33673 | Sharepoint List tools: Error Encountered: Root Element is Missing. | 2021.4.1.04899 | Known |
 | TCM-293 | AWS Secret Key is not displayed fully in Amazon S3 connectors in non-en OS environment on an external monitor. | 2021.4.1.04899 | Known |
 | TCM-298 | HDFS closes session after 15 seconds. | 2021.4.1.04899 | Known |
-| TCM-302
- DE7453 | XLSX: Overwrite with range can produce corrupt file. | 2021.4.1.04899 | Known |
+| TCM-302DE7453 | XLSX: Overwrite with range can produce corrupt file. | 2021.4.1.04899 | Known |
 | TCM-303 | Writing an Excel file in a particular way consistently corrupts it. To open the workbook at all, repairs are required. | 2021.4.1.04899 | Known |
-| TCM-307
- DE17836 | DTD processing error when using Sharepoint tools. | 2021.4.1.04899 | Known |
-| TCM-309
- GCSE-297 | <List of Sheet Names> failing in Input Data tool and Dynamic Input tool when loading multiple Excel XLSX files with sheet names of different lengths. | 2021.4.1.04899 | Known |
-| TCM-392
- GCSE-357 | Excel (xlsx) data ingest may cause Designer to not import all data or error. | 2021.4.1.04899 | Known |
-| TCPE-74
- DE27278 | PDF output by the Rendering tool gets slower on large records. | 2021.4.1.04899 | Known |
-| TCPE-89
- DE33954 | When a worker is told to stop by the AlteryxService, the user canceled message is not handled as an error by the Alteryx Engine. | 2021.4.1.04899 | Known |
-| TCPE-114
- DE17498 | An equal sign in the field name causes List Box to forget selected fields. | 2021.4.1.04899 | Known |
-| TCPE-115
- DE28137 | Workflow with warnings returns an irrelevant message to the caller workflow. | 2021.4.1.04899 | Known |
-| TCPE-123
- DE22217 | Alteryx workflows flagged as "Error" while the Event message and logs seem to indicate "Success". | 2021.4.1.04899 | Known |
-| TCPE-140
- GCSE-317 | Report tool: Size 8 font defaults to 8.5. | 2021.4.1.04899 | Known |
-| TCPE-152
- GCSE-324 | Macros are excluded from the Favorites tool palette category upon editing the tool. | 2021.4.1.04899 | Known |
-| TCPE-228
- GCSE-401 | Input Data tool fails when opening Visual Query Builder with Error "Could not load type 'ActiveDatabaseSoftware.ActiveQueryBuilder. SnowflakeMetadataProvider' from assembly 'ActiveDatabaseSoftware. ODBCMetadataProvider2..."
-
- As a workaround...
- 1. Uninstall 2021.4 via Control Panel (add/remove programs).
-2. Go to C:\Users\<username>\Appdata\Local\Alteryx\bin and check for leftover dlls.
-3. If dlls still exist, try renaming the C:\Users\<username>\Appdata\Local\Alteryx\bin folder to bin\_old
+| TCM-307DE17836 | DTD processing error when using Sharepoint tools. | 2021.4.1.04899 | Known |
+| TCM-309GCSE-297 | <List of Sheet Names> failing in Input Data tool and Dynamic Input tool when loading multiple Excel XLSX files with sheet names of different lengths. | 2021.4.1.04899 | Known |
+| TCM-392GCSE-357 | Excel (xlsx) data ingest may cause Designer to not import all data or error. | 2021.4.1.04899 | Known |
+| TCPE-74DE27278 | PDF output by the Rendering tool gets slower on large records. | 2021.4.1.04899 | Known |
+| TCPE-89DE33954 | When a worker is told to stop by the AlteryxService, the user canceled message is not handled as an error by the Alteryx Engine. | 2021.4.1.04899 | Known |
+| TCPE-114DE17498 | An equal sign in the field name causes List Box to forget selected fields. | 2021.4.1.04899 | Known |
+| TCPE-115DE28137 | Workflow with warnings returns an irrelevant message to the caller workflow. | 2021.4.1.04899 | Known |
+| TCPE-123DE22217 | Alteryx workflows flagged as "Error" while the Event message and logs seem to indicate "Success". | 2021.4.1.04899 | Known |
+| TCPE-140GCSE-317 | Report tool: Size 8 font defaults to 8.5. | 2021.4.1.04899 | Known |
+| TCPE-152GCSE-324 | Macros are excluded from the Favorites tool palette category upon editing the tool. | 2021.4.1.04899 | Known |
+| TCPE-228GCSE-401 | Input Data tool fails when opening Visual Query Builder with Error "Could not load type 'ActiveDatabaseSoftware.ActiveQueryBuilder. SnowflakeMetadataProvider' from assembly 'ActiveDatabaseSoftware. ODBCMetadataProvider2..."As a workaround...1. Uninstall 2021.4 via Control Panel (add/remove programs).
+2. Go to `C:\Users\<username>\Appdata\Local\Alteryx\bin` and check for leftover dlls.
+3. If dlls still exist, try renaming the `C:\Users\<username>\Appdata\Local\Alteryx\bin` folder to bin\_old
 4. Reinstall 2021.4.
  | 2021.4.1.04899 | Known |
 | TDCB-3767 | Alteryx Designer populates incorrect number precision for Snowflake fields. | 2021.4.1.04899 | Known |
 | TDCB-3776 | Publishing workflow that contains MongoDB Input tool causes error, won't run on server. | 2021.4.1.04899 | Known |
-| TDALI-844
- DE19725 | PNG not rendering properly to PDF from Render tool. | 2021.4.1.04899 | Known |
-| TDALI-877
- DE21115 | Report Text: Font size of 10 or 14 changes to 12 in Excel. | 2021.4.1.04899 | Known |
-| TDALI-878
- DE21128 | Footer created page numbers are incorrect. | 2021.4.1.04899 | Known |
-| TDALI-882
- DE21324 | Grouped column does not output correctly in the Render tool. | 2021.4.1.04899 | Known |
-| TDALI-884
- DE21433 | Chart: Quartile calculation results in Browse tool and R tool. | 2021.4.1.04899 | Known |
-| TDALI-902
- DE21854 | Chart: Default position selection for data labels. | 2021.4.1.04899 | Known |
-| TDALI-904
- DE21856 | Chart: Swap X and Y values when orientation is changed. | 2021.4.1.04899 | Known |
-| TDALI-906
- DE21858 | Chart: Show data type for each field in the Interactive Chart tool editor. | 2021.4.1.04899 | Known |
-| TDALI-950
- DE23142 | Data Cleanse tool converts the Layout field to text. | 2021.4.1.04899 | Known |
-| TDALI-964
- DE23736 | Table: Value missing in Table tool. | 2021.4.1.04899 | Known |
-| TDALI-1040
- DE26486 | Data Profiling filters don't persist when opening in a new window. | 2021.4.1.04899 | Known |
-| TDALI-1044
- DE26631 | Render tool not displaying properly when data is over 1000 records. | 2021.4.1.04899 | Known |
-| TDALI-1060
- DE27692 | Table: Large number of columns don't render properly. | 2021.4.1.04899 | Known |
-| TDALI-1062
- DE27857 | 2020.2: Inability to key a semicolon in the Events "To" email section. | 2021.4.1.04899 | Known |
-| TDALI-1070
- DE28136 | Formula rule is not functioning properly in Basic Table column rules. | 2021.4.1.04899 | Known |
-| TDALI-1071
- DE28138 | Image tool is not detecting image Blob from digital cameras. | 2021.4.1.04899 | Known |
-| TDALI-1109
- DE33546 | Download tool not able to render Chinese characters. | 2021.4.1.04899 | Known |
-| TDALI-1117
- DE33700 | Table tool window with overlapped widgets. | 2021.4.1.04899 | Known |
-| TDALI-4166
- DE28315 | Summarize tool: Financial function limits. | 2021.4.1.04899 | Known |
-| TDALI-4189
- DE34332 | Python tool: GPU can't be loaded in Alteryx. | 2021.4.1.04899 | Known |
-| TDALI-4225
- TCPE-102 | DoubleMetaphone in Fuzzy Match tool Configuration allows users to choose more than 8 key lengths. | 2021.4.1.04899 | Known |
-| TDALI-4237
- DE28817 | Custom fonts do not output to various file types via the Render tool. | 2021.4.1.04899 | Known |
-| TDCB-3975
- GCSE-371 | When reading multiline headers, the header appears truncated. | 2021.4.1.04899 | Known |
+| TDALI-844DE19725 | PNG not rendering properly to PDF from Render tool. | 2021.4.1.04899 | Known |
+| TDALI-877DE21115 | Report Text: Font size of 10 or 14 changes to 12 in Excel. | 2021.4.1.04899 | Known |
+| TDALI-878DE21128 | Footer created page numbers are incorrect. | 2021.4.1.04899 | Known |
+| TDALI-882DE21324 | Grouped column does not output correctly in the Render tool. | 2021.4.1.04899 | Known |
+| TDALI-884DE21433 | Chart: Quartile calculation results in Browse tool and R tool. | 2021.4.1.04899 | Known |
+| TDALI-902DE21854 | Chart: Default position selection for data labels. | 2021.4.1.04899 | Known |
+| TDALI-904DE21856 | Chart: Swap X and Y values when orientation is changed. | 2021.4.1.04899 | Known |
+| TDALI-906DE21858 | Chart: Show data type for each field in the Interactive Chart tool editor. | 2021.4.1.04899 | Known |
+| TDALI-950DE23142 | Data Cleanse tool converts the Layout field to text. | 2021.4.1.04899 | Known |
+| TDALI-964DE23736 | Table: Value missing in Table tool. | 2021.4.1.04899 | Known |
+| TDALI-1040DE26486 | Data Profiling filters don't persist when opening in a new window. | 2021.4.1.04899 | Known |
+| TDALI-1044DE26631 | Render tool not displaying properly when data is over 1000 records. | 2021.4.1.04899 | Known |
+| TDALI-1060DE27692 | Table: Large number of columns don't render properly. | 2021.4.1.04899 | Known |
+| TDALI-1062DE27857 | 2020.2: Inability to key a semicolon in the Events "To" email section. | 2021.4.1.04899 | Known |
+| TDALI-1070DE28136 | Formula rule is not functioning properly in Basic Table column rules. | 2021.4.1.04899 | Known |
+| TDALI-1071DE28138 | Image tool is not detecting image Blob from digital cameras. | 2021.4.1.04899 | Known |
+| TDALI-1109DE33546 | Download tool not able to render Chinese characters. | 2021.4.1.04899 | Known |
+| TDALI-1117DE33700 | Table tool window with overlapped widgets. | 2021.4.1.04899 | Known |
+| TDALI-4166DE28315 | Summarize tool: Financial function limits. | 2021.4.1.04899 | Known |
+| TDALI-4189DE34332 | Python tool: GPU can't be loaded in Alteryx. | 2021.4.1.04899 | Known |
+| TDALI-4225TCPE-102 | DoubleMetaphone in Fuzzy Match tool Configuration allows users to choose more than 8 key lengths. | 2021.4.1.04899 | Known |
+| TDALI-4237DE28817 | Custom fonts do not output to various file types via the Render tool. | 2021.4.1.04899 | Known |
+| TDCB-3975GCSE-371 | When reading multiline headers, the header appears truncated. | 2021.4.1.04899 | Known |
 | TDD-61 | Dock Window: Increase the height of the title bar and the title is fully highlighted in the German language. | 2021.4.1.04899 | Known |
-| TDES-2229
- DE25563 | Alteryx Designer: Container doesn't automatically move while inserting tools in the workflow. | 2021.4.1.04899 | Known |
-| TDES-2315
- DE28389 | Tool Containers opening and expanding when workflow is reopened. | 2021.4.1.04899 | Known |
-| TDES-3797
- DE24738 | Empty tool annotations don't revert to original annotation. | 2021.4.1.04899 | Known |
-| TDES-3798
- DE25925 | When printing the workflow, the counts following each tool do not print. | 2021.4.1.04899 | Known |
+| TDES-2229DE25563 | Alteryx Designer: Container doesn't automatically move while inserting tools in the workflow. | 2021.4.1.04899 | Known |
+| TDES-2315DE28389 | Tool Containers opening and expanding when workflow is reopened. | 2021.4.1.04899 | Known |
+| TDES-3797DE24738 | Empty tool annotations don't revert to original annotation. | 2021.4.1.04899 | Known |
+| TDES-3798DE25925 | When printing the workflow, the counts following each tool do not print. | 2021.4.1.04899 | Known |
 | TDES-3801 | ETS: Time series issue with labeling and rendering interval confidence. | 2021.4.1.04899 | Known |
 | TDES-3938 | Can't package formatted Excel file with workflow. | 2021.4.1.04899 | Known |
 | TDES-3962 | Designer crash on infinite macro recursion. | 2021.4.1.04899 | Known |
-| TDSL-4039
- GCSE-307 | Designer crashes when clicking Browse tool with WString size set above 16384 bytes on AMP Engine. | 2021.4.1.04899 | Known |
+| TDSL-4039GCSE-307 | Designer crashes when clicking Browse tool with WString size set above 16384 bytes on AMP Engine. | 2021.4.1.04899 | Known |
 | TPM-239 | SP List doesn’t return the Attachments field (boolean). | 2021.4.1.04899 | Known |
 | TPM-463 | Google Sheets V3.0 failing with a 401 Authorised Error when uploading the workflow to the gallery or running the same workflow on another machine | 2021.4.1.04899 | Known |
 | TPM-1154 | Sharepoint Files Input tool: Sharepoint lists are not loaded when you use the Service Principal authentication method. | 2021.4.1.04899 | Known |
 | Minor Release Version 2021.4.2.02731 |
 | --- |
-| TCM-306
- DE26907 | Dynamic Input errors with Excel sheets that have spaces in the sheet names. This issue exists when you run your workflow on the original engine but if you [change your workflow to use AMP](/20231/designer/alteryx-amp-engine "change your workflow to use AMP"), the issue is resolved. | 2021.4.2.02731 | Known |
-| TCM-308
- DE24477 | Excel input with a named range or specified range with a header that contains a filter does not produce the expected results. | 2021.4.2.02731 | Known |
-| TCUD-1626 | Certain antivirus programs incorrectly flag up to 4 vulnerabilities in the Alteryx installer files. The files are safe as long as they have not been modified from the official Alteryx distribution. You can verify the integrity of your download by comparing its SHA256 hash (obtainable with `certutil -hashfile <path\to\download> SHA256`) against the hash published on [http://downloads.alteryx.com/](http://downloads.alteryx.com/ "Alteryx Downloads"). | 2021.4.2.02731 | Known |
-
+| TCM-306DE26907 | Dynamic Input errors with Excel sheets that have spaces in the sheet names. This issue exists when you run your workflow on the original engine but if you [change your workflow to use AMP](../../designer/workflows/alteryx-amp-engine.html "Alteryx AMP Engine"), the issue is resolved. | 2021.4.2.02731 | Known |
+| TCM-308DE24477 | Excel input with a named range or specified range with a header that contains a filter does not produce the expected results. | 2021.4.2.02731 | Known |
+| TCUD-1626 | Certain antivirus programs incorrectly flag up to 4 vulnerabilities in the Alteryx installer files. The files are safe as long as they have not been modified from the official Alteryx distribution. You can verify the integrity of your download by comparing its SHA256 hash (obtainable with `certutil -hashfile <path\to\download> SHA256`) against the hash published on <http://downloads.alteryx.com/>. | 2021.4.2.02731 | Known |
 
 Security Updates
 ----------------
 
 
 
-
-| Fixed
-Patch/Minor Release Version 2021.4.2.07064 |
+| FixedPatch/Minor Release Version 2021.4.2.07064 |
 | --- |
-| ID | Description | Version | Issue Status |
+| ID | Description | Version | Issue Status |
 | --- | --- | --- | --- |
-| TELC-2814
-GCSE-422 | AMP Engine may log sensitive information when processing workflows that contain Gallery Connections. | 2021.4.2.07064 | Fixed |
-
-
-
-
-| Fixed
-Patch/Minor Release Version 2021.4.2.47884 |
-| --- |
-| ID | Description | Version | Issue Status |
-| --- | --- | --- | --- |
-| TGAL-8498
- GVM-584 | To be disclosed.\* | 2021.4.2.47884 | Fixed |
-
-
-\*In accordance with security best practices and to prevent potential manipulation by bad actors, Alteryx does not disclose the details of any open vulnerability until all supported versions are updated with a fix. Beginning with 2021.4, releases and updates will become available and will continue until the fix has been supplied for all supported versions. To ensure that all versions you use are promptly fixed, regular updates are strongly recommended. More information will be made available once the vulnerability has been fixed for all supported versions that were impacted.
-
-
-
-
-
-
-
-
-Was This Page Helpful?
-
-
-
-
-N/A
-
-
-
-Yes
-
-
-
-No
-
-
-
-
-
-
-
-
- 
-Have a comment? Please leave it here.
-
-
-
-
-Running into problems or issues with your Alteryx product? Visit the [Alteryx Community](https://community.alteryx.com/?category.id=external "Community") or contact [support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Support"). Can't submit this form? [Email us](mailto:helpfeedback@alteryx.com?subject=Help%20Feedback&body=URL%20of%20Help%20Page%3A%0AFeedback%3A).
-
-
-
-
- 
- 
-
-
-Leave this field blank
-
-
-
-
-
-
-
-
-
-#### In this Release Note:
-
-
-* [New Features](#new-features)
-* [Fixed and Known Issues](#fixed-and-known-issues)
-* [Security Updates](#security-updates)
-
-
-
-
-
-
-
-
-
-![](/themes/custom/themekit/images/alteryx-documentation-navy.png)
-
-
-Release Notes
--------------
-
-
-* [Designer](/release-notes/designer/designer-20223-release-notes)Toggle menu
-	+ [2023.1](/release-notes/designer/designer-20231-release-notes)
-	+ [2022.3](/release-notes/designer/designer-20223-release-notes)
-	+ [2022.2 FIPS](/release-notes/designer/designer-fips-20222-release-notes)
-	+ [2022.1](/release-notes/designer/designer-20221-release-notes)
-	+ [2021.4](/release-notes/designer/designer-20214-release-notes)
-	+ [2021.3](/release-notes/designer/designer-20213-release-notes)
-	+ [2021.2](/release-notes/designer/designer-20212-release-notes)
-	+ [2021.1](/release-notes/designer/designer-20211-release-notes)
-	+ [2020.4](/release-notes/designer/designer-20204-release-notes)
-	+ [2020.3](/release-notes/designer/designer-20203-release-notes)
-	+ [2020.2](/release-notes/designer/designer-20202-release-notes)
-	+ [2020.1](/release-notes/designer/designer-20201-release-notes)
-	+ [2019.4](/release-notes/designer/designer-20194-release-notes "Designer 2019.4 Release Notes")
-	+ [2019.3](/release-notes/designer/designer-20193-release-notes "Designer 2019.3 Release Notes")
-	+ [2019.2](/release-notes/designer/designer-20192-release-notes "Designer 2019.2 Release Notes")
-	+ [2019.1](/release-notes/designer/designer-20191-release-notes "Designer 2019.1 Release Notes")
-	+ [2018.4](/release-notes/designer/designer-20184-release-notes "Designer 2018.4 Release Notes")
-	+ [2018.3](/release-notes/designer/designer-20183-release-notes "Designer 2018.3 Release Notes")
-	+ [2018.2](/release-notes/designer/designer-20182-release-notes "Designer 2018.2 Release Notes")
-	Show Less
-* [Server](/release-notes/server/server-20211-release-notes)Toggle menu
-	+ [2023.1](/release-notes/server/server-20231-release-notes)
-	+ [2022.3](/release-notes/server/server-20223-release-notes)
-	+ [2022.2](/release-notes/server/server-fips-20222-release-notes)
-	+ [2022.1](/release-notes/server/server-20221-release-notes)
-	+ [2021.4](/release-notes/server/server-20214-release-notes)
-	+ [2021.3](/release-notes/server/server-20213-release-notes)
-	+ [2021.2](/release-notes/server/server-20212-release-notes)
-	+ [2021.1](/release-notes/server/server-20211-release-notes)
-	+ [2020.4](/release-notes/server/server-20204-release-notes)
-	+ [2020.3](/release-notes/server/server-20203-release-notes)
-	+ [2020.2](/release-notes/server/server-20202-release-notes)
-	+ [2020.1](/release-notes/server/server-20201-release-notes)
-	+ [2019.4](/release-notes/server/server-20194-release-notes)
-	+ [2019.3](/release-notes/server/server-20193-release-notes "Server 2019.3 Release Notes")
-	+ [2019.2](/release-notes/server/server-20192-release-notes)
-	+ [2019.1](/release-notes/server/server-20191-release-notes)
-	+ [2018.4](/release-notes/server/server-20184-release-notes)
-	+ [2018.3](/release-notes/server/server-20183-release-notes)
-	+ [2018.2](/release-notes/server/server-20182-release-notes)
-	Show More
-* [Analytics Hub](/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)Toggle menu
-	+ [2021.2](/release-notes/alteryx-analytics-hub/analytics-hub-20212-release-notes)
-	+ [2021.1](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)
-	+ [2020.4](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20204-release-notes)
-	+ [2020.3](/release-notes/alteryx-analytics-hub/analytics-hub-20203-release-notes)
-	+ [2020.2](/release-notes/alteryx-analytics-hub/analytics-hub-20202-release-notes)
-* [Connect](/release-notes/connect/connect-20204-release-notes)Toggle menu
-	+ [2023.1](/release-notes/connect/connect-20231-release-notes)
-	+ [2022.3](/release-notes/connect/connect-20223-release-notes)
-	+ [2022.1](/release-notes/connect/connect-20221-release-notes)
-	+ [2021.4](/release-notes/connect/connect-20214-release-notes)
-	+ [2021.3](/release-notes/connect/connect-20213-release-notes)
-	+ [2021.2](/release-notes/connect/connect-20212-release-notes)
-	+ [2021.1](/release-notes/connect/connect-20211-release-notes)
-	+ [2020.4](/release-notes/connect/connect-20204-release-notes)
-	+ [2020.3](/release-notes/connect/connect-20203-release-notes)
-	+ [2020.2](/release-notes/connect/connect-20202-release-notes)
-	+ [2020.1](/release-notes/connect/connect-20201-release-notes)
-	+ [2019.4](/release-notes/connect/connect-20194-release-notes "Connect 2019.4 Release Notes")
-	+ [2019.3](/release-notes/connect/connect-20193-release-notes "Connect 2019.3 Release Notes")
-	+ [2019.2](/release-notes/connect/connect-20192-release-notes "Connect 2019.2 Release Notes")
-	+ [2019.1](/release-notes/connect/connect-20191-release-notes "Connect 2019.1 Release Notes")
-	+ [2018.4](/release-notes/connect/connect-20184-release-notes "Connect 2018.4 Release Notes")
-	+ [2018.3](/release-notes/connect/connect-20183-release-notes "Connect 2018.3 Release Notes")
-	+ [2018.2](/release-notes/connect/connect-20182-release-notes "Connect 2018.2 Release Notes")
-	+ [3.0](/release-notes/connect/connect-30-release-notes "Connect 3.0 Release Notes")
-	+ [2.0](/release-notes/connect/connect-20-release-notes "Connect 2.0 Release Notes")
-	+ [1.0](/release-notes/connect/connect-10-release-notes "Connect 1.0 Release Notes")
-	Show More
-* [Promote](/release-notes/promote/promote-20204-release-notes)Toggle menu
-	+ [2022.3](https://help.alteryx.com/release-notes/promote/promote-20223-release-notes)
-	+ [2022.2](https://help.alteryx.com/release-notes/promote/promote-20222-release-notes)
-	+ [2022.1](https://help.alteryx.com/release-notes/promote/promote-20221-release-notes)
-	+ [2021.4](https://help.alteryx.com/release-notes/promote/promote-20214-release-notes)
-	+ [2021.3](/release-notes/promote/promote-20213-release-notes)
-	+ [2021.2](https://help.alteryx.com/release-notes/promote/promote-20212-release-notes)
-	+ [2021.1](https://help.alteryx.com/release-notes/promote/promote-20211-release-notes)
-	+ [2020.4](/release-notes/promote/promote-20204-release-notes)
-	+ [2020.3](/release-notes/promote/promote-20203-release-notes)
-	+ [2020.2](/release-notes/promote/promote-20202-release-notes)
-	+ [2020.1](/release-notes/promote/promote-20201-release-notes)
-	+ [2019.4](/release-notes/promote/promote-20194-release-notes "Promote 2019.4 Release Notes")
-	+ [2019.3](/release-notes/promote/promote-20193-release-notes)
-	+ [2019.2](/release-notes/promote/promote-20192-release-notes)
-	+ [2019.1](/release-notes/promote/promote-20191-release-notes)
-	+ [2018.4](/release-notes/promote/promote-20184-release-notes)
-	+ [2018.3](/release-notes/promote/promote-20183-release-notes)
-	+ [2018.2](/release-notes/promote/promote-20182-release-notes)
-	Show More
-* [Auto Insights](https://help.alteryx.com/release-notes/auto-insights/auto-insights-release-notes)
-* [Licensing & Downloads Portal Release Notes](/release-notes/product-activation-and-licensing/licensing-downloads-portal-release-notes)
-* [Machine Learning](https://docs.trifacta.com/display/AAC/Release+Notes+for+Machine+Learning+-+Application)
-
-
-
-
-
-
-
-
-
-
-Breadcrumb
-----------
-
-
-1. [Home](/)
-2. [Release Notes & Help Versions](/release-notes)
-
-
-
-
-
-
-
-
-
-
-
-[![Alteryx](/themes/custom/themekit/alteryx_logo.png)](https://help.alteryx.com/)
-
-
-
-
-Select your language
-EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Cookies Settings](#)
-
-
- 
-
-
-#### Ask The Community
-
-
-
-
- Post questions and get answers from our community of data science and analytic experts.
-
-
-
-
-[Ask Now](https://community.alteryx.com/?category_id=external)
-
-
-
-
-
-#### Contact Support
-
-
-
-
-[Contact](https://community.alteryx.com/t5/Support/bd-p/SupportPage)
-
-
-
-
-
- 
-
-Product Menu
-------------
-
-
-* [About](/20231/designer/about)
-* [Credits](/credits)
-* [Usage Data](/improving-our-products-usage-data)
-
-
-
-
-Footer Main Navigation
-----------------------
-
-
-* [Release Notes](/release-notes "Release Notes")
-* [License and Activate](/product-activation-and-licensing "License & Activation")
-* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
-
-
-
-
- 
- 
-
-{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/19172","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ckeditorheight":{"offset":1,"line\_height":1.5,"unit":"em","disable\_autogrow":null},"data":{"searchString":"Search Help \u0026 Documentation"},"lang\_dropdown":{"lang-dropdown-form":{"key":"lang-dropdown-form"}},"ajaxTrustedUrl":{"form\_action\_p\_pvdeGsVG5zNF\_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"4a7f5171b5c676338e4fc431c7e1a6cf24d8a4b2750c3964cc5b7ae3003b6388"}}
-
-window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"92abcb314d","applicationID":"597213089","transactionName":"ZFZRbEAECBAFVk1aXF0ccltGDAkNS3FLRkNSX29WXQEDPydaV0dBXF9fXUA5KAwAUG9aVkRwXFZGFwkPCFBLHg1FWlZP","queueTime":1,"applicationTime":726,"atts":"SBFSGggeGx4=","errorBeacon":"bam.nr-data.net","agent":""}
+| TELC-2814GCSE-422 | AMP Engine may log sensitive information when processing workflows that contain Gallery Connections. | 2021.4.2.07064 | Fixed |
+
+* [Designer 2021.4 Release Notes](#designer-2021-4-release-notes)
+* [New Features](#idm45508222129232)
+	+ [Link Designer with the Alteryx Platform](#idm45508222128304)
+	+ [XML Parse Tool Enhancement](#idm45508222127776)
+	+ [Generate Support File](#idm45508222123120)
+	+ [Reserve Products for Specific Users (Admin-only)](#idm45508222120800)
+	+ [Public Gallery and Designer](#idm45508222116992)
+	+ [Error Message Enhancements](#idm45508222115040)
+	+ [CEF Upgrade](#idm45508222112560)
+	+ [New Intelligence Suite Tool](#idm45508222111520)
+	+ [New Data Connectors](#idm45508222108992)
+	+ [Data Connection Manager (DCM)](#idm45508222106368)
+	+ [Engine Compatibility Mode](#idm45508222099456)
+	+ [Record Limit for All Inputs Support in AMP](#idm45508222097216)
+	+ [Customer-Managed Telemetry](#idm45508222095216)
+	+ [New in 2021.4.2.40860](#idm45508222094272)
+* [Fixed and Known Issues](#idm45508222128864)
+* [Security Updates](#idm45508222092032)
+Search results
+--------------
+
+
+No results found
+
+* [Prev](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-2022-1-release-notes.html)
+* [Next](https://help.alteryx.com/current/en/release-notes/server-release-notes.html)
+ © 2023 Alteryx, Inc. Publication date: 

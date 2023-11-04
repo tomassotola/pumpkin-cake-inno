@@ -31,6 +31,50 @@ def upload_to_es(updates: object) -> None:
         print(resp)
 
 
+def process_data(config: Config):
+     # Loading data and splitting texts
+    text_splits = get_splits(
+        loader_name=config.loader_name,
+        version=config.version
+    )
+
+    # Preparing chain
+    # llm = initialize_llm()
+    # llm_schema = generate_llm_schema(
+    #     schema_name=config.schema_name
+    # )
+    # chain = Extraction_Chain(
+    #     chain_name=config.chain_name,
+    #     llm=llm
+    # )
+
+    # updates = []
+    # # text = preprocess_prompt(text_splits[0])
+    # # preview = chain.preview(
+    # #     schema=llm_schema,
+    # #     prompt_text=text
+    # # )
+    # # print(preview)
+    # for each in range(0, len(text_splits)):
+    #     prompt_text = preprocess_prompt(text_splits[each])
+    #     print(f"requesting {each} split")
+    #     response = chain.run(
+    #         schema=llm_schema,
+    #         prompt_text=prompt_text
+    #     )
+    #     parsed = Update(**response['update'][0])
+    #     parsed.Release = config.version
+    #     parsed.Product = config.product_name
+    #     updates.append(parsed.model_dump_json())
+    # upload_to_es(updates=updates)
+
+
+def scrape_data(config: Config):
+    agent = Web_Agent(name=config.web_agent_name)
+    agent.initialise()
+    agent.get_data()
+
+
 def app():
     # 2020.4 not completed
     # Add full summary of the feature
@@ -39,52 +83,12 @@ def app():
     config = Config(
         web_agent_name="alteryx",
         loader_name="alteryx",
-        version="2022.1",
+        version="2023.2",
         schema_name="alteryx_notes",
         chain_name="alteryx",
         product_name="Alteryx"
     )
-    print(config)
     # Scraping data
-    # agent = Web_Agent(name=config.web_agent_name)
-    # agent.initialise()
-    # agent.get_data()
-
-    # Loading data and splitting texts
-    text_splits = get_splits(
-        loader_name=config.loader_name,
-        version=config.version
-    )
-
-    # Preparing chain
-    llm = initialize_llm()
-    llm_schema = generate_llm_schema(
-        schema_name=config.schema_name
-    )
-    chain = Extraction_Chain(
-        chain_name=config.chain_name,
-        llm=llm
-    )
-
-    updates = []
-    # text = preprocess_prompt(text_splits[0])
-    # preview = chain.preview(
-    #     schema=llm_schema,
-    #     prompt_text=text
-    # )
-    # print(preview)
-    for each in range(0, len(text_splits)):
-        prompt_text = preprocess_prompt(text_splits[each])
-        print(f"requesting {each} split")
-        response = chain.run(
-            schema=llm_schema,
-            prompt_text=prompt_text
-        )
-        parsed = Update(**response['update'][0])
-        parsed.Release = config.version
-        parsed.Product = config.product_name
-        updates.append(parsed.model_dump_json())
-    upload_to_es(updates=updates)
-
-
+    # scrape_data(config=config)
+    process_data(config=config)
 app()

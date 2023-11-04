@@ -1,0 +1,1052 @@
+
+
+[Skip to main content](#main-content)
+
+
+
+
+
+
+
+
+
+
+[![Home](/themes/custom/themekit/logo.png)](/ "Home")
+
+
+
+
+ 
+
+ 
+
+
+
+Select your language
+EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Secondary Menu
+--------------
+
+
+* [Community](https://community.alteryx.com "Community")
+* [Developer Help](/developer-help)
+* [Support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Get Support")
+
+
+
+
+Main navigation
+---------------
+
+
+* [Release Notes](/release-notes "Release Notes")
+* [License and Activate](/product-activation-and-licensing "License & Activation")
+* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
+
+
+
+
+  
+
+
+
+
+ 
+
+
+
+Designer 2022.1 Release Notes
+=============================
+
+
+
+Version: 
+
+ 2022.1
+
+Last modified: September 20, 2023
+
+
+
+
+| Release Note Product Versions |
+| --- |
+| Version | Release Date | Release | End of Support |
+| --- | --- | --- | --- |
+| 2022.1.1.25127 | May 4, 2022 | Major | May 4, 2024 |
+| 2022.1.1.25278 (FIPS) | May 19, 2022 | Minor | May 4, 2024 |
+| 2022.1.1.30569\* (Patch 1) | June 15, 2022 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.1.30961 (Patch 1) | June 23, 2022 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.40869\*\* (Minor)
+ 2022.1.1.2.40869\*\* (Patch 2) | September 8, 2022 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.42590 (Minor)
+ 2022.1.1.3.42590 (Patch 3) | November 21, 2022 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.42604 (Minor)
+ 2022.1.1.4.42604 (Patch 4) | January 4, 2023 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.42619 (Minor)
+ 2022.1.1.5.42619 (Patch 5) | February 15, 2023 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.42636 (Minor)
+ 2022.1.1.6.42636 (Patch 6) | March 29, 2023 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.42654 (Minor)
+ 2022.1.1.7.42654 (Patch 7) | May 24, 2023 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.42673 (Minor)^
+ 2022.1.1.8.42673 (Patch 8) | July 24, 2023 | Minor/Patch | May 4, 2024 |
+| 2022.1.1.42691 (Minor)^
+ 2022.1.1.9.42691 (Patch 9)  | September 20, 2023 | Minor/Patch | May 4, 2024 |
+
+
+*^No items in this release.*
+
+
+Important Notes and Updates
+---------------------------
+
+
+
+#### \*2022.1.1.30569 Patch Release Update
+
+
+
+The 2022.1.1.30569 Patch/Minor release has been removed from the Download Portal due to a missing signature in some of the included files. This causes the files to not be recognized as valid files provided by Alteryx and might trigger warning messages by some 3rd party programs.
+
+
+If you installed the 2022.1.1.30569 release, we recommend that you install the latest patch. You don't need to uninstall 2022.1.1.30569.
+
+
+
+
+
+#### Warning: Known Issue
+
+
+
+Do not install Alteryx Designer FIPS to the same location as your non-FIPS Admin Designer.
+
+
+By default, the FIPS installer recommends a different install location than the non-FIPS installer, but you can manually change it. If you change the install location, ensure it is NOT the same location as the non-FIPS Designer. If you install Alteryx Designer FIPS to the same location as a non-FIPS Admin Designer, your installation, as well as custom files and data that might be within that folder, will be significantly corrupted.
+
+
+
+
+
+#### Patch Updates
+
+
+
+Alteryx now gives you the ability to [patch your installation of Designer or Server](/product-activation-and-licensing/download-and-install-patch-update "patch your installation of Designer or Server") without the need to perform a full uninstall and reinstall. You can download the patch from the [Downloads & Licenses portal](https://downloads.alteryx.com/ "Downloads and Licenses portal"). For older patch versions, contact [Fulfillment](mailto:fulfillment@alteryx.com).
+
+
+
+
+
+#### TCPE-120
+
+
+
+Issue TCPE-120 was originally reported as Fixed. Further investigation has determined that this issue persists. As a result, TCPE-120 has been moved into the Known issues section. We apologize for the trouble and are working to fix this issue for a future release.
+
+
+
+
+Alteryx Designer FIPS
+---------------------
+
+
+Alteryx Designer FIPS version 2022.1 is the first release of Designer that offers a [FIPS 140-2 capable option](/20231/designer/alteryx-designer-fips "FIPS 140-2 compliant option") for customers that require FIPS compliance. Please note that these standards are developed by the US National Institute of Standards and Technology (NIST) for use by US government agencies and contractors. For more information about FIPS, go to the [NIST FIPS FAQ page](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips "https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips").
+
+
+The general release version of Alteryx Designer is not FIPS capable. A separate release (and installer\*) is available under separate license terms, for our FIPS 140-2 customers.
+
+
+\*Alteryx Designer FIPS uses new installer technology. As a result, the installation experience is different than what you might be familiar with when installing other Alteryx products.
+
+
+
+#### Feature and Tool Differences
+
+
+
+With the [Alteryx Designer FIPS 2022.1](/20231/designer/alteryx-designer-fips "Alteryx Designer FIPS") release, certain Designer tools and features are either not available or offer limited functionality. Over time, we plan to make many of these tools and features available again in future Alteryx Designer FIPS releases.
+
+
+
+
+New Features: Designer
+----------------------
+
+
+#### AMP as Default Engine
+
+
+AMP is now the default Engine for any new workflows you create. However, you can still choose the engine for your workflows via the workflow-level setting. Go to the Workflow - Configuration pane in Designer and select the Runtime tab. Next, enable or disable the Use AMP Engine check box to make your engine selection.
+
+
+Please note that when you launch the 22.1 version of Designer, you’ll be greeted with a pop-up to notify you that AMP is the default for new workflows. You can then select to not show the message again if you choose.
+
+
+Alteryx Multi-threaded Processing (AMP) is a new architecture of Alteryx Engine, designed to work with larger volumes of data at a higher velocity. To learn more about the AMP Engine, as well as the differences between the original engine and AMP, visit these resources:
+
+
+* [Alteryx AMP Engine](/20231/designer/alteryx-amp-engine "Alteryx Engine")
+* [Alteryx Engine and AMP: Main Differences](/20231/designer/alteryx-engine-and-amp-main-differences "Alteryx Engine and AMP: Main Differences")
+* [Tool Use with AMP](/20231/designer/tool-use-amp "Tool Use with AMP")
+* [AMP Memory Use](/20231/designer/amp-memory-use "AMP Memory Use")
+
+
+AMP Engine supports Standard, Iterative, and Batch Macros. In addition, over 85 tools have been converted to run with AMP. Tools that haven’t been converted will automatically use the original Engine.
+
+
+#### Field Limit for Input and Output Data with Original Engine and AMP
+
+
+For Input and Output data, there is now a 32,000 upper limit of fields per record for both the original Engine and AMP.
+
+
+* When read/write data is less than or equal to 32,000 fields, a valid workflow runs successfully.
+* When read/write data exceeds 32,000 fields, an error is returned on a workflow run to indicate that the max number of fields was exceeded: "Error - Number of fields is larger than the 32,000 limit. Please reduce the number of fields."
+
+
+#### AMP Grouping Framework Changes
+
+
+The grouping framework on AMP Engine has been changed to behave similarly to the original Engine. This affects the Summarize, Join, and Join Multiple tools.
+
+
+#### Designer User Interface Improvements
+
+
+We’ve updated the Designer UI to better align with other Alteryx products. As part of the refresh, you’ll notice new fonts, colors, and icons—all part of a more modern look and feel.
+
+
+One notable change is that when you run your workflow, you’ll no longer see the text "(Running)" in your workflow tab. Instead, you'll see a spinning/loading icon in the tab, beside the title of your workflow.
+
+
+#### Auto Insights Uploader
+
+
+The [Auto Insights Uploader tool](/20231/designer/auto-insights-uploader-tool "Auto Insights Uploader tool") is now a default tool in Alteryx Designer. You can access **Auto Insights Uploader** via the **In/Out**tool category.
+
+
+#### DCM Connection Tool
+
+
+The [DCM Connection tool](/20231/designer/dcm-connection-tool "DCM Connection tool") is a new tool within the **Interface** tools family. With the **DCM Connection tool**, you can display a prompt in an app or macro, and allow the user to pick a Connection from their DCM storage.
+
+
+#### Databricks Delta Lake Support
+
+
+There is new functionality that supports [Delta tables on Databricks](/20231/designer/databricks "Delta tables on Databricks"). You can use interactive or SQL Endpoint clusters on AWS and Azure. Bulk loading is supported with data staging in AWS S3 or Azure ADLS.
+
+
+#### Updated Gallery References to Server
+
+
+We have replaced any references to "Gallery" inside of Designer to instead reference "Server" and thus align with recent terminology updates to the Alteryx Server product.
+
+
+New Features: Predictive Tools
+------------------------------
+
+
+#### R Tool Upgrade
+
+
+We upgraded R to 4.1.3 from 4.0.5. Go to [CRAN](https://cran.r-project.org/bin/windows/base/old/4.1.3/NEWS.R-4.1.3.html) to find out what is new in R. [Download](https://downloads.alteryx.com/) and install the new version to make use of custom R code in Designer. The new version lets you continue to download R packages from CRAN.
+
+
+New Features: Intelligence Suite
+--------------------------------
+
+
+#### Part-of-Speech Tagger Tool
+
+
+The [Part-of-Speech Tagger tool](/20231/designer/part-speech-tagger "Part-of-Speech Tagger tool") allows you to determine a given word's part of speech. You can analyze specific parts of speech and refine outcomes for other **Text Mining** tools. For example, you can create word clouds of only verbs or topic models with just nouns.
+
+
+#### Barcode Tool
+
+
+The [Barcode tool](/20231/designer/barcode "Barcode tool") extracts information stored in QR codes and barcodes. The tool can also generate QR codes and barcodes. You can extract underlying information in QR codes and barcodes to automate business processes. For example, some companies use QR codes to determine whether documents are relevant to certain departments, then organize documents by Finance, HR, Marketing, etc. accordingly.
+
+
+#### OCR Optimization Feature in the Image Processing Tool
+
+
+We added an OCR Optimization feature to the Image Processing tool for scanned PDFs. Use the OCR Optimization step to pre-process noisy, scanned PDFs (for example, scanned documents that contain non-white or textured backgrounds and watermarks) for Optical Character Recognition (OCR). This additional step can greatly improve the Key-Value Pair tool results.
+
+
+#### Key-Value Pair Extraction Tool
+
+
+The [Key-Value Pair Extraction tool](/20231/designer/key-value-pair-extraction "Key-Value Pair tool") links 2 data elements, a key, which defines the data set, and its value, which belongs to the dataset. For example:
+
+
+* Company: Alteryx
+	+ "Company" is the key.
+	+ "Alteryx" is the value of the key "Company."
+
+
+#### OCR Speed Optimization
+
+
+Introduced performance improvements to the **Image Input** and **Image to Text** tools that can make your workflows run even faster! You might notice significant improvements (up to a 40% speed increase) when you parse larger documents such as multi-page PDFs.
+
+
+New Features: Installation and Licensing
+----------------------------------------
+
+
+#### Alteryx License Server
+
+
+We have streamlined the activation process with Alteryx License Server so you can focus on the available products by removing license keys from view.
+
+
+#### New Options for AlteryxActivateLicenseKeyCmd
+
+
+We have added an option to update the trusted storage with the information on the License Server. We have also added an option to return the current configuration including licensing mode, email address, and License Server URL, if applicable.
+
+
+### New in 2022.1.1.40869
+
+
+#### Patch Number in About Pane
+
+
+If you install a [Patch update](/product-activation-and-licensing/download-and-install-patch-update "Patch update") for Designer, you can now reference the Patch number in Designer via **Help** > **About**. The Patch number appears next to the Version number.
+
+
+Fixed and Known Issues
+----------------------
+
+
+
+
+| Fixed
+Major Release Version 2022.1.1.25127 |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| GDC-2294
+ GCSE-444 | Alteryx Designer incorrectly imports MRR files. | 2022.1.1.25127 | Fixed |
+| GDC-2499 | Simba Netezza driver doesn't work with Designer 21.4. | 2022.1.1.25127 | Fixed |
+| TCM-303 | Writing an Excel file in a particular way consistently corrupts it. To open the workbook at all, repairs are required. | 2022.1.1.25127 | Fixed |
+| TCM-308
+ DE24477 | Excel input with a named range or specified range with a header that contains a filter doesn't produce the expected results. | 2022.1.1.25127 | Fixed |
+| TCM-309
+ GCSE-297 | <List of Sheet Names> failing in Input Data tool and Dynamic Input tool when loading multiple Excel XLSX files with sheet names of different lengths. | 2022.1.1.25127 | Fixed |
+| TCM-310
+ GCSE-281 | Adding or overwriting a worksheet in a workbook that contains a pivot table corrupts the file. Attempting to repair the Excel sheet removes the pivot. | 2022.1.1.25127 | Fixed |
+| TCM-320
+ GCSE-303 | XLSB is corrupted when multiple worksheets are created. | 2022.1.1.25127 | Fixed |
+| TCPE-47
+ DE29223 | The ST\_Intersects function returns inaccurate results. | 2022.1.1.25127 | Fixed |
+| TCPE-49 | When Japanese characters are added to the Report Footer, they appear as rectangles on the PDF output. | 2022.1.1.25127 | Fixed |
+| TCPE-51 | An error is thrown when you schedule a workflow in Desktop Scheduler in a non-English language. | 2022.1.1.25127 | Fixed |
+| TCPE-56 | Alteryx Server: Adding Data Connection fails if the password has a pipe "|" symbol. | 2022.1.1.25127 | Fixed |
+| TCPE-59 | Right-click and Paste don't do anything in Designer 2021.2 in the Results window filter feature for fields. | 2022.1.1.25127 | Fixed |
+| TCPE-66
+ DE33819 | Filter operators are missing in the Results window for boolean data types. | 2022.1.1.25127 | Fixed |
+| TCPE-77
+ GCSE-277 | FileGetDir function doesn't properly process language characters (acute, umlaut, grave, etc.) via the AMP engine. | 2022.1.1.25127 | Fixed |
+| TCPE-78 | "You have found a bug" when running as an application, but works when running as a workflow. Workflow has a Browse File Interface tool to overwrite the default file stated in the Input Data tool. | 2022.1.1.25127 | Fixed |
+| TCPE-82
+ GCSE-278 | The Directory tool shows the wrong LastWriteTime because of a Daylight Saving bug on Windows. | 2022.1.1.25127 | Fixed |
+| TCPE-89
+ DE33954 | When a worker is told to stop by the AlteryxService, the user canceled message is not handled as an error by the Alteryx Engine. | 2022.1.1.25127 | Fixed |
+| TCPE-101
+ DE18565 | Dynamic Input tool error when no files are found. | 2022.1.1.25127 | Fixed |
+| TCPE-106
+ GCSE-296 | Base64 Encoder tool doesn't encode all records. | 2022.1.1.25127 | Fixed |
+| TCPE-111
+ GCSE-298 | Blank screen: Scheduling workflow through Designer when language is set to Deutsch (German). | 2022.1.1.25127 | Fixed |
+| TCPE-112
+ DE26351 | Multi-Row Formula tool intermittent error: "Multi-Row Formula (2) You have found a bug. Replicate, then let us know. We shall fix it soon." | 2022.1.1.25127 | Fixed |
+| TCPE-115
+ DE28137 | Workflow with warnings returns an irrelevant message to the caller workflow. | 2022.1.1.25127 | Fixed |
+| TCPE-123
+ DE22217 | Alteryx workflows flagged as "Error" while the Event message and logs seem to indicate "Success." | 2022.1.1.25127 | Fixed |
+| TCPE-130
+ GCSE-313 | Data Output tool error writing ESRI GeoDatabase (GDB folder) with AMP enabled: "Cannot access the folder." | 2022.1.1.25127 | Fixed |
+| TCPE-140
+ GCSE-317 | Report tool: Size 8 font defaults to 8.5. | 2022.1.1.25127 | Fixed |
+| TCPE-142
+ GCSE-320 | Workflows are being published to Server with blank names. | 2022.1.1.25127 | Fixed |
+| TCPE-149
+ TGAL-6137 | Schedules: Next Run timestamp is before the Last Run. | 2022.1.1.25127 | Fixed |
+| TCPE-152
+ GCSE-324 | Macros are excluded from the Favorites tool category after editing the tool. | 2022.1.1.25127 | Fixed |
+| TCPE-154
+ GCSE-326 | Text labels of Interface tools are being improperly translated when Designer is set to non-English languages. | 2022.1.1.25127 | Fixed |
+| TCPE-162
+ GCSE-333 | Workflow app creates a temp folder for Python tool in Workflow Location instead of the default/global temp directory. | 2022.1.1.25127 | Fixed |
+| TCPE-164
+ DE25563 | Tool Container doesn't automatically move while inserting tools in a workflow. | 2022.1.1.25127 | Fixed |
+| TCPE-179
+ GCSE-349 | TOPNIDX function produces the wrong order when NULL values are present. | 2022.1.1.25127 | Fixed |
+| TCPE-181
+ GCSE-350 | Special characters are skipped in the attachment name in the Email tool. | 2022.1.1.25127 | Fixed |
+| TCPE-183
+ DE28167 | The Message tool incorrectly references data with the original Engine. | 2022.1.1.25127 | Fixed |
+| TCPE-188
+ GCSE-352 | Default date of Date tool within a Group Box not displayed via Server. | 2022.1.1.25127 | Fixed |
+| TCPE-191
+ TDES-4033 | Tech Support File: ODBC file doesn't display Oracle drivers. | 2022.1.1.25127 | Fixed |
+| TCPE-192
+ DE17898 | When using the Buffer tool, there are unexpected lines connecting the original line object to the buffer object. | 2022.1.1.25127 | Fixed |
+| TCPE-195
+ TDES-4007 | Server connections: Duplicate entries for one Server can be added which leads to both Servers being removed. | 2022.1.1.25127 | Fixed |
+| TCPE-199
+ GCSE-361 | Schedule with Daily Frequency: Can't uncheck "Run only during week (Mon-Fri)." | 2022.1.1.25127 | Fixed |
+| TCPE-201 | An error occurs in the Join tool when trying to rename a field, then changing the data type. | 2022.1.1.25127 | Fixed |
+| TCPE-209
+ TDES-4050 | SSF pop-up is not displayed during a time-consuming Results grid search operation. | 2022.1.1.25127 | Fixed |
+| TCPE-214
+ GCSE-378 | When you use the Open Recent option in Designer to open a workflow from the Gallery, it doesn't open the most recently published version of the workflow. | 2022.1.1.25127 | Fixed |
+| TCPE-218
+ GCSE-309 | Resizing an image using the Image Settings Style editor of the Image tool has no effect. | 2022.1.1.25127 | Fixed |
+| TDALI-683
+ DE11021 | Text formatting is not kept when paragraphs in the text are passed to Report Text or Email tools. | 2022.1.1.25127 | Fixed |
+| TDALI-706
+ DE16393 | On the Notes/Annotations Chart and Axes pages, the LaTex area shows "Button" and "Button" instead of "Go Back" and "Continue." | 2022.1.1.25127 | Fixed |
+| TDALI-1036
+ DE26464 | Batch titles are dropped in the Interactive Chart tool. | 2022.1.1.25127 | Fixed |
+| TDALI-1064
+ DE27910 | Interactive Chart tool: Edits to axes titles are applied to both the X-axis and the Y-axis regardless of which axis title you edit. | 2022.1.1.25127 | Fixed |
+| TDALI-1080
+ DE28345 | Legend Splitter doesn't account for negative numbers. | 2022.1.1.25127 | Fixed |
+| TDALI-1126
+ DE34021 | The first field doesn't render in the Report Text tool when using Export Mode. | 2022.1.1.25127 | Fixed |
+| TDALI-4227
+ GCSE-292 | Join tool doesn't work correctly following a Summarize tool that renames fields. | 2022.1.1.25127 | Fixed |
+| TDCB-3623
+ DE21598 | Garbled error message with multibyte characters when connecting to Oracle. | 2022.1.1.25127 | Fixed |
+| TDCB-3881
+ DE33890 | Oracle throws an error when using Designer in a FIPS enabled Windows environment. | 2022.1.1.25127 | Fixed |
+| TDCB-3953 | MRR file spatial objects are shifted and cropped. | 2022.1.1.25127 | Fixed |
+| TDCB-3956 | MRR files drop the Class 1 spatial object. | 2022.1.1.25127 | Fixed |
+| TDCB-3976
+ GCSE-375 | When running a workflow in 2021.4, certain Excel files generate an error that references http://schemas.openxmlformats.org/ spreadsheetml/2006/main. | 2022.1.1.25127 | Fixed |
+| TDCB-3986
+ GCSE-330 | Snowflake bulk connections: Each chunk of data includes the API commands PUT and COPY. | 2022.1.1.25127 | Fixed |
+| TDD-55 | Quick repetitive mouse clicks between canvas and tools on the canvas cause an exception. | 2022.1.1.25127 | Fixed |
+| TDD-58 | Global search panel height is not changing when we search for the 1st time. | 2022.1.1.25127 | Fixed |
+| TDD-59 | Closing Designer or restoring defaults causes an exception. | 2022.1.1.25127 | Fixed |
+| TDD-60 | Configuration: Help and Apply icons are hidden while switching between tool selections. | 2022.1.1.25127 | Fixed |
+| TDD-61 | Dock window: Increase the height of the title bar and the Title is fully highlighted in German (Deutsch) language. | 2022.1.1.25127 | Fixed |
+| TDD-66 | Dock window button tooltips are not translated. | 2022.1.1.25127 | Fixed |
+| TDD-67 | Long tool names are not showing up properly. | 2022.1.1.25127 | Fixed |
+| TDD-69 | Tool Palette: Tool name is not clear in Chinese and Japanese. | 2022.1.1.25127 | Fixed |
+| TDD-89 | In some cases, inactive items in the docking manager context menus exhibit text and drop-shadow problems. | 2022.1.1.25127 | Fixed |
+| TDES-3732 | The help link for AMP Performance Profiling displays under the Files tab instead of the Message tab. | 2022.1.1.25127 | Fixed |
+| TDES-3764 | Run button missing after config changes. | 2022.1.1.25127 | Fixed |
+| TDES-3797
+ DE24738 | Empty tool annotations don't revert to the original annotation. | 2022.1.1.25127 | Fixed |
+| TDES-3847 | Designer crashes when switching between Messages and Browse in the Results window. | 2022.1.1.25127 | Fixed |
+| TDES-3853 | Interface Designer as a tabbed doc causes panel changes. | 2022.1.1.25127 | Fixed |
+| TDES-3854 | Macros column mapping: Upstream configuration changes cause field mapping to be lost. | 2022.1.1.25127 | Fixed |
+| TDES-3869 | Sample workflows paths contain forward slashes. | 2022.1.1.25127 | Fixed |
+| TDES-3874 | Inserting XML code into Footer Macro causes Designer to crash. | 2022.1.1.25127 | Fixed |
+| TDES-3876 | CEF credits homepage links are broken. | 2022.1.1.25127 | Fixed |
+| TDES-3928 | MongoDB logs are not in the Tech Support File. | 2022.1.1.25127 | Fixed |
+| TDES-3968 | Adding an invalid URL to Manage Alteryx Links does not result in an error. | 2022.1.1.25127 | Fixed |
+| TDES-3974 | Tech Support File errors with "Illegal characters in path" for ODBC info file. | 2022.1.1.25127 | Fixed |
+| TDES-3975 | Tech Support File: Proxy incorrectly set as "http://www.alteryx.com/." | 2022.1.1.25127 | Fixed |
+| TDES-4018 | The shortcuts for Find and Replace are not wrapped for translation in the Edit menu. | 2022.1.1.25127 | Fixed |
+| TDES-4021 | The search function doesn't work correctly in the Manage Alteryx Links window. | 2022.1.1.25127 | Fixed |
+| TDES-4032
+ TC-3364 | Saving from Designer Desktop to Platform loses Japanese and Chinese characters. | 2022.1.1.25127 | Fixed |
+| TDES-4041 | Tech Support File: Add a minor version number. | 2022.1.1.25127 | Fixed |
+| TDES-4048 | Text in the Autorecover dialog contains incorrect instructions. | 2022.1.1.25127 | Fixed |
+| TDES-4109
+ GDC-2155 | Designer crashes when trying to edit User Settings. | 2022.1.1.25127 | Fixed |
+| TDES-4120 | In User Settings > Localization, some strings are translated that shouldn't be. | 2022.1.1.25127 | Fixed |
+| TDES-4123
+ GCSE-448 | Default Gallery URL is no longer functional after upgrading to 21.4. | 2022.1.1.25127 | Fixed |
+| TDSL-3862 | Interactive Chart only renders the 1st Interactive Chart. | 2022.1.1.25127 | Fixed |
+| TDSL-3864 | The XML Parse tool doesn't detect specific child when using namespaces. | 2022.1.1.25127 | Fixed |
+| TDSL-3954 | Misconfigured Blob Input can crash with AMP. | 2022.1.1.25127 | Fixed |
+| TDSL-3992
+ GENG-2467 | AMP engine hangs if ODBC post SQL fails in the Input Data tool. | 2022.1.1.25127 | Fixed |
+| TDSL-4018
+ TDALI-4244 | Browse tool Report tab not showing all reports. | 2022.1.1.25127 | Fixed |
+| TDSL-4039
+ GSCE-307 | Designer crashes when clicking Browse tool with WString size set above 16384 bytes on AMP engine. | 2022.1.1.25127 | Fixed |
+| TDSL-4040
+ GCSE-319 | AMP Engine: Macro setup causes the Block Until Done tool to not output anything. | 2022.1.1.25127 | Fixed |
+| TDSL-4086
+ GCSE-341 | Summarize tool doesn't work correctly with Spatial objects in AMP. | 2022.1.1.25127 | Fixed |
+| TDSL-4131 | Error: "InboundNamedPipe GetOverlappedResult: The pipe has been ended" when both Use AMP Engine and Enable Performance Profiling settings are checked with Block Until Done in macro. | 2022.1.1.25127 | Fixed |
+| TDSL-4163
+ GENG-2598 | For now, since ZIP files are not AMP enabled, there is a cost to converting records and packaging between the original Engine and AMP. This cost has been documented and consideration will be given to AMP enablement for additional connector types in the future. | 2022.1.1.25127 | Fixed |
+| TDSL-4164
+ GCSE-366 | 2021.4 defect: The Table tool formats negative numbers with parentheses rather than negative signs as in past versions. | 2022.1.1.25127 | Fixed |
+| TDSL-4167
+ GDF-254 | AMP Generate Rows tool doesn't handle special character encoding. | 2022.1.1.25127 | Fixed |
+| TDYN-142 | Amazon Redshift: "ERROR: The session is read-only" using pre/post SQL option in the Input Data tool when attempting to perform any operation that is not a select statement. | 2022.1.1.25127 | Fixed |
+| TDYN-155
+ GDC-1820 | Add FSO for MSSQL Server drivers to use rowset size of 1. | 2022.1.1.25127 | Fixed |
+| TELC-2735
+ GENG-2557 | Remove the need to insert "sleep" method when R script is failing. | 2022.1.1.25127 | Fixed |
+| TELC-2840
+ TELC-2747 | Run Command tool throws an error on config runs when an input file doesn't exist. | 2022.1.1.25127 | Fixed |
+| TELC-2841 | AMP Engine: Error with Spatial Info tool: InboundNamedPipe GetOverlappedResult: The pipe has been ended. | 2022.1.1.25127 | Fixed |
+| TELC-2843 | AMP: XML Parse with 'Full update' mode outputs incorrect schema. | 2022.1.1.25127 | Fixed |
+| TELC-2845 | AMP: Select tool doesn't show truncate warning. | 2022.1.1.25127 | Fixed |
+| TELC-2846
+ DE19959 | Inconsistent behavior between original Engine and AMP. In AMP, no error about RecordInfo::CreateRecord: A record was created with no fields. | 2022.1.1.25127 | Fixed |
+| TELC-2864
+ DE33786 | AMP defect: RegEx output True instead of Null for method Match. | 2022.1.1.25127 | Fixed |
+| TELC-2865 | Warnings for truncated fields aren't always reported to the user. | 2022.1.1.25127 | Fixed |
+| TELC-2868
+ GENG-2649 | AMP Download tool discards Null URL values. | 2022.1.1.25127 | Fixed |
+| THYP-1272
+ DE30181 | Fix the AMP behavior for the Join Multiple tool when joining by duplicated fields. | 2022.1.1.25127 | Fixed |
+| THYP-1273 | Group By action of Summarize tool isn't recognizing renamed fields via AMP engine. | 2022.1.1.25127 | Fixed |
+| Minor Release Version 2022.1.1.30569 |
+| --- |
+| TCPE-305
+ GCSE-496 | 2021.4: The Date tool (Interface tool) with null or empty date doesn't work in the Gallery. | 2022.1.1.30569 | Fixed |
+| TELC-2939
+ DE34028 | The Open Debug option in the Interface Designer window doesn't work when the Use AMP Engine setting is checked. | 2022.1.1.30569 | Fixed |
+| TELC-2940
+ DE33584 | 21.2 AMP Engine error: "The file "debug\_temp.yxmd" does not exist" when using Debug Mode in the Interface Designer.  | 2022.1.1.30569 | Fixed |
+| TKUB-1323
+ GDC-2472 | It is not possible to create an In-DB Impala connection via the user interface. | 2022.1.1.30569 | Fixed |
+| Minor Release Version 2022.1.1.40869 |
+| --- |
+| TAAI-14 | Proxy support for Auto Insights Uploader tool in 22.1.x. | 2022.1.1.40869 | Fixed |
+| TDCB-4085 | Designer crashes after you close a workflow with a Connect In-DB tool and a Browse In-DB tool, and then create and run a 2nd workflow with the same tools. | 2022.1.1.40869 | Fixed |
+| TDES-4396 | When dragging and dropping tools from the Recommended Tools palette, the tool palette crashes. | 2022.1.1.40869 | Fixed |
+| TELC-2995
+ GENG-2767 | The Dynamic Input tool doesn't honor the Record Limit for AMP workflows. | 2022.1.1.40869 | Fixed |
+| Minor Release Version 2022.1.1.42590 |
+| --- |
+| TDSL-4517
+ TLOC-4497 | Designer can't run workflows that have Japanese file names on Japanese operating systems in AMP engine. | 2022.1.1.42590 | Fixed |
+| TDT-1569
+ GCSE-768 | Users can't edit the components of basemap layers in the Report Map tool in versions after 2021.4. | 2022.1.1.42590 | Fixed |
+| Minor Release Version 2022.1.1.42604 |
+| --- |
+| TCPE-456 | 404 error and code loss in the Python tool in workflows that are downloaded from Gallery. | 2022.1.1.42604 | Fixed |
+| TDCB-4214
+ GCSE-752 | Error when writing data of a V\_WString field type and field size = 65535 to Amazon Redshift database using the Output Data tool. The character length for <Field> is currently 65535, exceeding the limit of 65531 bytes. | 2022.1.1.42604 | Fixed |
+| TDCB-4221
+ GCSE-675
+ TDCB 4338 | Connecting to HIVE via the 2022.1 version of both Server and Designer using the MIT authentication results in an error. You need to contact Customer Support to apply the CNF file with the outdated encryption method. | 2022.1.1.42604 | Fixed |
+| Minor Release Version 2022.1.1.42619 |
+| --- |
+| TCPE-409
+ GCSE-730 | Issues with loading DLLs when using Alteryx 2022.1 .NET API. | 2022.1.1.42619 | Fixed |
+| Minor Release Version 2022.1.1.42636 |
+| --- |
+| TDSL-4686
+ GCSE-1046 | Unexpected results between AMP and the original Engine when using the Mode action in the Summarize tool. | 2022.1.1.42636 | Fixed |
+| TDSL-4721
+ TELC-3231 | AMP Union tool: "The input "#1" was not initialized." error.  | 2022.1.1.42636 | Fixed |
+| Minor Release Version 2022.1.1.42654 |
+| --- |
+| TDSL-4743
+ GENG-3078 | The Unique tool doesn't provide correct data while using the AMP engine with large datasets. | 2022.1.1.42654 | Fixed |
+| TELC-3619
+ GCSE-1297 | Problem with extended characters in path/folder when using the AMP engine. | 2022.1.1.42654 | Fixed |
+| TPM-758
+ GCSE-344 | ‘Filename.yxdb’ is not a valid yxdb file' error in the SharePoint Files Input tool using date-time fields. | 2022.1.1.42654 | Fixed |
+
+
+
+
+| Known |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| GDC-1503 | Dynamic Input doesn't query the table whose name was updated. | 2022.1.1.25127 | Known |
+| GDC-2039
+ GCSE-345
+ DE26564 | Exporting from the Results window to a file with a previously used name doesn't save for all records.  | 2022.1.1.25127 | Known |
+| GDC-2043
+ DE26564 | Exporting from the Results window to a file with a previously used name doesn't save. | 2022.1.1.25127 | Known |
+| GDC-2143
+ TCPE-228
+ GCSE-401 | Input Data tool fails when opening Visual Query Builder with Error "Could not load type 'ActiveDatabaseSoftware.ActiveQueryBuilder. SnowflakeMetadataProvider' from assembly 'ActiveDatabaseSoftware. ODBCMetadataProvider2..."
+
+ As a workaround...
+ 1. Uninstall 2021.4 via Control Panel (add/remove programs).
+2. Go to C:\Users\<username>\Appdata\Local\Alteryx\bin and check for leftover dlls.
+3. If dlls still exist, try renaming the C:\Users\<username>\Appdata\Local\Alteryx\bin folder to bin\_old.
+4. Reinstall 2021.4.
+ | 2022.1.1.25127 | Known |
+| GDC-2337 | VQB Parsing Error: "Invalid SELECT statement. Unexpected token..." when editing valid SQL statements. | 2022.1.1.25127 | Known |
+| GENG-1812
+ DE15582 | Designer can't write date or date-time values in the MapInfo TAB file format. | 2022.1.1.25127 | Known |
+| GENG-1956
+ DE23607 | Original engine: Browse Everywhere tells you there is no data and tells you to rerun your workflow when there actually is data. | 2022.1.1.25127 | Known |
+| GENG-1973
+ DE24092 | Buffer tool creates small gaps of less than one foot. | 2022.1.1.25127 | Known |
+| GENG-2060
+ DE33584 | 21.2 AMP engine error: "The file "debug\_temp.yxmd" does not exist" when using Debug mode in Interface Designer. | 2022.1.1.25127 | Known |
+| GENG-2069
+ DE33817 | The engine is unable to read files from a directory that contains a period in the provided file path. | 2022.1.1.25127 | Known |
+| GENG-2297
+ DE13411 | Generalize: Closing large interior holes in the polygon. | 2022.1.1.25127 | Known |
+| GENG-2532
+ GCSE-315 | Render tool PDF reverses Arabic, Hebrew, and other right-to-left languages. | 2022.1.1.25127 | Known |
+| GENG-2582
+ DE29944 | Error while trying to open a PowerPoint file created by the Render tool. | 2022.1.1.25127 | Known |
+| GENG-2605
+ GCSE-354 | Tables are not present in the output of most file types of the Render tool if the HTML <table> tag was included in the Report tool. | 2022.1.1.25127 | Known |
+| GENG-2606
+ TDES-4064 | The Results window doesn't recognize whitespace with multibyte characters. | 2022.1.1.25127 | Known |
+| GENG-2607
+ GCSE-382 | The Runner tool is unable to run a workflow in a double-byte named path. | 2022.1.1.25127 | Known |
+| GENG-2611
+ DE28570 | Double-byte numbers are not recognized as a number in the Text Input tool. | 2022.1.1.25127 | Known |
+| GENG-2679
+ GCSE-458 | PowerPoint outputs via the Render tool exclude default row border colors. | 2022.1.1.25127 | Known |
+| GENG-2689 | AMP: Summarized data in Summarize tool aren't generated in the workflow. | 2022.1.1.25127 | Known |
+| TCM-289
+ DE33673 | Sharepoint List tools: Error encountered: Root element is missing. | 2022.1.1.25127 | Known |
+| TCM-399 | Input tool Excel XLSX ranges are inconsistently loaded when data is sparse. | 2022.1.1.25127 | Known |
+| TCM-410
+ DE23667 | Input Data tool: Switching from Excel to SQL doesn't clear the Excel sheet name. | 2022.1.1.25127 | Known |
+| TCM-418
+ DE28506 | SQL Editor: Comments are not saving. | 2022.1.1.25127 | Known |
+| TCM-429
+ GCSE-456 | ESRI ArcGIS SHP file isn't opening correctly in 2021.4.2. Lat and Lon are reversed in polygons in some SHP files. | 2022.1.1.25127 | Known |
+| TCPE-12 | Connectors blank screen authenticating. Unable to complete authentication via browser in Designer 2021.3.2.54175. Affects Azure sign-in. | 2022.1.1.25127 | Known |
+| TCPE-120
+ DE33942 | Fields are duplicated in Select functionality when there is a field order change and rename (case change). | 2022.1.1.25127 | Known |
+| TCPE-208
+ GCSE-373 | Designer 2021.4: Unable to enter a value in the Results window filter options. | 2022.1.1.25127 | Known |
+| TCPE-277
+ DE34182 | Copying from browse and pasting to Text Input tool is broken with certain data. | 2022.1.1.25127 | Known |
+| TDALI-844
+ DE19725 | PNG not rendering properly to PDF from the Render tool. | 2022.1.1.25127 | Known |
+| TDALI-877
+ DE21115 | Report Text tool: Font size of 10 or 14 changes to 12 in Excel. | 2022.1.1.25127 | Known |
+| TDALI-878
+ DE21128 | Footer-created page numbers are incorrect. | 2022.1.1.25127 | Known |
+| TDALI-882
+ DE21324 | Grouped columns aren't output correctly in the Render tool. | 2022.1.1.25127 | Known |
+| TDALI-884
+ DE21433 | Quartile calculation results in the Browse tool are incorrect. | 2022.1.1.25127 | Known |
+| TDALI-950
+ DE23142 | The Data Cleanse tool converts the Layout field to text. | 2022.1.1.25127 | Known |
+| TDALI-1012
+ TDALI-1044
+ DE25789 | The Render tool can produce errors or issues with display tables when using more than 999 rows. | 2022.1.1.25127 | Known |
+| TDALI-1040
+ DE26486 | Data Profiling filters don't persist when opening a new window. | 2022.1.1.25127 | Known |
+| TDALI-1060
+ DE27692 | Tables with a large number of columns don't render properly. | 2022.1.1.25127 | Known |
+| TDALI-1062
+ DE27857 | 2020.2: Inability to key in a semicolon in the To field of an email event. | 2022.1.1.25127 | Known |
+| TDALI-1070
+ DE28136 | Formula rule isn't functioning properly in the Basic Table column rules. | 2022.1.1.25127 | Known |
+| TDALI-1071
+ DE28138 | The Image tool isn't detecting image Blob from digital cameras. | 2022.1.1.25127 | Known |
+| TDALI-1109
+ DE33546 | The Download tool is not able to render Chinese characters. | 2022.1.1.25127 | Known |
+| TDALI-1117
+ DE33700 | When you create a column rule in the Table tool, the Apply Always dropdown overlaps other widgets in the window. | 2022.1.1.25127 | Known |
+| TDALI-4166
+ DE28315 | Summarize tool: Financial function limits when the data set contains more than 65,536 records. | 2022.1.1.25127 | Known |
+| TDALI-4185
+ DE34172 | Excel outputs from the Render tool that are sourced via a Report Text tool are corrupt. | 2022.1.1.25127 | Known |
+| TDALI-4189 | Python tool: GPU can't be loaded in Alteryx. | 2022.1.1.25127 | Known |
+| TDALI-4199 | Jupyter Notebook doesn't load and fails with a 404 error if the Detour tool is used and diverts the route to another path that the Python tool isn't on. | 2022.1.1.25127 | Known |
+| TDALI-4225
+ TCPE-102 | DoubleMetaphone in Fuzzy Match tool configuration UI lets users choose more than 8 key lengths. | 2022.1.1.25127 | Known |
+| TDALI-4237
+ DE28817 | Custom fonts aren't output to various file types via the Render tool. | 2022.1.1.25127 | Known |
+| TDALI-4305
+ GCSE-430 | The Paper Size configuration of the Render tool isn't applied to PowerPoint output. | 2022.1.1.25127 | Known |
+| TDCB-1622
+ DE30001 | Dates are written as strings using 64-bit Access driver. | 2022.1.1.25127 | Known |
+| TDCB-1623
+ DE30005 | There's a limitation for int64 fields from Alteryx written to Access driver. | 2022.1.1.25127 | Known |
+| TDCB-3975
+ GCSE-371 | In 2021.4, multiline Excel file headers are truncated when read in via the Input Data tool. | 2022.1.1.25127 | Known |
+| TDCB-3987
+ GCSE-328 | Error: "The COPY failed with error: End of record reached while expected to parse column" when trying to update Snowflake using Bulk Connection. | 2022.1.1.25127 | Known |
+| TDCB-4038 | MRR file drops some Class 1 spatial objects. | 2022.1.1.25127 | Known |
+| TDCB-4047
+ GDC-2306 | DSN created with Postgres drivers isn't recognized in the Greenplum ODBC connection. | 2022.1.1.25127 | Known |
+| TDCB-4060 | Azure Databricks bulk loads fail when run from a Proxy. | 2022.1.1.25127 | Known |
+| TDCB-4068 | Bulk Loading Staging File upload errors aren't reported in the Results window in some cases with Azure Databricks. | 2022.1.1.25127 | Known |
+| TDES-3765
+ DE24306 | If you click the splash screen while Designer is loading, this sometimes causes Designer to open behind other windows without turning on the Taskbar icon. | 2022.1.1.25127 | Known |
+| TDES-3798
+ DE25925 | When you print a workflow, the counts following each tool don't print. | 2022.1.1.25127 | Known |
+| TDES-3816 | ASCII character FF (ASCII 12) in a workflow causes an Unhandled Exception and runtime error: "The Designer x64 reported: ParseError: invalid character reference at line # and column # while processing "AlteryxModule". | 2022.1.1.25127 | Known |
+| TDES-3825
+ DE32739 | Non-Admin starter kits fail to install. Requires admin access. | 2022.1.1.25127 | Known |
+| TDES-3867
+ DE33578 | Embedded macros pulled from the macro palette aren't seen as assets when pushed to Gallery (Server). | 2022.1.1.25127 | Known |
+| TDES-3899
+ TDCB-3810 | Designer WString doesn't seem to handle extended multilingual plane characters properly. | 2022.1.1.25127 | Known |
+| TDES-4056 | When using the Interface Designer's Test View to debug macros that use the Macro Input question output to populate a List Box or Drop Down interface tool, the fields defined in the Macro Input are not rendered. Since no fields can be selected, the Debug workflow can't be opened. | 2022.1.1.25127 | Known |
+| TDES-4145
+ GBETA-217 | Undo and Redo stack order is incorrect when you add tools from the Results grid. | 2022.1.1.25127 | Known |
+| TDES-4203
+ GDC-2271 | This error might display when you use the Browse tool with unusual date ranges: "There was an error loading the browse tab "Profile": <path>. The FileID does not match in the FileHeader." The application might crash after you close the error prompt. | 2022.1.1.25127 | Known |
+| TGAL-6490 | Users running on Japanese operating systems with Unicode characters in their directory path names might encounter an exception when attempting to use mapping and custom-made tools stored within these directories. | 2022.1.1.25127 | Known |
+| TINST-229
+ GDD-987 | Do not install Alteryx Designer FIPS to the same location as your non-FIPS Admin Designer.
+By default, the FIPS installer recommends a different install location than the non-FIPS installer, but you can manually change it. If you change the install location, ensure it is NOT the same location as the non-FIPS Designer. If you install Alteryx Designer FIPS to the same location as a non-FIPS Admin Designer, your installation, as well as custom files and data that might be within that folder, will be significantly corrupted. | 2022.1.1.25127 | Known |
+| TPM-1154 | Sharepoint Files Input tool: Sharepoint lists are not loaded when you use the Service Principal authentication method. | 2022.1.1.25127 | Known |
+
+
+Security Updates
+----------------
+
+
+
+
+| Fixed
+Patch/Minor Release Version 2022.1.1.42590 |
+| --- |
+| ID | Description | Version | Issue Status |
+| --- | --- | --- | --- |
+| TDS-555 | SV: Update OpenSSL to 3.0.7; remediates CVE-2022-3602 and CVE-2022-3786 | 2022.1.1.42590 | Fixed |
+
+
+
+
+
+
+
+
+Was This Page Helpful?
+
+
+
+
+N/A
+
+
+
+Yes
+
+
+
+No
+
+
+
+
+
+
+
+
+ 
+Have a comment? Please leave it here.
+
+
+
+
+Running into problems or issues with your Alteryx product? Visit the [Alteryx Community](https://community.alteryx.com/?category.id=external "Community") or contact [support](https://community.alteryx.com/t5/Support/bd-p/SupportPage "Support"). Can't submit this form? [Email us](mailto:helpfeedback@alteryx.com?subject=Help%20Feedback&body=URL%20of%20Help%20Page%3A%0AFeedback%3A).
+
+
+
+
+ 
+ 
+
+
+Leave this field blank
+
+
+
+
+
+
+
+
+
+#### In this Release Note:
+
+
+* [Important Notes and Updates](#important-notes-and-updates)
+* [Alteryx Designer FIPS](#alteryx-designer-fips)
+* [New Features: Designer](#new-features:-designer)
+* [New Features: Predictive Tools](#new-features:-predictive-tools)
+* [New Features: Intelligence Suite](#new-features:-intelligence-suite)
+* [New Features: Installation and Licensing](#new-features:-installation-and-licensing)
+* [Fixed and Known Issues](#fixed-and-known-issues)
+* [Security Updates](#security-updates)
+
+
+
+
+
+
+
+
+
+![](/themes/custom/themekit/images/alteryx-documentation-navy.png)
+
+
+Release Notes
+-------------
+
+
+* [Designer](/release-notes/designer/designer-20223-release-notes)Toggle menu
+	+ [2023.1](/release-notes/designer/designer-20231-release-notes)
+	+ [2022.3](/release-notes/designer/designer-20223-release-notes)
+	+ [2022.2 FIPS](/release-notes/designer/designer-fips-20222-release-notes)
+	+ [2022.1](/release-notes/designer/designer-20221-release-notes)
+	+ [2021.4](/release-notes/designer/designer-20214-release-notes)
+	+ [2021.3](/release-notes/designer/designer-20213-release-notes)
+	+ [2021.2](/release-notes/designer/designer-20212-release-notes)
+	+ [2021.1](/release-notes/designer/designer-20211-release-notes)
+	+ [2020.4](/release-notes/designer/designer-20204-release-notes)
+	+ [2020.3](/release-notes/designer/designer-20203-release-notes)
+	+ [2020.2](/release-notes/designer/designer-20202-release-notes)
+	+ [2020.1](/release-notes/designer/designer-20201-release-notes)
+	+ [2019.4](/release-notes/designer/designer-20194-release-notes "Designer 2019.4 Release Notes")
+	+ [2019.3](/release-notes/designer/designer-20193-release-notes "Designer 2019.3 Release Notes")
+	+ [2019.2](/release-notes/designer/designer-20192-release-notes "Designer 2019.2 Release Notes")
+	+ [2019.1](/release-notes/designer/designer-20191-release-notes "Designer 2019.1 Release Notes")
+	+ [2018.4](/release-notes/designer/designer-20184-release-notes "Designer 2018.4 Release Notes")
+	+ [2018.3](/release-notes/designer/designer-20183-release-notes "Designer 2018.3 Release Notes")
+	+ [2018.2](/release-notes/designer/designer-20182-release-notes "Designer 2018.2 Release Notes")
+	Show Less
+* [Server](/release-notes/server/server-20211-release-notes)Toggle menu
+	+ [2023.1](/release-notes/server/server-20231-release-notes)
+	+ [2022.3](/release-notes/server/server-20223-release-notes)
+	+ [2022.2](/release-notes/server/server-fips-20222-release-notes)
+	+ [2022.1](/release-notes/server/server-20221-release-notes)
+	+ [2021.4](/release-notes/server/server-20214-release-notes)
+	+ [2021.3](/release-notes/server/server-20213-release-notes)
+	+ [2021.2](/release-notes/server/server-20212-release-notes)
+	+ [2021.1](/release-notes/server/server-20211-release-notes)
+	+ [2020.4](/release-notes/server/server-20204-release-notes)
+	+ [2020.3](/release-notes/server/server-20203-release-notes)
+	+ [2020.2](/release-notes/server/server-20202-release-notes)
+	+ [2020.1](/release-notes/server/server-20201-release-notes)
+	+ [2019.4](/release-notes/server/server-20194-release-notes)
+	+ [2019.3](/release-notes/server/server-20193-release-notes "Server 2019.3 Release Notes")
+	+ [2019.2](/release-notes/server/server-20192-release-notes)
+	+ [2019.1](/release-notes/server/server-20191-release-notes)
+	+ [2018.4](/release-notes/server/server-20184-release-notes)
+	+ [2018.3](/release-notes/server/server-20183-release-notes)
+	+ [2018.2](/release-notes/server/server-20182-release-notes)
+	Show More
+* [Analytics Hub](/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)Toggle menu
+	+ [2021.2](/release-notes/alteryx-analytics-hub/analytics-hub-20212-release-notes)
+	+ [2021.1](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20211-release-notes)
+	+ [2020.4](https://help.alteryx.com/release-notes/alteryx-analytics-hub/analytics-hub-20204-release-notes)
+	+ [2020.3](/release-notes/alteryx-analytics-hub/analytics-hub-20203-release-notes)
+	+ [2020.2](/release-notes/alteryx-analytics-hub/analytics-hub-20202-release-notes)
+* [Connect](/release-notes/connect/connect-20204-release-notes)Toggle menu
+	+ [2023.1](/release-notes/connect/connect-20231-release-notes)
+	+ [2022.3](/release-notes/connect/connect-20223-release-notes)
+	+ [2022.1](/release-notes/connect/connect-20221-release-notes)
+	+ [2021.4](/release-notes/connect/connect-20214-release-notes)
+	+ [2021.3](/release-notes/connect/connect-20213-release-notes)
+	+ [2021.2](/release-notes/connect/connect-20212-release-notes)
+	+ [2021.1](/release-notes/connect/connect-20211-release-notes)
+	+ [2020.4](/release-notes/connect/connect-20204-release-notes)
+	+ [2020.3](/release-notes/connect/connect-20203-release-notes)
+	+ [2020.2](/release-notes/connect/connect-20202-release-notes)
+	+ [2020.1](/release-notes/connect/connect-20201-release-notes)
+	+ [2019.4](/release-notes/connect/connect-20194-release-notes "Connect 2019.4 Release Notes")
+	+ [2019.3](/release-notes/connect/connect-20193-release-notes "Connect 2019.3 Release Notes")
+	+ [2019.2](/release-notes/connect/connect-20192-release-notes "Connect 2019.2 Release Notes")
+	+ [2019.1](/release-notes/connect/connect-20191-release-notes "Connect 2019.1 Release Notes")
+	+ [2018.4](/release-notes/connect/connect-20184-release-notes "Connect 2018.4 Release Notes")
+	+ [2018.3](/release-notes/connect/connect-20183-release-notes "Connect 2018.3 Release Notes")
+	+ [2018.2](/release-notes/connect/connect-20182-release-notes "Connect 2018.2 Release Notes")
+	+ [3.0](/release-notes/connect/connect-30-release-notes "Connect 3.0 Release Notes")
+	+ [2.0](/release-notes/connect/connect-20-release-notes "Connect 2.0 Release Notes")
+	+ [1.0](/release-notes/connect/connect-10-release-notes "Connect 1.0 Release Notes")
+	Show More
+* [Promote](/release-notes/promote/promote-20204-release-notes)Toggle menu
+	+ [2022.3](https://help.alteryx.com/release-notes/promote/promote-20223-release-notes)
+	+ [2022.2](https://help.alteryx.com/release-notes/promote/promote-20222-release-notes)
+	+ [2022.1](https://help.alteryx.com/release-notes/promote/promote-20221-release-notes)
+	+ [2021.4](https://help.alteryx.com/release-notes/promote/promote-20214-release-notes)
+	+ [2021.3](/release-notes/promote/promote-20213-release-notes)
+	+ [2021.2](https://help.alteryx.com/release-notes/promote/promote-20212-release-notes)
+	+ [2021.1](https://help.alteryx.com/release-notes/promote/promote-20211-release-notes)
+	+ [2020.4](/release-notes/promote/promote-20204-release-notes)
+	+ [2020.3](/release-notes/promote/promote-20203-release-notes)
+	+ [2020.2](/release-notes/promote/promote-20202-release-notes)
+	+ [2020.1](/release-notes/promote/promote-20201-release-notes)
+	+ [2019.4](/release-notes/promote/promote-20194-release-notes "Promote 2019.4 Release Notes")
+	+ [2019.3](/release-notes/promote/promote-20193-release-notes)
+	+ [2019.2](/release-notes/promote/promote-20192-release-notes)
+	+ [2019.1](/release-notes/promote/promote-20191-release-notes)
+	+ [2018.4](/release-notes/promote/promote-20184-release-notes)
+	+ [2018.3](/release-notes/promote/promote-20183-release-notes)
+	+ [2018.2](/release-notes/promote/promote-20182-release-notes)
+	Show More
+* [Auto Insights](https://help.alteryx.com/release-notes/auto-insights/auto-insights-release-notes)
+* [Licensing & Downloads Portal Release Notes](/release-notes/product-activation-and-licensing/licensing-downloads-portal-release-notes)
+* [Machine Learning](https://docs.trifacta.com/display/AAC/Release+Notes+for+Machine+Learning+-+Application)
+
+
+
+
+
+
+
+
+
+
+Breadcrumb
+----------
+
+
+1. [Home](/)
+2. [Release Notes & Help Versions](/release-notes)
+
+
+
+
+
+
+
+
+
+
+
+[![Alteryx](/themes/custom/themekit/alteryx_logo.png)](https://help.alteryx.com/)
+
+
+
+
+Select your language
+EnglishEspañolItalianoPortuguêsFrançais日本語Deutsch简体中文
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Cookie Settings](#)
+
+
+ 
+
+
+#### Ask The Community
+
+
+
+
+ Post questions and get answers from our community of data science and analytic experts.
+
+
+
+
+[Ask Now](https://community.alteryx.com/?category_id=external)
+
+
+
+
+
+#### Contact Support
+
+
+
+
+[Contact](https://community.alteryx.com/t5/Support/bd-p/SupportPage)
+
+
+
+
+
+ 
+
+Product Menu
+------------
+
+
+* [About](/20231/designer/about)
+* [Credits](/credits)
+* [Usage Data](/improving-our-products-usage-data)
+
+
+
+
+Footer Main Navigation
+----------------------
+
+
+* [Release Notes](/release-notes "Release Notes")
+* [License and Activate](/product-activation-and-licensing "License & Activation")
+* [Download Products](https://downloads.alteryx.com "Downloads and Licenses")
+
+
+
+
+ 
+ 
+
+{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/21176","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ckeditorheight":{"offset":1,"line\_height":1.5,"unit":"em","disable\_autogrow":null},"data":{"searchString":"Search Help \u0026 Documentation"},"lang\_dropdown":{"lang-dropdown-form":{"key":"lang-dropdown-form"}},"ajaxTrustedUrl":{"form\_action\_p\_pvdeGsVG5zNF\_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"4a7f5171b5c676338e4fc431c7e1a6cf24d8a4b2750c3964cc5b7ae3003b6388"}}
+
+window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"92abcb314d","applicationID":"597213089","transactionName":"ZFZRbEAECBAFVk1aXF0ccltGDAkNS3FLRkNSX29WXQEDPydaV0dBXF9fXUA5KAwAUG9aVkRwXFZGFwkPCFBLHg1FWlZP","queueTime":0,"applicationTime":731,"atts":"SBFSGggeGx4=","errorBeacon":"bam.nr-data.net","agent":""}
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. [Privacy Policy](https://www.alteryx.com/privacy)
+
+Cookie Settings Accept All Cookies![Alteryx](https://cdn.cookielaw.org/logos/9a0f53e0-b5e2-4698-980d-254cf308dbfd/8a7de3be-bd44-42f5-9b24-bb4778797183/62bc9a95-f108-4fab-ae37-4ae32da238a6/a-corporateblue-01.png)Privacy Preference Center
+-------------------------
+
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+   
+[More information](https://www.alteryx.com/cookie-policy)Allow All###  Manage Consent Preferences
+
+#### Strictly Necessary Cookies
+
+Always ActiveThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+
+‎#### Performance Cookies
+
+  Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+‎#### Functional Cookies
+
+  Functional Cookies These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+‎#### Targeting Cookies
+
+  Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+‎Back Button### Performance Cookies
+
+  Search IconFilter IconClear checkbox label labelApply CancelConsent Leg.Interest checkbox label label checkbox label label checkbox label label* ### 
+
+#### 
+
+View Cookies
+	+ Namecookie name
+ Confirm My Choices[![Powered by Onetrust](https://cdn.cookielaw.org/logos/static/powered_by_logo.svg "Powered by OneTrust Opens in a new Tab")](https://www.onetrust.com/products/cookie-consent/)

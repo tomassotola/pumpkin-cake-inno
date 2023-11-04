@@ -1120,13 +1120,13 @@ Toggle navigation[![Corporate logotype](../../../css/image/corporate-logo.png)](
 	+ [2022.2-FIPS](/20222FIPS/index.html)
 	+ [2022.1](/20221/index.html)
 	+ [2021.4](/20214/index.html)
-*print*Toggle navigation* [Prev](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-fips-2022-2-release-notes.html)
-* [Next](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-2022-1-release-notes.html)
+*print*Toggle navigation* [Prev](https://help.alteryx.com/current/en/release-notes/designer-release-notes.html)
+* [Next](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-2023-1-release-notes.html)
 * 2023.2
 * [Release Notes](../../release-notes.html)
 * [Designer Release Notes](../designer-release-notes.html)
-* Designer 2022.3 Release Notes
-Designer 2022.3 Release Notes
+* Designer 2023.2 Release Notes
+Designer 2023.2 Release Notes
 =============================
 
 
@@ -1134,406 +1134,373 @@ Designer 2022.3 Release Notes
 | Release Note Product Versions |
 | --- |
 | Version | Release Date | Release | End of Support |
-| 2022.3.1.395 | November 29, 2022 | Major | November 29, 2024 |
-| 2022.3.1.430 (Patch 1)\* | January 25, 2023 | Minor/Patch | November 29, 2024 |
-| 2022.3.1.450 (Patch 2) | March 8, 2023 | Minor/Patch | November 29, 2024 |
-| 2022.3.1.486 (Patch 3) | May 2, 2023 | Minor/Patch | November 29, 2024 |
-| 2022.3.1.508 (Patch 4) | June 28, 2023 | Minor/Patch | November 29, 2024 |
-| 2022.1.1.532 (Patch 5) | August 31, 2023 | Minor/Patch | November 29, 2024 |
-
-**\*Important: Patch Installation**
-
-As of the initial 2022.3 release, Alteryx Designer, Server, and the R Predictive tools use new installer technology. This new installer behaves differently with regard to patch installations than the previous installer.
-
-With the previous installer, each time we released a patch we also released a new full release that contained the patch (and removed the previous full release). This ensured that anyone who downloaded the full release also received all the latest fixes included with the patch.
-
-With the new installer (at least in the short term), we will not release a new full release each time we release a patch. This means that for 2022.3…
-
-* If you have already installed the full 2022.3.1.395 version, you can install the patch version if you want the fixes in the patch.
-* If you haven't already installed the full [2022.3.1.395 version](https://alteryx.flexnetoperations.com/flexnet/operationsportal/entitledDownloadFile.action?downloadPkgId=Alteryx+Designer+%282022.3%29&orgId=Alteryx) and you want to install it (and want the patch as well), first install the full release and then install the patch release.
-Please stay tuned for updates!
+| --- | --- | --- | --- |
+| 2023.2.1.7 | November 1, 2023 | Major | November 1, 2025 |
 
 **Important**
 
-Alteryx Designer version 2022.3 offers separate GA and [FIPS 140-2 capable](../../designer/alteryx-designer-fips.html "Alteryx Designer-FIPS") products. For more information about FIPS, go to the [NIST FIPS FAQ page](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips).
+Alteryx Designer version 2023.2 offers separate GA and [FIPS 140-2 capable](../../designer/alteryx-designer-fips.html "Alteryx Designer-FIPS") products. For more information about FIPS, go to the [NIST FIPS FAQ page](https://www.nist.gov/standardsgov/compliance-faqs-federal-information-processing-standards-fips).
 
-The general release version of Alteryx Designer is not FIPS capable. A separate release (and installer) is available under separate license terms, for our FIPS 140-2 customers.
+The general release version of Alteryx Designer is not FIPS capable. A separate release (and installer) is available under separate license terms for our FIPS 140-2 customers.
 
-**Feature and Tool Differences** 
+**Feature and Tool Differences**
 
-Please note that certain tools and features might be limited or not available in [Alteryx Designer-FIPS](../../designer/alteryx-designer-fips.html "Alteryx Designer-FIPS"). Over time, we will continue to evaluate which tools and features to make available again in future Alteryx Designer-FIPS releases.
-
-**Upgrade Considerations: Designer-Server Compatibility**
-
-As is normally the case, if you upgrade Designer to 2022.3 and keep an older version of Server, you won’t be able to save workflows to Server (via Designer). You can only save them to Server via the Administrator UI or API.
-
-**New with the 2022.3 Release** 
-
-If you upgrade Server to 2022.3 and keep Designer at version 2022.2 or prior, you'll encounter an error when you attempt to save a workflow from Designer to Server. You can only save them to Server via the Administrator UI or API.
-
-Why? Server 2022.3 includes encryption improvements that are not compatible with previous versions of Designer. Due to the above-mentioned limitations, please make sure to upgrade Designer to 2022.3 if you upgrade Server to 2022.3.
-
-**Warning: Known Issue**
-
-Do not install Alteryx Designer FIPS to the same location as your non-FIPS Admin Designer.
-
-By default, the FIPS installer recommends a different install location than the non-FIPS installer, but you can manually change it. If you change the install location, ensure it is NOT the same location as the non-FIPS Designer. If you install Alteryx Designer FIPS to the same location as a non-FIPS Admin Designer, your installation, as well as custom files and data that might be within that folder, will be significantly corrupted.
+Please note that specific tools and features might be limited or unavailable in [Alteryx Designer-FIPS](../../designer/alteryx-designer-fips.html "Alteryx Designer-FIPS"). Over time, we will continue to evaluate which tools and features to make available again in future Alteryx Designer-FIPS releases.
 
 New Features: Designer
 ----------------------
 
-### OpenSSL3 Cryptographic Module Updates
+### Custom Templates
 
-* We’ve updated our bundled OpenSSL3 cryptographic engine to OpenSSL 3.0.7, which addresses CVE-3602 and CVE-3786, both rated as High Severity.
-* We’ve bundled the OpenSSL3 Legacy Provider, which supplies older algorithms and ciphers (MD2, MD4, RC4, DES, IDEA, and others) that are no longer packaged as part of the core crypto engine in the 3.x series. Note that the Legacy Provider is not loaded unless it has been manually enabled via backend configuration on a particular Designer or Server host.
-### Installer Updates
+You can now create and use custom templates in Alteryx Designer. Save your existing workflow, macro, or app as a template that you (and others, if shared) can reuse in the future. You can save templates with common workflow configurations and spend less time formatting workflows and more time delivering solutions. Go to [Templates](../../designer/workflows/templates.html "Templates") to learn more.
 
-As of the 2022.3 release, Alteryx Designer, Server, and the R Predictive tools use new installer technology. The updated installer detects your operating system language and installs Alteryx products in that language (if applicable). Go to [Download and Install a Product](../../license-and-activate/install/download-and-install-a-product.html "Download and Install a Product") for important upgrade and downgrade considerations and [review updated command-line options](../../license-and-activate/administer/use-command-line-options.html "Use Command-Line Options").
+### Find Missing Macros in Workflows
 
-### Search in Select
+No more black question mark icons! When you open a workflow with missing macros, you can now resolve the missing macro issue and open the workflow with no errors. Go to [Update Missing Macros](../../designer/apps-and-macros/macros/update-missing-macros.html "Update Missing Macros") to learn more.
 
-You can now perform a search in Designer tools that use the Select functionality. The search returns only the fields that match your search criteria—it searches the Field, Rename, and Description columns. You can then quickly select or deselect all the returned fields to perform actions on them, edit their data types, rename them, and more. We've also added a check box to let you quickly select and deselect all visible fields. Available in the Select, Join, Join Multiple, Append Fields, Select In-DB, Find Nearest, and Spatial Match tools.
+### Interactive Results Grid Enhancements
 
-### Formula Tool Enhancements
+We've made enhancements to the capabilities in the Interactive Results Grid. We added a change indicator to make it easier to see that a data cleanse, filter, or sort action was applied to a data column. Additionally, you now have access to new operators for date fields, and you can now filter results that are OK and Not OK. Go to [Results Window Data Manipulations](../../designer/workflows/results-window/results-window-data-manipulations.html "Results Window Data Manipulations") to learn more.
 
-We’ve added enhancements to the Formula tool. Each expression now contains an Expression ID number to assist with documenting and troubleshooting your expressions. Additionally, you can now quickly expand and collapse all expressions in the Formula tool via the expand all/collapse all toggle.
+### New Formula Functions
 
-### Multi Anchor Caching
+We’ve added 3 new [String functions](../../designer/functions/string-functions.html "String Functions"):
 
-You can now cache tools that have multiple output anchors (maximum of 5 anchors). This feature extends the caching functionality to over 50 additional tools. Please note that some tools (including those with more than 5 output anchors and In-DB tools) might still not be cacheable.
+* GetPart
+* GetLeft
+* GetRight
+You can use these anywhere functions are available.
 
-### Disable Single Output Data Tool
+### Build Custom Formula Functions via C++ with AMP
 
-You can now quickly disable a single Output Data tool while you develop your workflow or troubleshoot an issue. Use the **Disable Tool** check box in the tool’s configuration window. While disabled, the Output Data tool is shaded on the canvas to help visually indicate its disabled status.
+Advanced workflow developers who use Custom formula functions can now use Custom C++ formula functions with AMP engine (both newly created and existing functions). For more information, go to [Build Custom Formula Functions](../../developer-help/platform-sdk/legacy-sdks/build-custom-formula-functions.html "Build Custom Formula Functions").
 
-### Fuzzy Match Support for Japanese
+### Updates to IRR and XIRR Functions
 
-We’ve added support for Japanese to the Fuzzy Match tool. You can now apply predefined match styles, that account for Japanese orthography, to Japanese addresses, names, or text.
+The IRR and XIRR functions (available in the Formula and Summarize tools) were updated to use the Newton-Raphson Method. These improvements should allow the IRR/XIRR functions to produce solutions for more cases than they did previously. With the change of underlying computation method, you might see slight changes in your results from the functions when using the same input values.
 
-### Results Grid Accessibility Updates
+A fix to these functions has also been made for the error-handling case. In the previous version, there were some cases that could produce the erroneous value “999999” if the functions failed to converge on a result. We updated this to produce a warning message and return a NULL value in these cases.
 
-We’ve made updates to the user interface of the Designer **Results** grid to improve accessibility via screen readers and other assistive technology. Buttons and controls that were previously only visible under certain conditions are now always visible, though inactive if not applicable.
+### Calculate Product via Summarize Tool
 
-### Compare Workflow Enhancements
+You can now calculate the product for a group of numeric values via the Summarize tool. Go to [Summarize tool](../../designer/tools/transform/summarize-tool.html " Summarize Tool") to learn more.
 
-We've made improvements to the Compare Workflows feature. When you compare 2 workflows with container tools, if their enabled and disabled states are different, the Compare Workflows functionality identifies them as different.
+### Updates to the Cloud Execution for Desktop Experience
 
-### Start Here Updates
+We have made several usability enhancements to the [Cloud Execution for Desktop](../../designer/workflows/cloud-execution-for-desktop.html "Cloud Execution for Desktop") experience in Alteryx Designer. You can now see a progress bar when you save your workflows to the Alteryx Analytics Cloud Platform (AACP). You now also have access to a quick link that brings you to the location where your workflow is saved in AACP. Additionally, when you want to open your (previously saved to AACP) desktop workflow in Designer Desktop, you can now search for the workflow by name as well as sort the workflow list.
 
-We’ve rebuilt and updated the Start Here experience when you launch Designer. Start Here now launches in its own window rather than a tab on the Designer canvas. We’ll update the content periodically to highlight new features and updates in Designer. If you close the window, you can reopen it via **Help** > **Sample Workflows** > **Start Here**.
+### Dark Mode Updates
 
-### AMP Tool Support
+Additional Designer components are now Dark Mode compatible. We have also started updating several tool configuration components to be Dark Mode compatible. Go to [Dark Mode](../../designer/get-started/user-settings/dark-mode.html "Dark Mode") to learn more.
 
-With AMP, there are now 166 fully supported tools and 11 partially supported tools. The partially supported tools fall back to the original Engine for some unsupported functionality.
+**Beta Release**
 
-All Reporting and R tools are now AMP enabled (except the Insights Reporting tool).
+Dark Mode functionality is still in Beta at this time. This means that only certain Designer interface components have been converted to Dark Mode. Additionally, you might see certain components (including many tool configurations) that are currently only partially converted to Dark Mode. We will continue to include additional elements for Dark Mode in future releases.
 
-There are 7 more AMP-only Connectors, with several more planned over the next few months, and even more planned for 2023\*, 1 new [Engines Parity tool](https://community.alteryx.com/t5/Public-Community-Gallery/Engines-Parity-tool-Coming-Soon/ta-p/1009171), 13 Reporting tools, and 65 R tools for a total of 86 newly supported AMP tools, including the R tool in the Developer category.
+### Render Tool Updates
 
-\*These Connector tools are available as AMP-only, and won't work with the original Engine: Azure Data Lake File Input, Azure Data Lake File Output, Microsoft Power BI Output, OneDrive Input, OneDrive Output, SharePoint Input, and SharePoint Output.
+We've added right-to-left language support for PDF outputs from the [Render tool](../../designer/tools/reporting/render-tool.html " Render Tool"). Additionally, you can now select a widescreen slide size (16:9) when you output to PowerPoint from the Render tool.
 
-### Proxy Support in AMP
+### Tool UI Updates
 
-Support for networking via proxy has been added to AMP. Support for SFTP over HTTP proxy has been added to both engines. The ability to bypass proxy has been enabled for both engines. You can now specify the Proxy Protocol Type (HTTP and SOCKS5h are supported) in User Settings and System Settings. If you don’t specify the protocol, the default is HTTP.
+We've refreshed the user interface for the Record ID, Sort, Sample, and Unique tools.
 
-### Engines Parity Utility
+### Tools Fully Compatible with AMP
 
-Engines Parity Utility is an easy way to compare the original Engine to AMP. It allows you to run both engines in parallel, evaluate the results, and make a decision about which workflow you can confidently convert to AMP. You can run Engines Parity Utility via the command line with AlteryxEngineCmd.exe or run it via Designer using the Gallery Macro download. For more information, go to [Engines Parity Utility](../../designer/workflows/alteryx-amp-engine/engines-parity-utility.html "Engines Parity Utility").
+These tools are now fully converted to AMP:
 
-### Sleep Method in R Scripts Is Not Needed Anymore
+* The Blob Convert tool is now fully converted to AMP. There is a new functionality within the [Blob Convert tool](../../designer/tools/developer/blob-convert-tool.html " Blob Convert Tool") that allows you to convert from a Blob field to a SHA256 hash.
+* Create Samples
+* Distance
+* Formula
+* Imputation
+* Multi-Field Formula
+* Multi-Row Formula
+* Spatial Process
+### New User Setting to Enable Default State for Engine Compatibility Mode
 
-Prior to the 2022.3 release, there was a need in some cases to insert a *sleep* method in R Scripts to prevent script failure. Adding the call to Sys.sleep(0.1) helped to avoid an R error with loading Graphs. It pauses the execution of the R script for a tenth of a second, which should be enough time for the prior graph to be read by Alteryx before R attempts to send the next graph to Alteryx.
+You now have the option to automatically enable Engine Compatibility Mode whenever you enable AMP Engine. Go to [Engine Compatibility Mode](../../designer/workflows/alteryx-amp-engine/engine-compatibility-mode.html "Engine Compatibility Mode") to learn more.
 
-This was fixed for the original engine and AMP with the R conversion feature in 2022.3. You don't need to add the sleep method anymore.
+### Automated Crash Reporting
 
-### Global Setting to Enable Allow-list for Peer Validation
+There is a new crash reporting feature that uses debug information collected from Engine runs. This information is used to analyze issues and make improvements in the product. For more information, go to the [Automated Crash Reporting](../../designer/workflows/alteryx-amp-engine/automated-crash-reporting.html "Automated Crash Reporting") help page.
 
-As an admin with a non-FIPS Designer version, you are now able to specify a list of problematic hosts in a flat file for which peer validation will be skipped. If users encounter issues with certificate authorization, it does not need to stop the users from work. Go to [Peer Validation Allow List](../../designer/tools/developer/download-tool/peer-validation-allow-list.html "Peer Validation Allow List") for more information.
+### Amazon Tools
 
-### Behavior Analysis Tools Deprecation
+The Amazon S3 tools now support virtual-hosted-style paths. You can also enter a direct URL path to a file or folder. They can now also read, create, and overwrite XLSX files.
 
-The Behavior Analysis tools in Alteryx Designer have been deprecated. These tools will continue to work with US Business Insights Data Packages 2021 Q4 and earlier versions.
+### DCM Migration Tool
 
-### DCM External Vault
+There is a new Migration tool to help you quickly and effortlessly transfer your current workflows to DCM-utilizing connections. For more information, see the [Migration Tool](../../designer/tools/dcm---designer/migration-tool.html "Migration Tool") help page.
 
-The External Vault feature allows you to connect DCM with your Vault of choice. You can use External Vaults in DCM to fetch credentials from your Vault and securely use them in your workflow. For more information, go to [DCM External Vaults](../../designer/tools/dcm---designer/dcm-external-vaults.html "DCM External Vaults").
+### DCM Adoption
 
-### Google BigQuery Bulk Loading
+The option to enable and disable Data Connection Manager (DCM) in System and User Settings is no longer available. If you have DCM disabled in Designer and Server, it is automatically enabled when you update to 2023.2.
 
-Bulk loading to Google BigQuery is now available in the Output Data tool. It's supported with OAuth authentication using DCM. Data staging is done in Google Cloud Storage.
+DCM Mode selection is still available both on the System Settings and User Settings level, with the options of Optional, Default, Only, and Enforced, allowing you to choose a preferred way of using Designer and DCM. In the Optional mode, new connections are configured outside DCM with the option to opt-in for DCM for individual tools.
 
-### In-DB Support for Google BigQuery
+With DCM as Default, connections are by default stored in DCM with the option to opt-out from using DCM. The Only and Enforced modes do not allow configuring new tools outside of DCM, while the Only mode doesn't enforce DCM usage on already configured tools in existing workflows.
 
-Google BigQuery is now supported for the In-Database tools. It's supported with OAuth authentication using DCM and includes bulk loading for streaming-in data.
+### DCM Support for ODBC Technologies
 
-### Email Tool OAuth Support
+We're extending support for DCM to all database technologies. You can now create and store connections using DCM instead of creating DSNs first. Additionally, you can sync connections between your Designer and Server instances via DCM, without the need to set up DSNs.
 
-You can now authenticate to Microsoft Exchange Online with OAuth authentication via DCM and obtain a token pair that allows you to send emails from your Exchange Online account. For more information, go to [Email Tool](../../designer/tools/reporting/email-tool.html " Email Tool").
+### Configurable Connection Timeout for ODBC Connections
 
-### Azure AD Support for Snowflake
+You now have the ability to improve the connectivity experience and connect to remote data sources or data sources operating in peak times that are not able to respond within the 30-second timeframe.
 
-You can now access and manage your Snowflake data with OAuth authentication via DCM. For more information, go to [Snowflake OAuth Authentication](../../designer/data-sources/snowflake/snowflake-oauth-authentication.html "Snowflake OAuth Authentication").
+### OIDC Authentication for HashiCorp Vault
 
-### Azure AD Support for Databricks
+You are now able to leverage OIDC token authentication when fetching secrets from HashiCorp Vault with DCM.
 
-You can now access and manage (read/write/bulk write) your Databricks data via the private (single-tenant) and the public (multi-tenant) applications with OAuth authentication via DCM. For more information, go to [Databricks Azure OAuth Authentication.](../../designer/data-sources/databricks/databricks-azure-oauth-authentication.html "Databricks Azure OAuth Authentication")
+### Generic OAuth
 
-### Connectors Deprecation
+This feature lets you drastically improve security when you connect to driver-based data sources supported by Designer. When you enable Generic OAuth authentication methods, you can leverage custom identify providers (IdPs) when you establish connections with individual data sources.
 
-We’ve deprecated these connectors:
+### Databricks Unity Catalog
 
-* Dynamics CRM Input and Output
-* Google Sheets Input and Output
-* Publish to Tableau Server
-* Salesforce Einstein Analytics Output
-* Salesforce Wave Output
-* SharePoint List Input and Output
-For more information, go to [Data Sources](../../designer/data-sources.html "Data Sources") or visit the [Community article](https://community.alteryx.com/t5/Alteryx-Designer-Knowledge-Base/FAQs-Alteryx-Connectors-Deprecation-2022-3/ta-p/1041737).
+The new feature allows you to work with Unity Catalog-enabled Databricks instances. See the [Databricks Unity Catalog](../../designer/data-sources/databricks/databricks-unity-catalog.html "Databricks Unity Catalog") help page for more information about configuration and use.
 
-### Display Updates in Maps
+### Merge Tables in Databricks
 
-The Mapbox logo and attribute text now both appear at the bottom of the basemaps.
+With the Merge Tables functionality, you are now able to update or delete data in your target delta table in [Databricks Unity Catalog](../../designer/data-sources/databricks/databricks-unity-catalog.html "Databricks Unity Catalog") using the InDB tools. See the [Merge Tables](/document/preview/6541840#UUID-13e13ae6-ab9d-3b14-7686-9c422b4b121e) help page for more information about configuration and use.Merge Tables
 
-### Usage Data Configuration
+### Cancel Query Logic for Snowflake
 
-We have removed the configuration for sending usage data in the Designer User Settings. To read more about our philosophy on usage data, go to [Improving Our Products with Usage Data](/document/preview/6522583#UUID-ae830f92-8cb3-f4dd-388d-439335951356) and the [Alteryx Privacy Policy](https://www.alteryx.com/privacy-policy).Improving Our Products with Usage Data
+You can now unblock your data pipelines when you cancel execution locally. This feature lets you cut costs when you work with Snowflake and improves overall database interaction.
 
-### Improved Support for Multi-Byte Characters
+### Azure AD Authentication Updates
 
-We've made improvements to better support multi-byte characters, specifically characters that are common in Japanese data.
+* Redshift: With this feature, Alteryx enables enterprise-grade authentication for Redshift. This allows you to leverage Azure Active Directory identities when you access data in Redshift.
+* ADLS Staging for Databricks Bulk Loader: This feature lets you improve security when you work with Databricks Bulk Loader. Organizations can granularly manage access to individual containers within a storage account instead of granting storage account-level access.
+* Azure SQL Server, Azure Synapse, and Azure SQL Database: This feature drastically improves the user experience when you work with the referenced data sources. Instead of re-authenticating on each workflow execution, you are now able to use credentials stored in DCM to set up connections to these data sources.
+### Publish to Tableau Server Tool Removal
+
+The Publish to Tableau Server tool has been removed from the installer. Please use the [Tableau Output tool](../../designer/tools/connectors/tableau-output-tool.html " Tableau Output Tool") (which provides updated features) instead.
+
+### End of Support for Tableau .tde Files
+
+**Warning**
+
+As of the Tableau 2023.1 release, Tableau has deprecated the TDE extract file format and by default does not allow the publishing of TDE content. Starting with Designer Version 2023.2, Alteryx does not support Tableau TDE extract files anymore. Existing workflows will continue to run as long as they are not edited.
+
+### Python SDK Example Tool Removal
+
+The Python SDK Example tool (SDK Examples tool category) is no longer available. You can access SDK example tools that use the new v2 Python SDK at [Alteryx IO Resources](https://community.alteryx.com/t5/Alteryx-IO-Resources/tkb-p/knowledge-io).
+
+### OpenSSL Version Upgrade
+
+We have updated OpenSSL to version `3.0.8`. This addresses several vulnerabilities present in older versions:
+
+* CVE-2023-0286
+* CVE-2023-0401
+* CVE-2023-0217
+* CVE-2023-0216
+* CVE-2023-0215
+* CVE-2022-4450
+* CVE-2022-4304
+* CVE-2022-4203
+Go to <https://www.openssl.org/news/secadv/20230207.txt> for more information.
+
+### Python Version Upgrade
+
+We have upgraded the embedded Python version to `3.8.16`.
+
+### CEF Version Upgrade
+
+We have upgraded the Chromium Embedded Framework (CEF) version to `111.2.4+g49cae37+chromium-111.0.5563.65 / Chromium 111.0.5563.65`. This CEF build includes Chromium `111.0.5563.148`.
+
+### Legacy Alteryx Platform Access
+
+You no longer have access to the legacy Alteryx Platform via the File menu's Save and Open options. Additionally, the Manage Alteryx Links option (previously used to manage links to the legacy Alteryx Platform) is no longer available via the Options menu.
+
+**Important**
+
+Please note that the legacy Alteryx Platform, in this case, *does not* refer to the new Alteryx Analytics Cloud Platform (AACP).
+
+### Windows 11 Support
+
+Alteryx Designer now supports Microsoft Windows 11 for Designer versions 2023.2 and newer.
+
+### End of Support for Windows Server 2012
+
+**Warning**
+
+As of Designer version 2023.2, Alteryx no longer supports Windows Server 2012 as it has reached the end of support by Microsoft. Go to <https://learn.microsoft.com/en-us/lifecycle/announcements/windows-server-2012-r2-end-of-support> to learn more.
 
 New Features: Intelligence Suite
 --------------------------------
 
-### PDF to Text Tool
+### Python Version Upgrade
 
-Extract text encoded as characters directly from your PDF files with >99% accuracy. Add OCR to extract text from images for additional coverage. In most cases, you’ll see an increase in accuracy, speed, and completeness compared to the Image to Text tool.
+We have upgraded the Intelligence Suite Python version to `3.8.16`.
 
-### Zero-shot Text Classification Tool
+### Barcode Tool Dependencies
 
-Classify text into categories of your choice without the need for training data.
-
-### Text Summary Tool
-
-Extract a summary of your text based on the TextRank methodology. You can specify the length of the summary by number of sentences.
-
-### Image Template Tool Enhancements
-
-Added the ability to edit annotation bounding boxes in the Image Template tool. We enabled this functionality with mini-tate, a new open-source React library from Alteryx.
-
-### Shift Step in Image Processing Tool
-
-Added a Shift step to the Image Processing tool. Shift automatically shifts documents into alignment based on a user-defined anchor. Use the Image Template tool to define the anchor with an annotation. Shift can improve OCR results for images that shifted during the scanning process.
-
-### Image Recognition Tool Enhancements
-
-Added Evaluation Metrics and Model Report output anchors to the Image Recognition tool. Metrics include information on the precision, recall, and accuracy of each classification label. The report output includes loss and accuracy plots for each epoch. Use these plots to visualize if the tool sufficiently trained the model.
+For Designer 2023.2 or later, the Barcode tool requires additional dependencies to run. Please [download and install](https://www.microsoft.com/en-us/download/details.aspx?id=40784) the Microsoft Visual C++ 2013 Redistributable Package to add these required dependencies.
 
 Fixed and Known Issues
 ----------------------
 
 
 
-| FixedMajor Release Version 2022.3.1.395 |
+| FixedMajor Release Version 2023.2.1.7 |
 | --- |
 | ID | Description | Version | Issue Status |
-| GENG-2806TDALI-4343 | K-Centroids Diagnostics tool output is illegible in the Browse tool report in Japanese. | 2022.3.1.395 | Fixed |
-| GENG-2823DE29944 | Error while trying to open a PowerPoint file created by the Render tool. | 2022.3.1.395 | Fixed |
-| TCPE-202GCSE-365 | The tool palette can't be loaded when Designer is installed in a folder that has double-byte characters in the name. | 2022.3.1.395 | Fixed |
-| TCPE-208GCSE-373 | Designer 2021.4: Unable to enter a value in the Results filter. | 2022.3.1.395 | Fixed |
-| TCPE-217GCSE-388 | A CSV file created from the Export functionality in the Browse tool shows question marks for double-byte characters. | 2022.3.1.395 | Fixed |
-| TCPE-225GCSE-399 | If a workflow that contains spatial data is left open for too long, and you click on the Map tab of the Browse tool, an error displays. | 2022.3.1.395 | Fixed |
-| TCPE-231GCSE-406 | Multi-byte characters display as question marks in the Contingency Table tool. | 2022.3.1.395 | Fixed |
-| TCPE-239GCSE-418 | Attempts to use the Update WHERE clause in the Dynamic Input tool cause Designer to hang when a long string exists in the IN clause. | 2022.3.1.395 | Fixed |
-| TCPE-244TDES-4092 | Certain strings are suddenly not wrapped for translation. | 2022.3.1.395 | Fixed |
-| TCPE-246GCSE-429 | Some multi-byte characters aren't removed by the Data Cleansing tool. | 2022.3.1.395 | Fixed |
-| TCPE-251TDT-1388 | The Allocate Report tool throws "ComposerDoc::GetCSSProperty: Unknown error" when opening the generated PCXML file. | 2022.3.1.395 | Fixed |
-| TCPE-252GCSE-434 | Python: Alteryx.write returns "XmlParse Error: the attribute "type" is missing" if there are double quotes and the double quote is followed by a space and more characters. | 2022.3.1.395 | Fixed |
-| TCPE-253GCSE-433 | Analytic App with Date tool: Sometimes App Results shows the date that the user selected and sometimes it shows today's date. | 2022.3.1.395 | Fixed |
-| TCPE-257GCSE-438 | Attempts to search in the Results window fail with an error when a field name contains "]". | 2022.3.1.395 | Fixed |
-| TCPE-267GCSE-451 | 404 error in the Python tool after you reopen a saved workflow from Server. | 2022.3.1.395 | Fixed |
-| TCPE-288GCSE-478 | The Email tool encounters problems sending to multiple TO or CC email addresses. The tool sends an email with a blank TO line field or the tool errors with "Failure when receiving data from the peer." | 2022.3.1.395 | Fixed |
-| TCPE-290DE28360 | The Model Comparison tool doesn't link to its help page. | 2022.3.1.395 | Fixed |
-| TCPE-302GCSE-488 | ComposerDoc::GetCSSProperty: Unknown error with the Report Text and Email tools. | 2022.3.1.395 | Fixed |
-| TCPE-315GCSE-505 | The ampersand character (&) isn't displayed within the title of Interface tools. | 2022.3.1.395 | Fixed |
-| TCPE-325TGAL-6561 | When you set a workflow schedule, it defaults to the local machine timezone and causes an error. | 2022.3.1.395 | Fixed |
-| TCPE-331TDES-4056 | When you use the Interface Designer's Test View to debug macros that use the Macro Input question output to populate a List Box or Drop Down Interface tool, the fields defined in the Macro Input are not rendered. Since no fields can be selected, the Debug workflow can't be opened. | 2022.3.1.395 | Fixed |
-| TCPE-334GCSE-506 | Unable to switch connection of matched output anchor via the Spatial Match tool. | 2022.3.1.395 | Fixed |
-| TCPE-338DE23142 | The Data Cleanse tool converts a Layout field to text. | 2022.3.1.395 | Fixed |
-| TCPE-348GCSE-550 | The Sample tool default annotation for the First n% of rows shows "undefined". | 2022.3.1.395 | Fixed |
-| TCPE-369GCSE-572 | Interface tools don't show the annotation if the question is empty. | 2022.3.1.395 | Fixed |
-| TCPE-381DE28168 | There is a Unicode rendering issue that relates to reporting layout from the Summarize tool. | 2022.3.1.395 | Fixed |
-| TCPE-386DE26391 | When you add text to a table and use the Summarize tool with the "Combine Horizontal" function, you get an error: Summarize (12) You have found a bug. Replicate, then let us know. We shall fix it soon. | 2022.3.1.395 | Fixed |
-| TDALI-877DE21115 | Report Text tool: Font size of 10 or 14 changes to 12 in Excel. | 2022.3.1.395 | Fixed |
-| TDALI-1062DE27857 | 2020.2: You can't key-in a semicolon in the To field of an email event. | 2022.3.1.395 | Fixed |
-| TDALI-1078DE28304 | PowerPoint PPT and PPTX outputs from the Render tool are corrupt. | 2022.3.1.395 | Fixed |
-| TDALI-1084DE28493 | The Record Limit of the Browse tool's Data Profiling is improperly applied to the Basic Data Profile tool. | 2022.3.1.395 | Fixed |
-| TDALI-1117DE33700 | The Table tool window has overlapped widgets. | 2022.3.1.395 | Fixed |
-| TDALI-4185DE34172 | Excel outputs from the Render tool (sourced via the Report Text tool) are corrupt. | 2022.3.1.395 | Fixed |
-| TDALI-4225TCPE-102 | The DoubleMetaphone in Fuzzy Match tool Configuration allows users to choose more than 8 key lengths. | 2022.3.1.395 | Fixed |
-| TDALI-4306GCSE-372 | The Render tool doesn't output an empty file when it has no records to output. | 2022.3.1.395 | Fixed |
-| TDALI-4310 | When you change from a variable string type (either V\_String or V\_WString) to a fixed width string type (either String or WString) and the variable field has a limit that was unreasonable for a fixed string, then the size of the field is lowered to 16 KB. | 2022.3.1.395 | Fixed |
-| TDALI-4390GENG-2796 | Failed to render Interactive Chart to PDF in both engines. | 2022.3.1.395 | Fixed |
-| TDALI-4446 | An unhandled exception triggers when opening a workflow while certain tools have focus. | 2022.3.1.395 | Fixed |
-| TDCB-3761 | Snowflake bulk with local staging insertion fails when using a custom append field map. | 2022.3.1.395 | Fixed |
-| TDCB-4060 | Azure Databricks bulk proxy test failure. | 2022.3.1.395 | Fixed |
-| TDCB-4065 | An unhandled exception is triggered when you enter an invalid URL for a Databricks Bulk connection. | 2022.3.1.395 | Fixed |
-| TDCB-4085GCSE-513 | Designer crashes after you close a workflow with a Connect In-DB tool and a Browse In-DB tool, and then create and run a 2nd workflow with the same tools. | 2022.3.1.395 | Fixed |
-| TDCB-4148GCSE-547 | Output Data tool output to Excel creates a corrupted workbook. | 2022.3.1.395 | Fixed |
-| TDCB-4155GDC-2681 | Spatial data are read as SpatialObj or Blob due to different Lua scripts being called depending on DSN and non-DSN connections. | 2022.3.1.395 | Fixed |
-| TDCB-4214GCSE-752 | When writing data of V\_WString field type and field size = 65535 to the Amazon Redshift database, the Output Data tool throws an error: "Error: Output Data (4): Character length for <Field> is currently 65535, exceeding the limit of 65531 bytes. Reduce the length by shrinking the column size." and the write fails. | 2022.3.1.395 | Fixed |
-| TDCE-5 | The Visual Query Builder doesn't show Snowflake databases in which all schemas only contain views. | 2022.3.1.395 | Fixed |
-| TDES-3765DE24306 | If you click the splash screen while Designer loads, this sometimes causes Designer to open behind other windows without turning on the Taskbar icon. | 2022.3.1.395 | Fixed |
-| TDES-3798DE25925 | When you print a workflow, the counts that follow each tool don't print. | 2022.3.1.395 | Fixed |
-| TDES-4150GBETA-259 | FIPS DesignerSystemInformation doesn't include FIPS notation. | 2022.3.1.395 | Fixed |
-| TDES-4151GBETA-261 | A workflow won't open if it has a data pack that isn't installed. | 2022.3.1.395 | Fixed |
-| TDES-4161 | Server sign-in needs to persist between Designer startups. | 2022.3.1.395 | Fixed |
-| TDES-4396 | When you drag and drop tools from the Recommended Tools palette, the tool palette crashes. | 2022.3.1.395 | Fixed |
-| TDES-4419DE23607 | Browse Everywhere tells you there is no data and to rerun the workflow, when there is data. | 2022.3.1.395 | Fixed |
-| TDES-4433GCSE-371 | Designer 2021.4: The Input Data tool truncates headers with multilines when reading-in Excel files. | 2022.3.1.395 | Fixed |
-| TDSL-4276DE33604 | AMP: The Generate Rows tool doesn't report progress correctly. | 2022.3.1.395 | Fixed |
-| TDSL-4284GENG-2511 | The Dictionary Sort in the Sort tool doesn't always place strings that are the same next to each other. | 2022.3.1.395 | Fixed |
-| TDSL-4314 | AMP Fuzzy Match returns a different number of records than the original Engine. | 2022.3.1.395 | Fixed |
-| TDSL-4352GCSE-507 | Empty and Null values are included within Concatenated Output of the Cross Tab tool via AMP. | 2022.3.1.395 | Fixed |
-| TDSL-4356 | AMP: The Test tool doesn't work correctly with the "Expression is True for all Records" configuration. | 2022.3.1.395 | Fixed |
-| TDSL-4359 | WideChars aren't rendered from the Map Legend Builder tool. | 2022.3.1.395 | Fixed |
-| TDSL-4366 | AMP ignores Workflow - Configuration > Runtime > Temporary Files > Use Specific Folder setting specifying a UNC path. | 2022.3.1.395 | Fixed |
-| TDSL-4383GENG-2728 | AMP error when using the Control parameter to update the S3 Download tool: Record packets locked at the end of the run: 1. | 2022.3.1.395 | Fixed |
-| TDSL-4385GCSE-472 | Calgary Input fails to return results for text that contains special characters on an advanced index, specifically for V\_WString. | 2022.3.1.395 | Fixed |
-| TDSL-4386TDES-4167 | "You have found a bug..." error on the Join Multiple tool that exists on the initial tool configuration and after the workflow runs. | 2022.3.1.395 | Fixed |
-| TDSL-4410GCSE-583 | The Table tool doesn't produce output when AMP is enabled. | 2022.3.1.395 | Fixed |
-| TDSL-4423 | Both the original Engine and AMP Render tools fail to render wide characters to PDF and PNG. | 2022.3.1.395 | Fixed |
-| TDSL-4435GCSE-585 | The Publish to Tableau Server tool throws an error when run from the Gallery with AMP enabled. | 2022.3.1.395 | Fixed |
-| TDSL-4439DE28570 | Double-byte numbers aren't recognized as a number in the Text Input tool. | 2022.3.1.395 | Fixed |
-| TDSL-4440GCSE-382 | The Runner tool (AlteryxRunner.exe) is unable to run a workflow in a double-byte named path. In order to take advantage of the fix, you must download the updated Runner tool from the [Community Gallery](https://community.alteryx.com/t5/Community-Gallery/Runner/ta-p/889234). | 2022.3.1.395 | Fixed |
-| TDSL-4453GBETA-209 | Render tool output PDF is garbled if an upstream Report Text tool's font setting is different than the default. | 2022.3.1.395 | Fixed |
-| TDSL-4454GBETA-287 | The Report Footer and Header tools output partially garbled text in Japanese. | 2022.3.1.395 | Fixed |
-| TDSL-4455 | The Runner tool doesn't work correctly on the Japanese and Chinese versions of Designer. In order to take advantage of the fix, you must download the updated Runner tool from the [Community Gallery](https://community.alteryx.com/t5/Community-Gallery/Runner/ta-p/889234). | 2022.3.1.395 | Fixed |
-| TDSL-4456GCSE-458 | PowerPoint outputs via the Render tool exclude default row border colors. | 2022.3.1.395 | Fixed |
-| TDSL-4466GCSE-629 | AMP Dynamic Input tool fails to replace a string with multi-byte characters. | 2022.3.1.395 | Fixed |
-| TDSL-4481GENG-2843 | The original Engine performs better than AMP with regard to downstream processing. | 2022.3.1.395 | Fixed |
-| TDSL-4485GENG-2832 | AMP issue with calculating percentiles using the Summarize tool on large data sets. | 2022.3.1.395 | Fixed |
-| TDSL-4486GENG-2841 | Using constants in shimmed tools doesn't work with AMP. | 2022.3.1.395 | Fixed |
-| TDSL-4505GCSE-784 | Error: Dynamic Input (1): Error SecString size limit reached: Strings are limited to size between 0 and 1000000 bytes. | 2022.3.1.395 | Fixed |
-| TDSL-4512GCSE-781 | AMP: UTF-16 ignores tab delimiters when a field has a null value. | 2022.3.1.395 | Fixed |
-| TDST-2530DE33860 | Metadata for the "Model Output" anchor is added for metadata-only runs. Because the metadata needs to include the classification labels when connected to the predict model, which would require the workflow to run, the metadata run version of the model metadata is missing the classification labels but is populated once run. | 2022.3.1.395 | Fixed |
-| TDST-2739 | The Image Profile tool outputs the Dots per Inch (DPI) for both the length and width. If a physical measurement size (in other words, inches) was not associated with the image, the tool defaults the DPI value to 72, which is incorrect. Now the tool displays NULL as the value. | 2022.3.1.395 | Fixed |
-| TDST-3012 | Previously, the Image Scaling step resized images to a value close to the requested pixel value when **Keep Aspect ratio** was checked. Now the target dimension matches exactly the requested pixel value and the secondary dimension scales appropriately. | 2022.3.1.395 | Fixed |
-| TDST-3161 | Image Cropping doesn't crop to the requested value every time. | 2022.3.1.395 | Fixed |
-| TDST-3324 | The barcode reader isn't functioning in the Barcode tool. | 2022.3.1.395 | Fixed |
-| TDST-3612 | Document isn't viewable in the Image Template tool. | 2022.3.1.395 | Fixed |
-| TDST-3688 | The Image Processing tool shows the "automatically and manually rotate images" message in the tooltip. | 2022.3.1.395 | Fixed |
-| TDT-1569GCSE-768 | The Report Map tool can't edit layers in 2022.1. | 2022.3.1.395 | Fixed |
-| TELC-2867GENG-2501 | AMP is missing the field name in truncation warnings with the CSV reader. | 2022.3.1.395 | Fixed |
-| TELC-2869GENG-2500 | Run Command in a macro runs twice with AMP. | 2022.3.1.395 | Fixed |
-| TELC-2870 | Progress (when reading with a record limit) ignores the limit. | 2022.3.1.395 | Fixed |
-| TELC-2871DE27659 | AMP cancels workflow run on 1st error in Azure Data Lake File Output tool. | 2022.3.1.395 | Fixed |
-| TELC-2897 | Fix RunCommand in IFS.yxmc to be able to run in parallel. | 2022.3.1.395 | Fixed |
-| TELC-2898 | Fix RunCommand in Google\_Analytics.Prep\_Query\_String.yxmc to be able to run in parallel. | 2022.3.1.395 | Fixed |
-| TELC-2899 | Fix RunCommand in UTCDateTimeConverterMacro.yxmc to be able to run in parallel. | 2022.3.1.395 | Fixed |
-| TELC-2939DE34028 | "Open Debug" isn't working correctly with AMP enabled. | 2022.3.1.395 | Fixed |
-| TELC-2940DE33584 | 21.2 AMP error: "The file "debug\_temp.yxmd" does not exist" when using Debug mode with Interface Designer. | 2022.3.1.395 | Fixed |
-| TELC-2995GENG-2767 | Dynamic Input doesn't honor the Record Limit for AMP workflows. | 2022.3.1.395 | Fixed |
-| TELC-3002GCSE-545 | Error parsing Configuration on the Interactive Chart tool when the Data Source for the Transforms > Splits Enabled By Field contains leading zeros. | 2022.3.1.395 | Fixed |
-| TELC-3013DE28136 | A formula rule doesn't function properly in Basic Table column rules. | 2022.3.1.395 | Fixed |
-| TELC-3081 | Jupyter Notebook doesn't load and fails with a 404 error if the Detour tool is used and diverts the route to another path that the Python tool isn't on. | 2022.3.1.395 | Fixed |
-| TELC-3109 | Formula tool: Engine.Workflow.Directory has the wrong encoding with AMP. | 2022.3.1.395 | Fixed |
-| TELC-3129 | AMP caching: Metadata isn't populating correctly. | 2022.3.1.395 | Fixed |
-| TELC-3131 | Workflows that contain R tools, and Batch macros that contain other R tools, generate errors when AMP is enabled. | 2022.3.1.395 | Fixed |
-| **Minor Release Version 2022.3.1.430** |
-| TAAI-916 | The Auto Insights Uploader tool doesn't work in Designer version 2022.3. | 2022.3.1.430 | Fixed |
-| TDES-4595 | The Choose Tool Version option available via certain tools' right-click context menu isn't working. | 2022.3.1.430 | Fixed |
-| TDSL-4618 | Dynamic save of PDF stopped working with AMP in 2022.3. | 2022.3.1.430 | Fixed |
-| TDSL-4627GCSE-1050 | In 2022.3, with AMP enabled, the Render tool works incorrectly when you create an Excel file with the Group Data Into Separate Reports setting. | 2022.3.1.430 | Fixed |
-| TDST-3823 | PDF to Text: Unable to extract text content in PDF (Chinese language). | 2022.3.1.430 | Fixed |
-| TDYN-338 | When you select an Output tool with bulk loading for a Snowflake data source, there is no option to select the username and password authentication using the DSN-less method of connection. | 2022.3.1.430 | Fixed |
-| **Minor Release Version 2022.3.1.450** |
-| TAAI-916 | The Auto Insights Uploader tool doesn't work in Designer version 2022.3. | 2022.3.1.450 | Fixed |
-| TCPE-409GCSE-730 | Issues with loading DLLs when using Alteryx 2022.1 .NET API. | 2022.3.1.450 | Fixed |
-| TCPE-456 | 404 error and code loss in the Python tool in workflows that are downloaded from Gallery. | 2022.3.1.450 | Fixed |
-| TDCB-4339TDCB-4221 | Connecting to HIVE via the 2022.1 version of both Server and Designer using the MIT authentication results in an error. | 2022.3.1.450 | Fixed |
-| TINST-503TDES-4841 | The patch number doesn’t display in Designer’s About pane after you install a patch. Only the patch version displays. | 2022.3.1.450 | Fixed |
-| **Minor Release Version 2022.3.1.486** |
-| TCPE-615GCSE-1181 | Tools don't read all the rows from an Excel file. | 2022.3.1.486 | Fixed |
-| TDSL-4686GCSE-1046 | The Summarize tool Mode action produces different and unexpected results between AMP and the original Engine. | 2022.3.1.486 | Fixed |
-| TDSL-4698GCSE-1071 | Table tool: Column Styling Rules don't get applied to the header. | 2022.3.1.486 | Fixed |
-| TDSL-4721TELC-3231DE19776 | AMP Union tool: Error input "#1" was not initialized. | 2022.3.1.486 | Fixed |
-| TDSL-4743GENG-3078 | The Unique tool doesn't give correct data while using AMP with larger data sets. | 2022.3.1.486 | Fixed |
-| TPM-758GCSE-344 | 'Filename.yxdb' is not a valid YXDB file on the SharePoint Files Input tool using date-time fields. | 2022.3.1.486 | Fixed |
-| **Minor Release Version 2022.3.1.508**  |
-| TGAL-7785TCPE-587GCSE-1149 | Designer can’t connect directly to a remote controller to create or manage schedules (Desktop Automation/Scheduler). | 2022.3.1.508 | Fixed |
-| TDCB-4655 | Access 32-bit drivers fail in tool config (versions 2010, 2013, 2016, 365). Runtime works for the XLSB and ACCDB files. | 2022.3.1.508 | Fixed |
-| TDCB-4662 | Active Query Builder doesn't work with Access 2016 and 365 64-bit drivers. | 2022.3.1.508 | Fixed |
-| TDCB-4669 | XLSB is not available in the Windows dropdown after selecting in SiAP (No Office/Win 10/365 Runtime/64-bit). | 2022.3.1.508 | Fixed |
-| TELC-3666GCSE-1315 | Autoconfigure issue: Fields are not being passed through to the next tools after adding the Data Cleansing tool. A workflow must be run, then the tool receives the fields. | 2022.3.1.508 | Fixed |
-| **Minor Release Version 2022.3.1.532**  |
-| TCPE-647GCSE-1301 | Numbers formatted in Reporting tools are exported as strings randomly after upgrade. | 2022.3.1.532 | Fixed |
+| --- | --- | --- | --- |
+| GDCM-3067 | Alteryx-NetSuite connection fails with a ; (semicolon) in password. | 2023.2.1.7 | Fixed |
+| GENG-3240TDES-7779 | Error while executing Analytic App in Designer. | 2023.2.1.7 | Fixed |
+| TCPE-542GCSE-1064 | If "Cancel Running Workflow on Error" is checked, an email is sent when a workflow fails, but there is no mention in the Results log about this. | 2023.2.1.7 | Fixed |
+| TCPE-566GCSE-1096 | ESRI, Shp file, and Shape file export data in another language. | 2023.2.1.7 | Fixed |
+| TCPE-606GCSE1187 | Report Text tool fails to populate values when the field name has Japanese characters. | 2023.2.1.7 | Fixed |
+| TCPE-615GCSE-1181 | All rows are not being read from an Excel file when read from a source using a Connector tool. | 2023.2.1.7 | Fixed |
+| TCPE-616TDT-1818 | Data Package Basemap ‘Most Recent Vintage’ doesn’t render on Server. | 2023.2.1.7 | Fixed |
+| TCPE-647GCSE-1301 | Numbers formatted in Reporting tools are exported as strings randomly after upgrade. | 2023.2.1.7 | Fixed |
+| TCPE-648GCSE-1295 | Issue with WorkflowFilePath tag in Customer Managed Telemetry. | 2023.2.1.7 | Fixed |
+| TCPE-664GCSE-1319 | When clicking on the Analytic App interface link to file, there is no response. | 2023.2.1.7 | Fixed |
+| TCPE-677GCSE-1335 | Fuzzy Matching: Edit Match Options | 2023.2.1.7 | Fixed |
+| TCPE-695GCSE-1395 | In Designer version 2023.1, when running an Analytic App, the finish button has changed from blue to gray. | 2023.2.1.7 | Fixed |
+| TCPE-735GCSE-1491 | Bug in Reporting Table tool or Reporting Render tool. | 2023.2.1.7 | Fixed |
+| TCPE-779GCSE-1487 | Unable to schedule Gallery workflows using Legacy scheduler in Designer 2023.1. | 2023.2.1.7 | Fixed |
+| TDALI-4809 | Forced data type gets the Unhandled Exception error. | 2023.2.1.7 | Fixed |
+| TDALI-4972GCSE-1443 | An unexpected error occurs when attempting to choose a non-English data type in the Output data type in the Multi Field Formula tool with Designer version 2023.1. | 2023.2.1.7 | Fixed |
+| TDALI-5140 | Search in Select is updating data type in more columns than are displayed when filtered. | 2023.2.1.7 | Fixed |
+| TDCB-4603 | Add support for "none" for Table/FieldName SQL Style FSO for Denodo. | 2023.2.1.7 | Fixed |
+| TDCB-4655 | Access 32-bit drivers fail in tool configuration, but runtime works for XLSB and ACCDB. | 2023.2.1.7 | Fixed |
+| TDCB-4662 | Active Query Builder doesn't work with Access 2016 and 365 64-bit drivers. | 2023.2.1.7 | Fixed |
+| TDCB-4669 | Restore the filter in SiAP to select a XLSB file when using a recent Access runtime (2016 and Office 365). | 2023.2.1.7 | Fixed |
+| TDCB-4843 | Spatial with PostgreSQL fails from the Input tool when selecting only a table as input. | 2023.2.1.7 | Fixed |
+| TDCB-4888 | Amazon Redshift Bulk Loader size of bulk load chunks set to default. | 2023.2.1.7 | Fixed |
+| TDCB-4928 | Multi-byte characters change to blocks using In-DB for Databricks. | 2023.2.1.7 | Fixed |
+| TDCB-4940 | Postgres throws an error if GEOMETRY\_COLUMNS is in a different schema. | 2023.2.1.7 | Fixed |
+| TDCB-5012GCSE-1598 | Non-DCM Databricks Bulk Loader with ADLS only works when TempDirectory is filled. | 2023.2.1.7 | Fixed |
+| TDCB-5015GCSE-1531 | Write Data In-DB creates placeholder values when it shouldn't. It isn't leveraging default value. | 2023.2.1.7 | Fixed |
+| TDCB-5016GCSE-1602 | Avro files causing Designer to freeze. | 2023.2.1.7 | Fixed |
+| TDCB-5077 | Allow Snowflake Bulk with Local Staging to use Extra ODBC connection parameters. | 2023.2.1.7 | Fixed |
+| TDCB-5090 | Hyphen in BigQuery table names causes error in the Input tool Visual Query Builder. | 2023.2.1.7 | Fixed |
+| TDCE-105GCSE-1130 | VQB permission errors when connecting to BigQuery if a user is missing tables.list permission on any dataset. | 2023.2.1.7 | Fixed |
+| TDCE-130GCSE-1190 | Browse tool "Export" action causes Designer to crash when a Spatial object is present, and XLS is chosen. | 2023.2.1.7 | Fixed |
+| TDCE-132GCSE-1186 | Input Data tool error: "Unable to find field", even though that field is not included in the SELECT statement. | 2023.2.1.7 | Fixed |
+| TDCE-149GCSE-1284 | "Unable to find stored procedure <procedure\_name>" is shown when clicking on the Stored Procedures tab in the "Configure Pre/Post SQL statements and "Stored Procedure" window. | 2023.2.1.7 | Fixed |
+| TDCE-165DE27554 | CLOB error with special and multibyte characters. | 2023.2.1.7 | Fixed |
+| TDCE-166GCSE1359 | VQB SQL Editor: Brackets [ ] are not automatically added for column names with full-width round brackets ( ), which causes SQL error. | 2023.2.1.7 | Fixed |
+| TDCE-169DE25915 | SpatialMatch tool and Find Nearest tool not working when connecting to SQL Server. |  | Fixed |
+| TDCE-194GCSE-1490 | Can't save changing the projection as JGD2000.shp. | 2023.2.1.7 | Fixed |
+| TDCE-256GCSE-570 | When reading the SQL Server table, you get syntax errors on queries if the query includes a spatial object column and that column name has spaces. | 2023.2.1.7 | Fixed |
+| TDCE-262DE29246 | Corrupted data when writing WString to a CLOB using OCI. | 2023.2.1.7 | Fixed |
+| TDES-4555 | Multi-anchor Caching Error with Macros | 2023.2.1.7 | Fixed |
+| TDES-4700 | Control Container: Insert After and Add Browse After not working. | 2023.2.1.7 | Fixed |
+| TDES-4906 | Control Container: Double-clicking a tool should appear to the right of Control Containers. | 2023.2.1.7 | Fixed |
+| TDES-5430 | Control Container: Action tool missing action type. | 2023.2.1.7 | Fixed |
+| TDES-5637 | Control Container: Compare Workflows is not working for Control Containers. | 2023.2.1.7 | Fixed |
+| TDES-5955 | Control Container: Insert in Connection doesn't auto-move tools to make room. | 2023.2.1.7 | Fixed |
+| TDES-6029 | Control Container: Cache and Run Workflow with Control Containers has unexpected results. | 2023.2.1.7 | Fixed |
+| TDES-6186 | Workflow Dependencies aren't opening. | 2023.2.1.7 | Fixed |
+| TDES-6197 | An unhandled exception occurs when opening Designer. | 2023.2.1.7 | Fixed |
+| TDSL-4772GCSE-1063 | AMP issue with Iterative Macro. | 2023.2.1.7 | Fixed |
+| TDSL-4785 | Int64 fails in Formula Add-In functions. | 2023.2.1.7 | Fixed |
+| TDSL-4800GCSE-1260 | Workflow with a Render tool in a macro fails with an error in Gallery when AMP is enabled. | 2023.2.1.7 | Fixed |
+| TDSL-4801GCSE-894 | AMP: Error opening the file. The filename, directory name, or syntax is incorrect. | 2023.2.1.7 | Fixed |
+| TDSL-4817GCSE-1392 | AMP: Summarize Median calculation is miscomputing. | 2023.2.1.7 | Fixed |
+| TDSL-4851TDES-6731 | Error: "You found a bug. Contact customer support for assistance." after running workflow in Designer. | 2023.2.1.7 | Fixed |
+| TDSL-4862GCSE-1424 | Macro in a folder with a Japanese name (multi-byte char): The macro returns an error on Designer 2023.1.1.123. | 2023.2.1.7 | Fixed |
+| TDSL-4882GENG-2900 | Internal error: Cannot acquire memory for e1 Shim. | 2023.2.1.7 | Fixed |
+| TDSL-4883GENG-2925 | AMP: Fuzzy Match columns were swapped. | 2023.2.1.7 | Fixed |
+| TDSL-4917 | AMP FuzzyMatch: Different results of MatchScore on original Engine and AMP. | 2023.2.1.7 | Fixed |
+| TDST-4010 | Fixed a security vulnerability in Alteryx Intelligence Suite versions 2021.4 to 2023.1. If you have AIS versions 2021.4 to 2023.1 installed, please download and reinstall the latest applicable version from the [license portal](https://us1.alteryxcloud.com/license-portal/). | 2023.2.1.7 | Fixed |
+| TDYN-587 | There are incorrect attributes in the DCM schema for Databricks private app with OAuth. | 2023.2.1.7 | Fixed |
+| TELC-3558 | Control Container: Internal error for non-activated Control Container. | 2023.2.1.7 | Fixed |
+| TELC--3627GENG-3113 | AMP: Analytic App with Control Container and Tree tool produces an error. | 2023.2.1.7 | Fixed |
+| TELC-3636GENG-3111 | Control Container: Tool Container nested inside Control Container produces an error. | 2023.2.1.7 | Fixed |
+| TELC-3637GENG-3108 | AMP: Two Detour tools producing wrong behavior inside Control Container. | 2023.2.1.7 | Fixed |
+| TELC-3666GCSE-1315 | Autoconfigure issue: The Summarize tool does not have fields passed after Data Cleansing tool. | 2023.2.1.7 | Fixed |
+| TELC-3695TDES-6283 | Control Container: Error when connection to Browse tool inside Control Container crosses the container boundary. | 2023.2.1.7 | Fixed |
+| TELC-3696GENG-3142 | Original Engine: Input Data from HTML: Reading of long records producing "You have found a bug." message. | 2023.2.1.7 | Fixed |
+| TELC-3759 | Control Container: App and standard workflow error when disabling all Browse tools. | 2023.2.1.7 | Fixed |
+| TELC-3768 | Control Container: Tools inside non-active Control Containers shouldn't process and output any data. | 2023.2.1.7 | Fixed |
+| TELC-3803TDES-7237 | Getting access denied error after running a workflow in non-Admin Designer after resetting the path to temp folder via command line. | 2023.2.1.7 | Fixed |
+| TELC-3819GENG-3195 | AMP performance issue with Crosstab. | 2023.2.1.7 | Fixed |
 
 
 
 | Known |
 | --- |
 | ID | Description | Version | Issue Status |
-| GENG-2883GCSE-837 | AMP creates excessive temp files in the event of a crash. | 2022.3.1.395 | Known |
-| GENG-2936DE13411 | Generalize tool: There are large interior holes that are closed in the polygon. | 2022.3.1.395 | Known |
-| TCPE-428GCSE-746 | When you pull data from a CSV file, if a column name has a trailing space, Alteryx replaces the space with a period. | 2022.3.1.395 | Known |
-| TCPE-462GCSE-845 | A message set in Interface Designer (in version 2021.4) doesn't display a message in Server. | 2022.3.1.395 | Known |
-| TDALI-4395GCSE-544 | Changing the case of an incoming field name breaks some tools. | 2022.3.1.395 | Known |
-| TDCE-26GCSE-779 | SQL Server data type money shows up as V\_String when connected using OLEDB. | 2022.3.1.395 | Known |
-| TDCE-34GCSE-849 | When trying to append data in an Amazon Redshift table that contains a column with the attribute IDENTITY(seed, step) the record is inserted fine, but the value of the first column to be inserted is NULL. | 2022.3.1.395 | Known |
-| TDCE-38GCSE-859 | SharePoint Input tool version 2.2.0 inputs "nan" from Excel workbooks for cells with a blank/NULL value. | 2022.3.1.395 | Known |
-| TDES-4451 | When you view the list of selectable fields (x of x dropdown) in the Results window, you can't scroll all the way to the bottom of the field selection list. The last item is cut-off. | 2022.3.1.395 | Known |
-| TDES-4466DE28817 | Custom fonts don't output to various file types via the Render tool. | 2022.3.1.395 | Known |
-| TDES-4520 | The Service Data Parser macro needs a configuration update. | 2022.3.1.395 | Known |
-| TDES-4555 | Custom macros with multiple outputs aren't running successfully after being cached. | 2022.3.1.395 | Known |
-| TDES-4595 | The Choose Tool Version option in the Designer canvas tool-context menu is not working. | 2022.3.1.395 | Known |
-| TDSL-4444GCSE-315 | The Render tool PDF reverses Arabic, Hebrew, and other right-to-left (RTL) languages. | 2022.3.1.395 | Known |
-| TDSL-4448DE19725 | PNG doesn't render properly to PDF from the Render tool. | 2022.3.1.395 | Known |
-| **Minor Release Version 2022.3.1.430** |
-| TINST-503TDES-4841 | The patch number doesn’t display in Designer’s About pane after you install a patch. Only the patch version displays. | 2022.3.1.430 | Known |
+| --- | --- | --- | --- |
+| GENG-1973 | Buffer tool: Subfoot gaps. | 2023.2.1.7 | Known |
+| GENG-2936DE13411 | Generalize: Closing large interior holes in polygon. | 2023.2.1.7 | Known |
+| GENG-3264 | DateTime precision and AMP: Union tool incorrectly truncates data. | 2023.2.1.7 | Known |
+| TCPE-730GCSE-1449 | 2023.1 Canada Geocoder error: Device or resource busy. | 2023.2.1.7 | Known |
+| TCPE-750GCSE-1512 | When Desktop Automation is configured, Alteryx creates a temp folder AlteryxCEF\_xxxx-xxxx-xxxx-xxxx every time Designer is opened and doesn't clear up automatically. | 2023.2.1.7 | Known |
+| TCPE-805GCSE-1565 | The search for values copied from Excel doesn't return any value in the Results window. | 2023.2.1.7 | Known |
+| TCPE-838GCSE-1614 | Interface Designer: Link not working correctly for relative or absolute file path, hyperlink. | 2023.2.1.7 | Known |
+| TCPE-845GCSE-1713 | When the "Alteryx Database as Browse Everwhere" file type is chosen, the output is created as YXDB, instead of YXBE. | 2023.2.1.7 | Known |
+| TDALI-5234 | Fuzzy Match unhandled exception when using Custom option. | 2023.2.1.7 | Known |
+| TDCB-4632 | Can't read tables that contain a slash character from local data sources using MS Access. | 2023.2.1.7 | Known |
+| TDCB-4945 | Databricks Unity Catalog: Visual Query Builder tab: Scalar functions are not correctly parsed. | 2023.2.1.7 | Known |
+| TDCB-4948GCSE-1521 | BigQuery Bulk Loader loads date fields as strings. | 2023.2.1.7 | Known |
+| TDCB-5105 | Error creating temporary table using Stream In-DB tool with Redshift if case sensitive identifier is set to true. | 2023.2.1.7 | Known |
+| TDCB-5108 | Error creating table with special characters in Databricks bulk with Stream In. | 2023.2.1.7 | Known |
+| TDCE-184GCSE-1452 | Unable to open workflow that contains a SharePoint Input tool followed by a Data Cleansing tool. | 2023.2.1.7 | Known |
+| TDCE-186GCSE-1478 | Tableau Output tool fails to create TDSX file when the file is over a certain size. | 2023.2.1.7 | Known |
+| TDCE-206GCSE-1518 | Tableau Output tool throws an error when appending to a dataset created by the deprecated Publish to Tableau Server tool. | 2023.2.1.7 | Known |
+| TDCE-209GCSE1532 | Tableau Output 1.3.0 fails to update using Upserts. | 2023.2.1.7 | Known |
+| TDCE-235GCSE-1596 | MIF file coordinates read into the wrong hemisphere in versions 2023.1 and 2022.3. | 2023.2.1.7 | Known |
+| TDCE-252GCSE-1687 | Google Drive Output 1.2.1 doesn't append records to new sheet whereas Google Drive Output 1.1.1 does. | 2023.2.1.7 | Known |
+| TDCE-255GCSE-1623 | Google Drive Input connector error when changing a file name in File Path field to an existing file. | 2023.2.1.7 | Known |
+| TDCE-258GCSE-1692 | Google Drive connector is changing Google Sheet IDs (GIDs). | 2023.2.1.7 | Known |
+| TDCE-267GCSE-1732 | Google Drive connector error: There is no such file or directory: "/xxxx/gsheet". | 2023.2.1.7 | Known |
+| TDES-7735 | The updated Missing Macro name isn't showing in the Configuration window. | 2023.2.1.7 | Known |
+| TDES-8052 | Saving templates from Server workflows is not working properly. | 2023.2.1.7 | Known |
+| TDES-8060 | Saving templates from AACP workflows is not working properly. | 2023.2.1.7 | Known |
+| TDST-4016 | Error returned when using a Python tool that contains a machine learning pipeline generated from the Assisted Modeling tool. | 2023.2.1.7 | Known |
 
-* [Designer 2022.3 Release Notes](#designer-2022-3-release-notes)
-* [New Features: Designer](#idm45506848171056)
-	+ [OpenSSL3 Cryptographic Module Updates](#idm45506848169840)
-	+ [Installer Updates](#idm45506848169312)
-	+ [Search in Select](#idm45506848167520)
-	+ [Formula Tool Enhancements](#idm45506848163840)
-	+ [Multi Anchor Caching](#idm45506848161680)
-	+ [Disable Single Output Data Tool](#idm45506848159216)
-	+ [Fuzzy Match Support for Japanese](#idm45506848157408)
-	+ [Results Grid Accessibility Updates](#idm45506848155584)
-	+ [Compare Workflow Enhancements](#idm45506848154480)
-	+ [Start Here Updates](#idm45506848152640)
-	+ [AMP Tool Support](#idm45506848151360)
-	+ [Proxy Support in AMP](#idm45506848147936)
-	+ [Engines Parity Utility](#idm45506848144528)
-	+ [Sleep Method in R Scripts Is Not Needed Anymore](#idm45506848143280)
-	+ [Global Setting to Enable Allow-list for Peer Validation](#idm45506848140640)
-	+ [Behavior Analysis Tools Deprecation](#idm45506848138912)
-	+ [DCM External Vault](#idm45506848136192)
-	+ [Google BigQuery Bulk Loading](#idm45506848135120)
-	+ [In-DB Support for Google BigQuery](#idm45506848132608)
-	+ [Email Tool OAuth Support](#idm45506848131488)
-	+ [Azure AD Support for Snowflake](#idm45506848130560)
-	+ [Azure AD Support for Databricks](#idm45506848128080)
-	+ [Connectors Deprecation](#idm45506848125552)
-	+ [Display Updates in Maps](#idm45506848123056)
-	+ [Usage Data Configuration](#idm45506848117312)
-	+ [Improved Support for Multi-Byte Characters](#idm45506848116160)
-* [New Features: Intelligence Suite](#idm45506848170560)
-	+ [PDF to Text Tool](#idm45506848110768)
-	+ [Zero-shot Text Classification Tool](#idm45506848110368)
-	+ [Text Summary Tool](#idm45506848109152)
-	+ [Image Template Tool Enhancements](#idm45506848108096)
-	+ [Shift Step in Image Processing Tool](#idm45506848107152)
-	+ [Image Recognition Tool Enhancements](#idm45506848106000)
-* [Fixed and Known Issues](#idm45506848111024)
+* [Designer 2023.2 Release Notes](#designer-2023-2-release-notes)
+* [New Features: Designer](#new-features--designer-6563529)
+	+ [Custom Templates](#custom-templates-6563529)
+	+ [Find Missing Macros in Workflows](#find-missing-macros-in-workflows-6563529)
+	+ [Interactive Results Grid Enhancements](#interactive-results-grid-enhancements-6563529)
+	+ [New Formula Functions](#idm45507179873088)
+	+ [Build Custom Formula Functions via C++ with AMP](#build-custom-formula-functions-via-c---with-amp-6563529)
+	+ [Updates to IRR and XIRR Functions](#updates-to-irr-and-xirr-functions-6563529)
+	+ [Calculate Product via Summarize Tool](#calculate-product-via-summarize-tool-6563529)
+	+ [Updates to the Cloud Execution for Desktop Experience](#updates-to-the-cloud-execution-for-desktop-experience-6563529)
+	+ [Dark Mode Updates](#dark-mode-updates-6563529)
+	+ [Render Tool Updates](#render-tool-updates-6563529)
+	+ [Tool UI Updates](#tool-ui-updates-6563529)
+	+ [Tools Fully Compatible with AMP](#idm45507179841616)
+	+ [New User Setting to Enable Default State for Engine Compatibility Mode](#idm45507179840512)
+	+ [Automated Crash Reporting](#automated-crash-reporting-6563529)
+	+ [Amazon Tools](#amazon-tools-6563529)
+	+ [DCM Migration Tool](#dcm-migration-tool-6563529)
+	+ [DCM Adoption](#dcm-adoption-6563529)
+	+ [DCM Support for ODBC Technologies](#dcm-support-for-odbc-technologies-6563529)
+	+ [Configurable Connection Timeout for ODBC Connections](#configurable-connection-timeout-for-odbc-connections-6563529)
+	+ [OIDC Authentication for HashiCorp Vault](#oidc-authentication-for-hashicorp-vault-6563529)
+	+ [Generic OAuth](#generic-oauth-6563529)
+	+ [Databricks Unity Catalog](#databricks-unity-catalog-6563529)
+	+ [Merge Tables in Databricks](#merge-tables-in-databricks-6563529)
+	+ [Cancel Query Logic for Snowflake](#cancel-query-logic-for-snowflake-6563529)
+	+ [Azure AD Authentication Updates](#azure-ad-authentication-updates-6563529)
+	+ [Publish to Tableau Server Tool Removal](#publish-to-tableau-server-tool-removal-6563529)
+	+ [End of Support for Tableau .tde Files](#end-of-support-for-tableau--tde-files-6563529)
+	+ [Python SDK Example Tool Removal](#python-sdk-example-tool-removal-6563529)
+	+ [OpenSSL Version Upgrade](#openssl-version-upgrade-6563529)
+	+ [Python Version Upgrade](#python-version-upgrade-6563529)
+	+ [CEF Version Upgrade](#cef-version-upgrade-6563529)
+	+ [Legacy Alteryx Platform Access](#legacy-alteryx-platform-access-6563529)
+	+ [Windows 11 Support](#windows-11-support-6563529)
+	+ [End of Support for Windows Server 2012](#end-of-support-for-windows-server-2012-6563529)
+* [New Features: Intelligence Suite](#new-features--intelligence-suite-6563529)
+	+ [Python Version Upgrade](#idm45507179762368)
+	+ [Barcode Tool Dependencies](#idm45507179761680)
+* [Fixed and Known Issues](#idm45507179762832)
 Search results
 --------------
 
 
 No results found
 
-* [Prev](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-fips-2022-2-release-notes.html)
-* [Next](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-2022-1-release-notes.html)
+* [Prev](https://help.alteryx.com/current/en/release-notes/designer-release-notes.html)
+* [Next](https://help.alteryx.com/current/en/release-notes/designer-release-notes/designer-2023-1-release-notes.html)
  © 2023 Alteryx, Inc. Publication date: 
