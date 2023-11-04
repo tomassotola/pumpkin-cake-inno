@@ -12,4 +12,3 @@ STACK_VERSION=8.4.0
 ES_PORT=9200
 # Port to expose Kibana to the host
 KIBANA_PORT=5601
- --> 
