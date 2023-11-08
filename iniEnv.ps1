@@ -1,0 +1,5 @@
+$env:ES_PORT=9200
+$env:KIBANA_PORT=5601
+$env:STACK_VERSION="8.10.4"
+$env:OPENAI_API_KEY="xxxxxx"
+

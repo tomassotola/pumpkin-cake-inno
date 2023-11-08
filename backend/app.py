@@ -91,4 +91,6 @@ def app():
     # Scraping data
     # scrape_data(config=config)
     process_data(config=config)
-app()
+
+if __name__ == "__main__":
+    app()

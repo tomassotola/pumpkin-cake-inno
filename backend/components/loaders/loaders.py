@@ -3,6 +3,7 @@ from .loader_models import SchemaParser
 from langchain.document_loaders import UnstructuredMarkdownLoader
 from langchain.text_splitter import MarkdownHeaderTextSplitter
 import json
+import os
 
 
 def transform_elements(element: str) -> str:
@@ -27,8 +28,12 @@ class Alteryx_Loader:
 
     def __prepare_schema(self) -> None:
         # loadign specific schema by name
+
+        cwd = os.getcwd()        
+        raw_schemas_path = os.path.join(cwd, 'backend', 'components', 'loaders', 'schemas.json')
+         
         raw_schemas = open(
-            f"components/loaders/schemas.json", "r").read()
+            raw_schemas_path, "r").read()
         all_schemas = json.loads(raw_schemas)['schemas']
         selected_schema = SchemaParser(**all_schemas[self.name])
         start_condition = selected_schema.start
@@ -39,8 +44,11 @@ class Alteryx_Loader:
 
     def __load_raw_and_convert(self) -> None:
         # loading data and converts to unstructured
-        raw_notes = UnstructuredMarkdownLoader(
-            f"./raw_notes/{self.name}/release_notes_text_{self.version}.txt", mode="elements"
+        cwd = os.getcwd()
+        raw_notes_path = os.path.join(cwd, 'backend', 'raw_notes', str(self.name), f"release_notes_text_{self.version}.txt")
+
+        raw_notes = UnstructuredMarkdownLoader(        
+            raw_notes_path, mode="elements"
         )
         self.md = raw_notes.load()
 

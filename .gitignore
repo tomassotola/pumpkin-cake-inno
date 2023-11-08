@@ -1,3 +1,7 @@
-.env 
+.env
+.vscode 
 venv
 frontend/node_modules
+
+# mirek's :)
+initEnv.ps1
