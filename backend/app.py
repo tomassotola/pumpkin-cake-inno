@@ -48,6 +48,8 @@ def upload_to_es(updates: object) -> None:
 
 
 def process_data(config: Config):
+    print("version " + config.version )
+
      # Loading data and splitting texts
     text_splits = get_splits(
         loader_name=config.loader_name,
@@ -71,9 +73,9 @@ def process_data(config: Config):
     #     prompt_text=text
     # )
     # print(preview)
-    for each in range(0, len(text_splits)):
-        prompt_text = preprocess_prompt(text_splits[each])
-        print(f"requesting {each} split")
+    for index, text_split in enumerate(text_splits):
+        prompt_text = preprocess_prompt(text_split)
+        print(f"requesting {index} split")
         response = chain.run(
             schema=llm_schema,
             prompt_text=prompt_text
@@ -93,6 +95,8 @@ def scrape_data(config: Config):
 
 
 def app():
+    versions = ["2020.1", "2020.2", "2020.3", "2020.4", "2021.1", "2021.2", "2021.3", "2021.4", "2022.1", "2022.3", "2023.1", "2023.2"]
+
     # 2020.4 not completed
     # Add full summary of the feature
     # Check 2020.2 last feature how it gets sent to OpenAI
@@ -100,14 +104,18 @@ def app():
     config = Config(
         web_agent_name="alteryx",
         loader_name="alteryx",
-        version="2023.2",
+        version="",
         schema_name="alteryx_notes",
         chain_name="alteryx",
         product_name="Alteryx"
     )
     # Scraping data
     # scrape_data(config=config)
-    process_data(config=config)
+
+    for version in versions:
+        config.version = version
+        process_data(config=config)
+
 
 if __name__ == "__main__":
     app()

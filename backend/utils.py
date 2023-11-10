@@ -10,7 +10,10 @@ def to_markdown(soup, **options):
 
 def preprocess_prompt(text_split: object):
     page_content = text_split.page_content
-    metadata = text_split.metadata['Header 3']
+    if 'Header 3' in text_split.metadata.keys():
+        metadata = text_split.metadata['Header 3']
+    else:
+        metadata = "Update"
     prompt_text = "<>" + metadata + "<>" + page_content
     return prompt_text
 
