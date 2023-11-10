@@ -26,6 +26,22 @@ def upload_to_es(updates: object) -> None:
         # basic_auth=("elastic", ELASTIC_PASSWORD)
     )
 
+    #upload index
+    mappings = {
+        "properties": {
+        "Feature": { "type": "text" },
+        "Summary": { "type": "text" },
+        "Tags":{ "type": "keyword" },
+        "Release":{ "type": "keyword" },
+        "Product":{ "type": "keyword" },
+        "Type":{ "type": "keyword" },
+        "Deprecations":{ "type": "keyword" }
+        }
+    }
+
+    if not es.indices.exists(index="alteryx_updates"):
+        es.indices.create(index="alteryx_updates", mappings=mappings)
+
     for each in range(0, len(updates)):
         resp = es.index(index="alteryx_updates", document=updates[each])
         print(resp)
@@ -39,34 +55,35 @@ def process_data(config: Config):
     )
 
     # Preparing chain
-    # llm = initialize_llm()
-    # llm_schema = generate_llm_schema(
-    #     schema_name=config.schema_name
-    # )
-    # chain = Extraction_Chain(
-    #     chain_name=config.chain_name,
-    #     llm=llm
-    # )
+    llm = initialize_llm()
+    llm_schema = generate_llm_schema(
+        schema_name=config.schema_name
+    )
+    chain = Extraction_Chain(
+        chain_name=config.chain_name,
+        llm=llm
+    )
 
-    # updates = []
-    # # text = preprocess_prompt(text_splits[0])
-    # # preview = chain.preview(
-    # #     schema=llm_schema,
-    # #     prompt_text=text
-    # # )
-    # # print(preview)
-    # for each in range(0, len(text_splits)):
-    #     prompt_text = preprocess_prompt(text_splits[each])
-    #     print(f"requesting {each} split")
-    #     response = chain.run(
-    #         schema=llm_schema,
-    #         prompt_text=prompt_text
-    #     )
-    #     parsed = Update(**response['update'][0])
-    #     parsed.Release = config.version
-    #     parsed.Product = config.product_name
-    #     updates.append(parsed.model_dump_json())
-    # upload_to_es(updates=updates)
+    updates = []
+    # text = preprocess_prompt(text_splits[0])
+    # preview = chain.preview(
+    #     schema=llm_schema,
+    #     prompt_text=text
+    # )
+    # print(preview)
+    for each in range(0, len(text_splits)):
+        prompt_text = preprocess_prompt(text_splits[each])
+        print(f"requesting {each} split")
+        response = chain.run(
+            schema=llm_schema,
+            prompt_text=prompt_text
+        )
+        parsed = Update(**response['update'][0])
+        parsed.Release = config.version
+        parsed.Product = config.product_name
+        updates.append(parsed.model_dump_json())
+        
+    upload_to_es(updates=updates)
 
 
 def scrape_data(config: Config):

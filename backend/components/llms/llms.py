@@ -105,9 +105,8 @@ class Extraction_Chain():
         self.name = chain_name
         self.llm = llm
         self.encoder = "csv"
-        self.insturctions_template = instruction_template
 
-    def run(self, schema: object, prompt_text: str) -> None:
+    def run(self, schema: object, prompt_text: str) -> str:
         chain = create_extraction_chain(
             llm=self.llm,
             node=schema,
